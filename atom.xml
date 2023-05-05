@@ -6,7 +6,7 @@
   <link href="http://example.com/atom.xml" rel="self"/>
   
   <link href="http://example.com/"/>
-  <updated>2023-05-05T12:31:09.848Z</updated>
+  <updated>2023-05-05T13:09:10.515Z</updated>
   <id>http://example.com/</id>
   
   <author>
@@ -15,6 +15,29 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>xiaopf教育app停服公告</title>
+    <link href="http://example.com/2023/05/05/xiaopf%E6%95%99%E8%82%B2app%E5%81%9C%E6%9C%8D%E5%85%AC%E5%91%8A/"/>
+    <id>http://example.com/2023/05/05/xiaopf%E6%95%99%E8%82%B2app%E5%81%9C%E6%9C%8D%E5%85%AC%E5%91%8A/</id>
+    <published>2023-05-05T12:15:21.000Z</published>
+    <updated>2023-05-05T13:09:10.515Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;由于老总林中梧与开发部门决裂&lt;br&gt;所以从现在起开始停服&lt;br&gt;若中梧使用管理权限开服将清空全部数据&lt;br&gt;开服时间待定&lt;br&gt;具体参见➡&lt;a</summary>
+        
+      
+    
+    
+    
+    
+    <category term="其他" scheme="http://example.com/tags/%E5%85%B6%E4%BB%96/"/>
+    
+  </entry>
   
   <entry>
     <title>班级同学外号查询</title>
@@ -84,7 +107,7 @@
     <link href="http://example.com/2023/05/01/xiaopf%E6%95%99%E8%82%B2app%E6%AD%A3%E5%BC%8F%E4%B8%8A%E7%BA%BF%EF%BC%81/"/>
     <id>http://example.com/2023/05/01/xiaopf%E6%95%99%E8%82%B2app%E6%AD%A3%E5%BC%8F%E4%B8%8A%E7%BA%BF%EF%BC%81/</id>
     <published>2023-05-01T10:08:22.000Z</published>
-    <updated>2023-05-02T02:55:09.292Z</updated>
+    <updated>2023-05-05T13:06:56.166Z</updated>
     
     
       
