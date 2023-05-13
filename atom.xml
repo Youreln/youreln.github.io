@@ -6,7 +6,7 @@
   <link href="http://example.com/atom.xml" rel="self"/>
   
   <link href="http://example.com/"/>
-  <updated>2023-05-05T13:09:10.515Z</updated>
+  <updated>2023-05-06T03:11:30.681Z</updated>
   <id>http://example.com/</id>
   
   <author>
@@ -15,6 +15,21 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>山影映湖中，碧波荡漾，人间仙境</title>
+    <link href="http://example.com/2023/05/06/%E6%B9%96%E7%BE%8E%E4%B8%83%E6%98%9F%E6%B9%96/"/>
+    <id>http://example.com/2023/05/06/%E6%B9%96%E7%BE%8E%E4%B8%83%E6%98%9F%E6%B9%96/</id>
+    <published>2023-05-06T03:09:11.000Z</published>
+    <updated>2023-05-06T03:11:30.681Z</updated>
+    
+    
+    
+    
+    
+    <category term="其他" scheme="http://example.com/tags/%E5%85%B6%E4%BB%96/"/>
+    
+  </entry>
   
   <entry>
     <title>xiaopf教育app停服公告</title>
@@ -36,6 +51,33 @@
     
     
     <category term="其他" scheme="http://example.com/tags/%E5%85%B6%E4%BB%96/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>xiaopf教育网页版</title>
+    <link href="http://example.com/2023/05/05/xiaopf%E6%95%99%E8%82%B2%E7%BD%91%E9%A1%B5%E7%89%88%E5%8F%91%E5%B8%83%EF%BC%81%EF%BC%81%EF%BC%81/"/>
+    <id>http://example.com/2023/05/05/xiaopf%E6%95%99%E8%82%B2%E7%BD%91%E9%A1%B5%E7%89%88%E5%8F%91%E5%B8%83%EF%BC%81%EF%BC%81%EF%BC%81/</id>
+    <published>2023-05-05T12:15:21.000Z</published>
+    <updated>2023-05-13T11:04:26.132Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;网页版的好处：可登录，数据永不丢失&lt;br&gt;坏处：不够稳定&lt;br&gt;app版的好处：好处：十分稳定&lt;br&gt;坏处：只能游客发帖，重装还会分配新游客账号导致之前游客数据丢失&lt;br&gt;要前往请参见以下内容&lt;br&gt;&lt;!DOCTYPE html&gt;&lt;/p&gt;
+&lt;html&gt;
+
+&lt;head&gt;
+ </summary>
+        
+      
+    
+    
+    
+    
+    <category term="技术" scheme="http://example.com/tags/%E6%8A%80%E6%9C%AF/"/>
     
   </entry>
   
@@ -86,7 +128,7 @@
     <link href="http://example.com/2023/05/03/%E7%A5%96%E5%9B%BD%E5%95%8A%EF%BC%8C%E6%88%91%E4%BA%B2%E7%88%B1%E7%9A%84%E7%A5%96%E5%9B%BD%E6%A8%A1%E6%9D%BF-%E6%9C%97%E8%AF%B5%E8%AF%8D%20-%20%E5%89%AF%E6%9C%AC/"/>
     <id>http://example.com/2023/05/03/%E7%A5%96%E5%9B%BD%E5%95%8A%EF%BC%8C%E6%88%91%E4%BA%B2%E7%88%B1%E7%9A%84%E7%A5%96%E5%9B%BD%E6%A8%A1%E6%9D%BF-%E6%9C%97%E8%AF%B5%E8%AF%8D%20-%20%E5%89%AF%E6%9C%AC/</id>
     <published>2023-05-03T06:10:57.000Z</published>
-    <updated>2023-05-03T06:34:13.646Z</updated>
+    <updated>2023-05-06T03:01:10.546Z</updated>
     
     
       
