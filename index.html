@@ -190,35 +190,23 @@
       
     <div class="article-entry" itemprop="articleBody">
        
-  <p>网页版的好处：可登录，数据永不丢失<br>坏处：不够稳定<br>app版的好处：好处：十分稳定<br>坏处：只能游客发帖，重装还会分配新游客账号导致之前游客数据丢失<br>要前往请参见以下内容<br><!DOCTYPE html></p>
-<html>
-
-<head>
-    <title>中梧教育跳转页</title>
-
-</head>
-
-<body>
-    <button type="button" onclick="handleOnclick()">跳转</button>
-</body>
-<script src="./tucao.js"></script>
-<script type="text/javascript">
-"use strict";
-var data = {
-      "nickname": "tucao_test",
-      "avatar": "https://tucao.qq.com/static/desktop/img/products/def-product-logo.png",
-      "openid": "tucao_123",
-  },
-  productId = 502768; // 把1221数字换成你的产品ID，否则会不成功
-
-<p>function handleOnclick(){<br>  Tucao.request(productId, data);<br>}</p>
-<p></script></p>
+  <p>网页版的好处：可登录，数据永不丢失<br>坏处：不够稳定<br>app版的好处：好处：十分稳定<br>坏处：只能游客发帖，重装还会分配新游客账号导致之前游客数据丢失<br>但是要保证数据请用微信打开此网页<br>要前往请参见以下内容<br><!DOCTYPE html>  </p>
+<html>  
+<head>  
+    <title>跳转到微信</title>  
+</head>  
+<body>  
+    <button onclick="jumpToWeixin()">跳转到微信</button>  
+    <script>  
+        function jumpToWeixin() {  
+            var productUrl = 'https://support.qq.com/product/502768';  
+            window.location.href = productUrl;  
+        }  
+    </script>  
+</body>  
 </html>
-注意：本跳转页会取消登录，并分配公共账号！
-点击跳转进入
-如需保持登录并到微信打开请点击
-<a href="weixin://open?url=https%3A%2F%2Fsupport.qq.com%2Fproduct% gender">跳转到微信</a>
- 
+如需到微信打开请点击
+<a href="weixin://open?url=https%3A%2F%2Fsupport.qq.com%2Fproduct% gender">跳转到微信</a> 
       <!-- reward -->
       
     </div>
