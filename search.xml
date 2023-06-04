@@ -24,22 +24,7 @@
   <entry>
     <title>xiaopf教育网页版</title>
     <url>/2023/05/13/xiaopf%E6%95%99%E8%82%B2%E7%BD%91%E9%A1%B5%E7%89%88%E5%8F%91%E5%B8%83%EF%BC%81%EF%BC%81%EF%BC%81/</url>
-    <content><![CDATA[<p>原中梧教育<br>网页版的好处：可登录，数据永不丢失<br>坏处：不够稳定<br>app版的好处：好处：十分稳定<br>坏处：只能游客发帖，重装还会分配新游客账号导致之前游客数据丢失<br>但是要保证数据请用微信打开此网页<br>要前往请参见以下内容<br><!DOCTYPE html>  </p>
-<html>  
-<head>  
-    <title>跳转到微信</title>  
-</head>  
-<body>  
-    <button onclick="jumpToWeixin()">点此前往</button>  
-    <script>  
-        function jumpToWeixin() {  
-            var productUrl = 'https://support.qq.com/product/502768';  
-            window.location.href = productUrl;  
-        }  
-    </script>  
-</body>  
-</html>
-APP下载：<!DOCTYPE html>  
+    <content><![CDATA[<p>原中梧教育<br>网页版的好处：可登录，数据永不丢失<br>坏处：不够稳定<br>app版的好处：好处：十分稳定<br>坏处：只能游客发帖，重装还会分配新游客账号导致之前游客数据丢失<br>但是要保证数据请用微信打开此网页<br>要前往请参见以下内容<br><a href="https://support.qq.com/product/1221">点击跳转到xiaopf教育页面</a><br>APP下载：<!DOCTYPE html>  </p>
 <html>  
 <head>  
     <title>跳转到微信</title>  
@@ -56,7 +41,7 @@ APP下载：<!DOCTYPE html>
 </html>
 如需到微信打开请点击
 <a href="weixin://open?url=https%3A%2F%2Fsupport.qq.com%2Fproduct% gender">跳转到微信</a>
-推荐网页版]]></content>
+推荐网页版[https://support.qq.com/product/502768](https://support.qq.com/product/502768)]]></content>
       <tags>
         <tag>技术</tag>
       </tags>
