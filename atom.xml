@@ -6,7 +6,7 @@
   <link href="https://youreln.gitee.io/atom.xml" rel="self"/>
   
   <link href="https://youreln.gitee.io/"/>
-  <updated>2023-06-26T06:13:40.223Z</updated>
+  <updated>2023-06-26T06:54:31.886Z</updated>
   <id>https://youreln.gitee.io/</id>
   
   <author>
@@ -15,6 +15,25 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Youreln工具箱正式开源以及用户手册</title>
+    <link href="https://youreln.gitee.io/2023/06/26/%E7%94%A8%E6%88%B7%E6%8C%87%E5%8D%97/"/>
+    <id>https://youreln.gitee.io/2023/06/26/%E7%94%A8%E6%88%B7%E6%8C%87%E5%8D%97/</id>
+    <published>2023-06-26T06:38:44.000Z</published>
+    <updated>2023-06-26T06:54:31.886Z</updated>
+    
+    
+    <summary type="html">&lt;h1 id=&quot;Youreln工具箱&quot;&gt;&lt;a href=&quot;#Youreln工具箱&quot; class=&quot;headerlink&quot; title=&quot;Youreln工具箱&quot;&gt;&lt;/a&gt;Youreln工具箱&lt;/h1&gt;&lt;p&gt;开源地址：h&lt;a href=&quot;https://gitee.com/Youreln/youreln-toolbox&quot;&gt;ttps://gitee.com/Youreln/youreln-toolbox&lt;/a&gt;&lt;/p&gt;
+&lt;h4 id=&quot;介绍&quot;&gt;&lt;a href=&quot;#介绍&quot; class=&quot;headerlink&quot; title=&quot;介绍&quot;&gt;&lt;/a&gt;介绍&lt;/h4&gt;&lt;p&gt;一个使用HTML开发的工具箱，里面还有小游戏，完全开源&lt;/p&gt;
+&lt;h4 id=&quot;软件架构&quot;&gt;&lt;a href=&quot;#软件架构&quot; class=&quot;headerlink&quot; title=&quot;软件架构&quot;&gt;&lt;/a&gt;软件架构&lt;/h4&gt;&lt;p&gt;完全纯HTML+JavaScript开发&lt;/p&gt;</summary>
+    
+    
+    
+    
+    <category term="技术" scheme="https://youreln.gitee.io/tags/%E6%8A%80%E6%9C%AF/"/>
+    
+  </entry>
   
   <entry>
     <title>《昆虫记》中考必刷题</title>
