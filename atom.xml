@@ -6,7 +6,7 @@
   <link href="https://youreln.gitee.io/atom.xml" rel="self"/>
   
   <link href="https://youreln.gitee.io/"/>
-  <updated>2023-07-01T05:58:40.611Z</updated>
+  <updated>2023-07-01T06:02:20.091Z</updated>
   <id>https://youreln.gitee.io/</id>
   
   <author>
@@ -21,21 +21,11 @@
     <link href="https://youreln.gitee.io/2023/07/01/Youreln%E5%B7%A5%E5%85%B7%E7%AE%B1%E6%AD%A3%E5%BC%8F%E5%8F%91%E5%B8%83/"/>
     <id>https://youreln.gitee.io/2023/07/01/Youreln%E5%B7%A5%E5%85%B7%E7%AE%B1%E6%AD%A3%E5%BC%8F%E5%8F%91%E5%B8%83/</id>
     <published>2023-07-01T04:59:59.000Z</published>
-    <updated>2023-07-01T05:58:40.611Z</updated>
+    <updated>2023-07-01T06:02:20.091Z</updated>
     
     
     <summary type="html">&lt;p&gt;用户手册：&lt;a href=&quot;https://youreln.gitee.io/2023/06/26/%E7%94%A8%E6%88%B7%E6%8C%87%E5%8D%97/&quot;&gt;点此查看&lt;/a&gt;&lt;br&gt;在经过了一个多月的内测，修复了大量bug后，我的工具箱app正式上线！&lt;br&gt;开发代码就已经非常大量了&lt;br&gt;&lt;img src=&quot;https://pic.imgdb.cn/item/649fb3c31ddac507cc4afdc3.jpg&quot;&gt;&lt;br&gt;目前已经完全开源使用，开源仓库：&lt;a href=&quot;https://gitee.com/Youreln/youreln-toolbox&quot;&gt;https://gitee.com/Youreln/youreln-toolbox&lt;/a&gt;&lt;/p&gt;
-&lt;h2 id=&quot;下载&quot;&gt;&lt;a href=&quot;#下载&quot; class=&quot;headerlink&quot; title=&quot;下载&quot;&gt;&lt;/a&gt;下载&lt;/h2&gt;&lt;p&gt;下载app请点击下方按钮&lt;br&gt;&lt;!DOCTYPE html&gt;&lt;/p&gt;
-&lt;html&gt;
-&lt;head&gt;
-    &lt;meta charset=&quot;UTF-8&quot;&gt;
-&lt;/head&gt;
-&lt;body&gt;
-    &lt;button onclick=&quot;window.location.href=&#39;https://gitee.com/Youreln/youreln-toolbox/releases/tag/v1.2&#39;&quot;&gt;点击下载&lt;/button&gt;
-&lt;/body&gt;
-&lt;/html&gt;
-也提供网页版：[https://youreln.rth1.one/](https://youreln.rth1.one/)
-但app提供不一样的界面哦</summary>
+&lt;h2 id=&quot;下载&quot;&gt;&lt;a href=&quot;#下载&quot; class=&quot;headerlink&quot; title=&quot;下载&quot;&gt;&lt;/a&gt;下载&lt;/h2&gt;&lt;p&gt;下载app请点击下方按钮&lt;br&gt;    &lt;button onclick=&quot;window.location.href=&#39;https://gitee.com/Youreln/youreln-toolbox/releases/tag/v1.2&#39;&quot;&gt;点击下载&lt;/button&gt;&lt;br&gt;也提供网页版：&lt;a href=&quot;https://youreln.rth1.one/&quot;&gt;https://youreln.rth1.one/&lt;/a&gt;&lt;br&gt;但app提供不一样的界面哦&lt;/p&gt;</summary>
     
     
     
