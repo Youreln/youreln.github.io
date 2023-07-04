@@ -12,15 +12,6 @@
       </tags>
   </entry>
   <entry>
-    <title>Youreln</title>
-    <url>/2023/04/05/Youreln/</url>
-    <content><![CDATA[<p>新网站重建了！！！<br>但是，旧网站[youreln.top]也没了，域名已经释放了<br>都怪我手残<br>把数据库不小心毁了<br>算了，继续加油吧！！！<br>另外，中梧教育app也要上线了<br>设计稿给大家，点<a href="https://js.design/f/psph1t?p=GHPXNMnltV">这边</a><br>2023/5/2 10:11:02<br>已上线，看置顶文章</p>
-]]></content>
-      <tags>
-        <tag>其他</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>xiaopf教育app停服公告</title>
     <url>/2023/05/05/xiaopf%E6%95%99%E8%82%B2app%E5%81%9C%E6%9C%8D%E5%85%AC%E5%91%8A/</url>
     <content><![CDATA[<p>由于老总林中梧与开发部门决裂<br>所以从现在起开始停服<br>若中梧使用管理权限开服将清空全部数据<br>开服时间待定<br>具体参见➡<a href="https://support.qq.com/products/502768/post/168329177515739724/">公告📄</a></p>
@@ -30,37 +21,12 @@
       </tags>
   </entry>
   <entry>
-    <title>xiaopf教育网页版</title>
-    <url>/2023/05/13/xiaopf%E6%95%99%E8%82%B2%E7%BD%91%E9%A1%B5%E7%89%88%E5%8F%91%E5%B8%83%EF%BC%81%EF%BC%81%EF%BC%81/</url>
-    <content><![CDATA[<p>原中梧教育<br>网页版的好处：可登录，数据永不丢失<br>坏处：不够稳定<br>app版的好处：好处：十分稳定<br>坏处：只能游客发帖，重装还会分配新游客账号导致之前游客数据丢失<br>但是要保证数据请用微信打开此网页<br>要前往请参见以下内容<br><a href="https://support.qq.com/product/1221">点击跳转到xiaopf教育页面</a><br>APP下载：<!DOCTYPE html>  </p>
-<html>  
-<head>  
-    <title>跳转到微信</title>  
-</head>  
-<body>  
-    <button onclick="jumpToWeixin()">点此下载app</button>  
-    <script>  
-        function jumpToWeixin() {  
-            var productUrl = 'https://youreln.gitee.io/2023/05/01/xiaopf%E6%95%99%E8%82%B2app%E6%AD%A3%E5%BC%8F%E4%B8%8A%E7%BA%BF%EF%BC%81/';  
-            window.location.href = productUrl;  
-        }  
-    </script>  
-</body>  
-</html>
-如需到微信打开请点击
-<a href="weixin://open?url=https%3A%2F%2Fsupport.qq.com%2Fproduct% gender">跳转到微信</a>
-推荐网页版[https://support.qq.com/product/502768](https://support.qq.com/product/502768)]]></content>
-      <tags>
-        <tag>技术</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>xiaopf教育app正式上线！</title>
-    <url>/2023/05/01/xiaopf%E6%95%99%E8%82%B2app%E6%AD%A3%E5%BC%8F%E4%B8%8A%E7%BA%BF%EF%BC%81/</url>
-    <content><![CDATA[<p>经过我的不懈努力，中梧教育app正式上线！！！<br>要下载的话可以点这儿哦➡<a href="https://baby2020.lanzoub.com/iJoRU0ugepmd">下载</a><br>或者识别下方二维码下载<br><img src="https://img1.imgtp.com/2023/05/02/iedeEmpE.png"><br>密码：xiaopf<br>现在开放公测！！！<br>感谢<a href="https://space.bilibili.com/1372117931">@xiaopf</a></p>
+    <title>Youreln</title>
+    <url>/2023/04/05/Youreln/</url>
+    <content><![CDATA[<p>新网站重建了！！！<br>但是，旧网站[youreln.top]也没了，域名已经释放了<br>都怪我手残<br>把数据库不小心毁了<br>算了，继续加油吧！！！<br>另外，中梧教育app也要上线了<br>设计稿给大家，点<a href="https://js.design/f/psph1t?p=GHPXNMnltV">这边</a><br>2023/5/2 10:11:02<br>已上线，看置顶文章</p>
 ]]></content>
       <tags>
-        <tag>技术</tag>
+        <tag>其他</tag>
       </tags>
   </entry>
   <entry>
@@ -108,6 +74,31 @@
       </tags>
   </entry>
   <entry>
+    <title>xiaopf教育网页版</title>
+    <url>/2023/05/13/xiaopf%E6%95%99%E8%82%B2%E7%BD%91%E9%A1%B5%E7%89%88%E5%8F%91%E5%B8%83%EF%BC%81%EF%BC%81%EF%BC%81/</url>
+    <content><![CDATA[<p>原中梧教育<br>网页版的好处：可登录，数据永不丢失<br>坏处：不够稳定<br>app版的好处：好处：十分稳定<br>坏处：只能游客发帖，重装还会分配新游客账号导致之前游客数据丢失<br>但是要保证数据请用微信打开此网页<br>要前往请参见以下内容<br><a href="https://support.qq.com/product/1221">点击跳转到xiaopf教育页面</a><br>APP下载：<!DOCTYPE html>  </p>
+<html>  
+<head>  
+    <title>跳转到微信</title>  
+</head>  
+<body>  
+    <button onclick="jumpToWeixin()">点此下载app</button>  
+    <script>  
+        function jumpToWeixin() {  
+            var productUrl = 'https://youreln.gitee.io/2023/05/01/xiaopf%E6%95%99%E8%82%B2app%E6%AD%A3%E5%BC%8F%E4%B8%8A%E7%BA%BF%EF%BC%81/';  
+            window.location.href = productUrl;  
+        }  
+    </script>  
+</body>  
+</html>
+如需到微信打开请点击
+<a href="weixin://open?url=https%3A%2F%2Fsupport.qq.com%2Fproduct% gender">跳转到微信</a>
+推荐网页版[https://support.qq.com/product/502768](https://support.qq.com/product/502768)]]></content>
+      <tags>
+        <tag>技术</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>一篇小日记</title>
     <url>/2023/04/22/%E4%B8%80%E7%AF%87%E5%B0%8F%E6%97%A5%E8%AE%B0/</url>
     <content><![CDATA[<p><img src="https://pic2.imgdb.cn/item/645067da0d2dde57777372e3.jpg"></p>
@@ -116,19 +107,6 @@
 ]]></content>
       <tags>
         <tag>其他</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Youreln工具箱上线</title>
-    <url>/2023/06/11/youreln%E5%B7%A5%E5%85%B7%E7%AE%B1/</url>
-    <content><![CDATA[<p>经过了好久的开发，终于搞了一个看起来还行的工具箱<br><img src="https://pic.imgdb.cn/item/64856ae71ddac507cc6a9e12.jpg"></p>
-<span id="more"></span>
-<p>1、二维码生成解码美化器<br><img src="https://pic.imgdb.cn/item/64856b171ddac507cc6aef33.jpg"><br>2、摩斯电码生成和解码工具<br><img src="https://pic.imgdb.cn/item/64856b4a1ddac507cc6b5b37.jpg"><br>3、倒计时工具<br><img src="https://pic.imgdb.cn/item/64856b801ddac507cc6bb69f.jpg"><br>4、番茄时钟<br><img src="https://pic.imgdb.cn/item/64856ba41ddac507cc6bf8cf.jpg"><br>。。。。。<br>还在开发，还没写完自己看累死了<a href="http://youreln.rth1.one/">http://youreln.rth1.one</a></p>
-<iframe src="https://youreln.rth1.one/pc.html" width="100%" height="500px" frameborder="0"></iframe>
-2023/7/1 14:04:53 
-开发完毕自己看]]></content>
-      <tags>
-        <tag>技术</tag>
       </tags>
   </entry>
   <entry>
@@ -144,12 +122,6 @@
       </tags>
   </entry>
   <entry>
-    <title>搞个项目迭了8代</title>
-    <url>/2023/05/05/%E6%90%9E%E4%B8%AA%E9%A1%B9%E7%9B%AE%E8%BF%AD%E4%BA%868%E4%BB%A3/</url>
-    <content><![CDATA[<p><a href="https://www.kdocs.cn/l/crnKsa9jGwuK">文档</a><br>累死了累死了！<br><img src="https://pic2.imgdb.cn/item/6454c8dd0d2dde577736747f.png"><br>昨天录了一下午<br>今天剪了一天！！！！<br>成片即将登场<br>关注我！！！！！！</p>
-]]></content>
-  </entry>
-  <entry>
     <title>关于我</title>
     <url>/2023/04/22/%E5%85%B3%E4%BA%8E%E6%88%91/</url>
     <content><![CDATA[<p>自从上初中以来，我已忙忙碌碌，从小学的一周一更，到现在一月都不一定更。<br>虽说学习累，但我们还要坚持<br>生活是丰富多彩的，要我们去发现<br>航拍 风光 延时<br>B站（大杂烩）：<a href="https://space.bilibili.com/593864864" title="Youreln">https://space.bilibili.com/593864864</a><br>微博（不常更）：<a href="https://weibo.com/7748480464" title="YRStudio-Youreln">https://weibo.com/7748480464</a><br>抖音（粉丝最多）：<a href="https://www.douyin.com/user/MS4wLjABAAAAdN1pfPgV-1UvUP3Ox0sq9wkRfSEDTanGLgVlnETLZ9fgV1jg6_5OTiCAdlbzinyE" title="Youreln">https://www.douyin.com/user/MS4wLjABAAAAdN1pfPgV-1UvUP3Ox0sq9wkRfSEDTanGLgVlnETLZ9fgV1jg6_5OTiCAdlbzinyE</a><br>微信视频号（熟人最多）：<a href="https://img1.imgtp.com/2023/04/22/7NVK95Kf.jpg" title="Youreln视频号二维码">https://img1.imgtp.com/2023/04/22/7NVK95Kf.jpg</a><br>快手（被恶心到了，他说我的年度总结是默片，不会更新了）：<a href="https://www.kuaishou.com/profile/3xr6iytpmj67ppm" title="Youreln看着玩">https://www.kuaishou.com/profile/3xr6iytpmj67ppm</a></p>
@@ -157,6 +129,12 @@
       <tags>
         <tag>其他</tag>
       </tags>
+  </entry>
+  <entry>
+    <title>搞个项目迭了8代</title>
+    <url>/2023/05/05/%E6%90%9E%E4%B8%AA%E9%A1%B9%E7%9B%AE%E8%BF%AD%E4%BA%868%E4%BB%A3/</url>
+    <content><![CDATA[<p><a href="https://www.kdocs.cn/l/crnKsa9jGwuK">文档</a><br>累死了累死了！<br><img src="https://pic2.imgdb.cn/item/6454c8dd0d2dde577736747f.png"><br>昨天录了一下午<br>今天剪了一天！！！！<br>成片即将登场<br>关注我！！！！！！</p>
+]]></content>
   </entry>
   <entry>
     <title>《昆虫记》中考必刷题</title>
@@ -167,22 +145,6 @@
 ]]></content>
       <tags>
         <tag>其他</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>班级同学外号查询</title>
-    <url>/2023/05/05/%E7%8F%AD%E7%BA%A7%E5%90%8C%E5%AD%A6%E5%A4%96%E5%8F%B7%E6%9F%A5%E8%AF%A2/</url>
-    <content><![CDATA[<p>为了防止外人，特此利用查询，点击边栏<a href="https://727952.yichafen.com/">“查询系统”</a>即可进入查询<br>爱看点此进入➡<a href="https://727952.yichafen.com/">查询</a><br>对应班级：大田县第五中学七年六班</p>
-<iframe src="https://727952.yichafen.com/public/queryscore/sqcode/Mszckn0mMzA0MXxjODczZTIwYmIzNTc5M2VkNjM0NjQwZTIyYmUwODZjMXw3Mjc5NTIO0O0O.html" width="100%" height="800" frameborder="0" scrolling="no"></iframe>]]></content>
-  </entry>
-  <entry>
-    <title>山影映湖中，碧波荡漾，人间仙境</title>
-    <url>/2023/05/06/%E6%B9%96%E7%BE%8E%E4%B8%83%E6%98%9F%E6%B9%96/</url>
-    <content><![CDATA[<p>拍摄地点：湖美七星湖<br>BGM：起风了钢琴版<br>视频</p>
-<span id="more"></span>
-<iframe src="//player.bilibili.com/player.html?aid=740703473&bvid=BV1sk4y1E7Vs&cid=1115721816&page=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true" autoplay="0"></iframe>]]></content>
-      <tags>
-        <tag>摄影</tag>
       </tags>
   </entry>
   <entry>
@@ -233,15 +195,20 @@
       </tags>
   </entry>
   <entry>
-    <title>红星照耀中国小册子电子档</title>
-    <url>/2023/06/22/%E7%BA%A2%E6%98%9F%E7%85%A7%E8%80%80%E4%B8%AD%E5%9B%BD%E5%B0%8F%E5%86%8C%E5%AD%90/</url>
-    <content><![CDATA[<p>制作不易，可以来我工具箱支持一下我：<a href="https://youreln.rth1.one/">工具箱</a><br><img src="https://pic.imgdb.cn/item/649411e81ddac507ccce005f.jpg"></p>
+    <title>山影映湖中，碧波荡漾，人间仙境</title>
+    <url>/2023/05/06/%E6%B9%96%E7%BE%8E%E4%B8%83%E6%98%9F%E6%B9%96/</url>
+    <content><![CDATA[<p>拍摄地点：湖美七星湖<br>BGM：起风了钢琴版<br>视频</p>
 <span id="more"></span>
-<p><img src="https://pic.imgdb.cn/item/649411e81ddac507ccce00a2.jpg"><br><img src="https://pic.imgdb.cn/item/649411e81ddac507ccce010d.jpg"><br><img src="https://pic.imgdb.cn/item/649411e91ddac507ccce01a6.jpg"><br><img src="https://pic.imgdb.cn/item/649411e91ddac507ccce022e.jpg"><br><img src="https://pic.imgdb.cn/item/649411f41ddac507ccce11b4.jpg"><br><img src="https://pic.imgdb.cn/item/649411f41ddac507ccce1204.jpg"><br><img src="https://pic.imgdb.cn/item/649411f41ddac507ccce1236.jpg"><br><img src="https://pic.imgdb.cn/item/649411f51ddac507ccce128c.jpg"><br><img src="https://pic.imgdb.cn/item/649411f51ddac507ccce12ec.jpg"><br><img src="https://pic.imgdb.cn/item/6494120f1ddac507ccce3dd6.jpg"><br><img src="https://pic.imgdb.cn/item/6494120f1ddac507ccce3dfd.jpg"><br><img src="https://pic.imgdb.cn/item/6494120f1ddac507ccce3e69.jpg"><br><img src="https://pic.imgdb.cn/item/6494120f1ddac507ccce3edc.jpg"><br><img src="https://pic.imgdb.cn/item/6494120f1ddac507ccce3f40.jpg"><br><img src="https://pic.imgdb.cn/item/649412161ddac507ccce49c3.jpg"><br><img src="https://pic.imgdb.cn/item/649412161ddac507ccce49f9.jpg"><br><img src="https://pic.imgdb.cn/item/649412161ddac507ccce4a54.jpg"><br><img src="https://pic.imgdb.cn/item/649412161ddac507ccce4a9e.jpg"><br><img src="https://pic.imgdb.cn/item/649412161ddac507ccce4ae6.jpg"><br><img src="https://pic.imgdb.cn/item/6494121e1ddac507ccce5707.jpg"><br><img src="https://pic.imgdb.cn/item/6494121e1ddac507ccce5749.jpg"><br><img src="https://pic.imgdb.cn/item/6494121f1ddac507ccce57b8.jpg"><br><img src="https://pic.imgdb.cn/item/6494121f1ddac507ccce5842.jpg"><br><img src="https://pic.imgdb.cn/item/6494121f1ddac507ccce58c8.jpg"><br><img src="https://pic.imgdb.cn/item/649412221ddac507ccce5e75.jpg"><br><img src="https://pic.imgdb.cn/item/649412231ddac507ccce5ea4.jpg"></p>
-]]></content>
+<iframe src="//player.bilibili.com/player.html?aid=740703473&bvid=BV1sk4y1E7Vs&cid=1115721816&page=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true" autoplay="0"></iframe>]]></content>
       <tags>
-        <tag>其它</tag>
+        <tag>摄影</tag>
       </tags>
+  </entry>
+  <entry>
+    <title>班级同学外号查询</title>
+    <url>/2023/05/05/%E7%8F%AD%E7%BA%A7%E5%90%8C%E5%AD%A6%E5%A4%96%E5%8F%B7%E6%9F%A5%E8%AF%A2/</url>
+    <content><![CDATA[<p>为了防止外人，特此利用查询，点击边栏<a href="https://727952.yichafen.com/">“查询系统”</a>即可进入查询<br>爱看点此进入➡<a href="https://727952.yichafen.com/">查询</a><br>对应班级：大田县第五中学七年六班</p>
+<iframe src="https://727952.yichafen.com/public/queryscore/sqcode/Mszckn0mMzA0MXxjODczZTIwYmIzNTc5M2VkNjM0NjQwZTIyYmUwODZjMXw3Mjc5NTIO0O0O.html" width="100%" height="800" frameborder="0" scrolling="no"></iframe>]]></content>
   </entry>
   <entry>
     <title>Youreln工具箱正式开源以及用户手册</title>
@@ -373,6 +340,87 @@
 
 </body>
 </html>
+]]></content>
+      <tags>
+        <tag>技术</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>红星照耀中国小册子电子档</title>
+    <url>/2023/06/22/%E7%BA%A2%E6%98%9F%E7%85%A7%E8%80%80%E4%B8%AD%E5%9B%BD%E5%B0%8F%E5%86%8C%E5%AD%90/</url>
+    <content><![CDATA[<p>制作不易，可以来我工具箱支持一下我：<a href="https://youreln.rth1.one/">工具箱</a><br><img src="https://pic.imgdb.cn/item/649411e81ddac507ccce005f.jpg"></p>
+<span id="more"></span>
+<p><img src="https://pic.imgdb.cn/item/649411e81ddac507ccce00a2.jpg"><br><img src="https://pic.imgdb.cn/item/649411e81ddac507ccce010d.jpg"><br><img src="https://pic.imgdb.cn/item/649411e91ddac507ccce01a6.jpg"><br><img src="https://pic.imgdb.cn/item/649411e91ddac507ccce022e.jpg"><br><img src="https://pic.imgdb.cn/item/649411f41ddac507ccce11b4.jpg"><br><img src="https://pic.imgdb.cn/item/649411f41ddac507ccce1204.jpg"><br><img src="https://pic.imgdb.cn/item/649411f41ddac507ccce1236.jpg"><br><img src="https://pic.imgdb.cn/item/649411f51ddac507ccce128c.jpg"><br><img src="https://pic.imgdb.cn/item/649411f51ddac507ccce12ec.jpg"><br><img src="https://pic.imgdb.cn/item/6494120f1ddac507ccce3dd6.jpg"><br><img src="https://pic.imgdb.cn/item/6494120f1ddac507ccce3dfd.jpg"><br><img src="https://pic.imgdb.cn/item/6494120f1ddac507ccce3e69.jpg"><br><img src="https://pic.imgdb.cn/item/6494120f1ddac507ccce3edc.jpg"><br><img src="https://pic.imgdb.cn/item/6494120f1ddac507ccce3f40.jpg"><br><img src="https://pic.imgdb.cn/item/649412161ddac507ccce49c3.jpg"><br><img src="https://pic.imgdb.cn/item/649412161ddac507ccce49f9.jpg"><br><img src="https://pic.imgdb.cn/item/649412161ddac507ccce4a54.jpg"><br><img src="https://pic.imgdb.cn/item/649412161ddac507ccce4a9e.jpg"><br><img src="https://pic.imgdb.cn/item/649412161ddac507ccce4ae6.jpg"><br><img src="https://pic.imgdb.cn/item/6494121e1ddac507ccce5707.jpg"><br><img src="https://pic.imgdb.cn/item/6494121e1ddac507ccce5749.jpg"><br><img src="https://pic.imgdb.cn/item/6494121f1ddac507ccce57b8.jpg"><br><img src="https://pic.imgdb.cn/item/6494121f1ddac507ccce5842.jpg"><br><img src="https://pic.imgdb.cn/item/6494121f1ddac507ccce58c8.jpg"><br><img src="https://pic.imgdb.cn/item/649412221ddac507ccce5e75.jpg"><br><img src="https://pic.imgdb.cn/item/649412231ddac507ccce5ea4.jpg"></p>
+]]></content>
+      <tags>
+        <tag>其它</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>西安旅游攻略</title>
+    <url>/2023/07/04/%E8%A5%BF%E5%AE%89%E6%97%85%E8%A1%8C%E6%94%BB%E7%95%A5/</url>
+    <content><![CDATA[<p><img src="https://cdn.nlark.com/yuque/0/2023/jpeg/35935935/1688466205367-275a997c-7666-4ef7-abaf-68e24aef5b9d.jpeg?x-oss-process=image/interlace,1"></p>
+<h1 id="去程"><a href="#去程" class="headerlink" title="去程"></a>去程</h1><p><img src="https://cdn.nlark.com/yuque/0/2023/png/35935935/1688466205913-ee3f7df6-259f-4a6a-a310-e754b0b38b29.png"></p>
+<span id="more"></span>
+<h1 id="酒店"><a href="#酒店" class="headerlink" title="酒店"></a>酒店</h1><p>博雅臻选酒店(西安北客站店)<br><img src="https://cdn.nlark.com/yuque/0/2023/jpeg/35935935/1688466206425-c2290d89-ece7-4b7c-92c0-745b39d05cbd.jpeg?x-oss-process=image/interlace,1"></p>
+<h1 id="行程安排"><a href="#行程安排" class="headerlink" title="行程安排"></a>行程安排</h1><blockquote>
+<p>第一天（7月16日）：大明宫国家遗址森林公园、回民街<br>早上抵达西安站后，入住酒店，睡到中午。下午前往大明宫国家遗址森林公园。游览完大明宫国家遗址森林公园后，晚上可以在回民街品尝一下当地的小吃如肉夹馍、羊肉泡馍等。</p>
+</blockquote>
+<h2 id="大明宫介绍"><a href="#大明宫介绍" class="headerlink" title="大明宫介绍"></a>大明宫介绍</h2><p>唐代的大明宫是长安城中辉煌壮丽的建筑群。公园建在大明宫的遗址上，这里有含元殿等宫殿的台基、墩台遗址；能欣赏到复原的大明宫微缩景观；观赏IMAX 3D影片《千宫之宫》，还能体验文物的考古发掘和修复。<br>景区有南门和东门，南门是正门，游客中心也位于南门，建议游客南门进入景区。遗址公园分为免费区和收费区两部分，其中收费区是景区的核心区域，包括含元殿、宣政殿和紫宸殿遗址以及大明宫遗址博物馆。免费区内的部分景点也需要购票，如丹凤门遗址博物馆、考古探索中心等。<br>在收费区内，游客可以观赏到各大殿的台基遗址以及在台基遗址上用轻钢结构呈现出的宫殿轮廓。在大明宫遗址博物馆内，能够观赏到遗址内出土的文物，如：皇家用具、器皿等。博物馆的东北角，还有按照1:15比例复原的大明宫微缩景观，最高的微缩宫殿高约2米左右，你可以“行走“在景观中的街道上，融入盛唐大明宫之中。<br>靠近南门的丹凤门遗址博物馆内，保存了当年丹凤门的门阙墩台遗址，这里是中国历史上可考的较大一座城门。在丹凤门的西北部有考古探索中心，在这里可以亲身体验文物考古发掘和修复工作，特别适合对文物工作感兴趣的游客。<br>在游客中心旁的影院内，游客可以观赏到IMAX 3D影片（大明宫传奇，在3D环境下，观众犹如穿越历史大门，置身1300年前的盛唐王朝。<br><img src="https://cdn.nlark.com/yuque/0/2023/jpeg/35935935/1688466207161-a3b81885-6085-4d43-9f82-6af03e1d4b7c.jpeg?x-oss-process=image/interlace,1"><br>开放时间<br>全年 08:30-18:00</p>
+<h2 id="回民街介绍"><a href="#回民街介绍" class="headerlink" title="回民街介绍"></a>回民街介绍</h2><p><img src="https://cdn.nlark.com/yuque/0/2023/jpeg/35935935/1688466207531-31d5696d-b2b8-4bfc-8697-12133bf44d69.jpeg?x-oss-process=image/interlace,1"><br>回民街不只是一条街，是西安市中心回民聚集区内多条街道的统称，由北院门、北广济街、西羊市、大皮院等街道组成。这里是西安小吃的集中地，作为几百年历史的回民区，这里还能感受到浓浓的穆斯林气息。<br>能吃到几乎所有的西安小吃<br>这里也称为“回坊”、“坊上”，在这里你能够吃到几乎所有的西安小吃，包括各种烤肉串、羊肉泡馍、灌汤包子、麻辣羊蹄、水盆羊肉、酸菜炒米、腊牛羊肉、凉皮、羊肉饼等。在这里吃饱喝足后，还可以买一些具有当地风味的糕饼、干果、蜜饯等小吃，作为伴手礼带回家赠送亲朋好友。<br>浓郁的穆斯林气息<br>回民街是一个有着几百年历史的回民老街区，这里洋溢着浓厚的穆斯林文化气息。街区内有年代不一的多座清真寺，如化觉巷大清真寺、广济街清真小寺、大学习巷清真寺等。这里有约2万名回民依寺而居，维持着原有的宗教传统和生活习惯。<br>多数游客游玩回民街从西大街的北院门处开始游玩，这里距离西安鼓楼和钟楼都不远。<br>开放时间<br>全年 全天开放</p>
+<blockquote>
+<p>第二天（7月17日）：大雁塔与大唐不夜城<br>上午可以前往大雁塔参观，下午可以前往大唐不夜城游览。晚上可以在大唐不夜城的夜景中体验唐代文化的魅力。</p>
+</blockquote>
+<h2 id="大雁塔介绍"><a href="#大雁塔介绍" class="headerlink" title="大雁塔介绍"></a>大雁塔介绍</h2><p>大雁塔，位于市区南部大慈恩寺内。大慈恩寺是唐代长安城内颇为宏丽的皇家寺院，建于唐太宗时期，是太子李治为了追念母亲文德皇后而建，并由西行取经归来的玄奘法师担任“首任主持”。期间，法师督造了大雁塔。<br>玄奘法师在大慈恩寺翻译佛经、弘扬佛法11年，并创立了佛教的“相唯识宗”，使大慈恩寺成为唯识宗（又称“法相宗”）祖庭。期间，为供奉从印度请回的经像和舍利，法师亲自督造修建了大雁塔。<br>如今的大慈恩寺，是明代在原寺院“西塔院”的基础上修建而成的，现存的殿堂则多是清代建筑。寺院内中轴线上的主体建筑依次是大雄宝殿、法堂、大雁塔、玄奘三藏院。其中，大雁塔内和玄奘三藏院分别供奉的佛舍利和玄奘法师的顶骨，是大慈恩寺的“镇寺之宝”。<br>寺院中轴线以东是塔园，园内的塔林，共有舍利塔九座，供奉着自清代以来本寺九位高僧的舍利子。<br>大慈恩寺的南、北都有广场。周边还有陕西博物馆和大唐芙蓉园等景点。<br><img src="https://cdn.nlark.com/yuque/0/2023/jpeg/35935935/1688466208077-dce117b3-0761-4c85-8e92-0f96ccea4199.jpeg?x-oss-process=image/interlace,1"><br>开放时间<br>全年 08:30-17:00（16:50停止售票，16:50停止入园）；清园时间18:00</p>
+<h2 id="大唐不夜城介绍"><a href="#大唐不夜城介绍" class="headerlink" title="大唐不夜城介绍"></a>大唐不夜城介绍</h2><p><img src="https://dimg04.c-ctrip.com/images/100m10000000qecbzE3EC_R_1600_10000.jpg"><br>大唐不夜城的中轴景观大道是一条约1500米横贯南北的中央雕塑景观步行街，其上分布着盛世帝王、历史人物、英雄故事等九组主题群雕，立体展现大唐帝国在宗教、文学、艺术、科技等领域的地位并彰显大国气象。<br>大唐不夜城以大雁塔为依托，北起玄奘广场、南至唐城墙遗址公园、东起慈恩东路、西至慈恩西路，贯穿玄奘广场、贞观文化广场、开元庆典广场三个主题广场，拥有六个仿唐街区和西安音乐厅、西安大剧院、曲江电影城、陕西艺术家展廊四大文化建筑。大唐不夜城晚上灯火璀璨，光影中的仿古建筑流光溢彩，气势恢宏，宛如大唐盛世再现。<br>这里聚集网红玩法，重点呈现炫彩、梦幻和科技感，利用大场景装置，打造时尚、动感的交互体验馆，为年轻潮流的人群，提供推崇的拍照场所。在亲子科技区，通过场景形象展现、现场动手操作，来启发孩子们的想象力、创造力，将游戏与能力培养、体验收获相结合，是亲子游玩的好场所。</p>
+<blockquote>
+<p>第三天（7月18日）：华清宫</p>
+</blockquote>
+<h2 id="华清宫介绍"><a href="#华清宫介绍" class="headerlink" title="华清宫介绍"></a>华清宫介绍</h2><p><img src="https://cdn.nlark.com/yuque/0/2023/jpeg/35935935/1688466208689-13f49894-8542-4a7a-9037-cc86d1dade08.jpeg?x-oss-process=image/interlace,1"><br>华清宫（华清池 • 骊山）景区位于西安城东30公里，与兵马俑相毗邻。因其亘古不变的温泉资源和众多历史事件享誉海内外，成为中国唐宫文化旅游标志性景区。<br>宫内胜景：<br>华清宫历史悠久，周、秦、汉、隋、唐等历代帝王在此建有离宫别苑，宫内集中着唐御汤遗址博物馆、西安事变旧址——五间厅、九龙湖与芙蓉湖风景区、唐梨园遗址博物馆等文化区和飞霜殿、万寿殿、 长生殿、环园和禹王殿等标志性建筑群。<br>·                      “温泉颂”碑<br>骊山温泉因开发利用早且备受历代帝王的青睐，享有“天下第一御泉”的美誉。早在6000年前的仰韶文化时期，姜寨先民就开始利用骊山温泉。源远流长的骊山温泉凝聚着丰富的文化内涵，是中华民族历史文化中不可或缺的重要组成部分。<br>景区内的这块温泉颂石碑高154厘米，宽72厘米，厚19厘米，盘龙螭首，梯形跌座。是北魏雍州刺史元苌篆刻，碑文写到“温泉乃自然之经方，天地之元医，干城万国之民，怀疾枕菏之客，莫不宿粮而来宾，疗苦于水”，此碑是华清宫现存最早的文字实物资料。<br>·                         唐御汤遗址博物馆<br>这里就是《长恨歌》中描述杨贵妃出浴场景的浴池所在地，在安史之乱后，原来的建筑残存无几。1982年，临潼县人民政府在修建“贵妃亭”时，偶尔发现了唐代浴池遗址，后经发掘整理，建成唐华清宫御汤遗址博物馆。这个汤池小巧灵珑，设计独特，东西长3.6，南北宽2.9，形近似椭园形。池壁全由青石拼砌而成，汤池上下两层的台式结构，由18组卷石拼砌而成。池中有供杨贵妃沐浴时的专用的长条石，刻有“杨”字纹样。池底中间有一直经为10厘米大小的进水口。这里出土了一汉白玉雕刻的莲花底座，底座上莲接喷头，下接陶水管道与总水源相接，温泉水因自然压力通过管道从莲花喷头四散喷出，这洒落下来的水雾呢，也就和今天的淋浴相差无几。贵妃池东边紧挨着的便是唐玄宗专用的御汤。唐时池上建有九龙殿，殿外有白玉雕成的九条龙，口喷泉水。此汤平面呈写实的莲花状，故又名“莲花汤”。<br>·                         西安事变旧址<br>华清宫的五间厅是当年西安事变发生的地方。直到今天五间厅的玻璃窗、墙壁上还保留兵谏发生激战时的弹痕，各房间办公室用的桌子、椅子、床、沙发、茶具、火炉、地毯、电话等，均按原貌复制摆放。<br>历史事件：<br>·                         西安事变<br>西安事变，又称“双十二事变”。张学良、杨虎城在华清池发动兵变，扣留了时任国民政府军事委员会委员长。<br>游玩指南：<br>景区内可以观看大型舞剧。<br>景区在2007年推出的大型实景历史舞剧《长恨歌》， 2012年又推出的多媒体影像剧《玄境长生殿》。其中《长恨歌》只在4-10月期间演出，普通席位的票价，根据区域不同，在200-300元之间。<br>还有根据历史事件改编的《1212西安事变》，真实而生动的展现了“西安事变”鲜为人知的历史原貌。<br>如果想要尝试一下在这里泡温泉，那么可以入住华清宫内的酒店，这里提供天然的骊山温泉供住客享受。<br>开放时间<br>全年 07:30-19:00（18:20停止售票，18:30停止入园）；清园时间18:50</p>
+<h2 id="《长恨歌》演出介绍"><a href="#《长恨歌》演出介绍" class="headerlink" title="《长恨歌》演出介绍"></a>《长恨歌》演出介绍</h2><p><img src="https://cdn.nlark.com/yuque/0/2023/jpeg/35935935/1688466209277-36b0a404-c70d-4bf5-8caf-e008c17e469a.jpeg?x-oss-process=image/interlace,1"><br>大型山水历史舞剧《长恨歌》根据白居易的同名叙事长诗改编，由300多名专业演员身着华丽的唐服出演，用舞蹈展现诗中记叙的经典桥段：盛唐时期，唐明皇召杨玉环入宫，至爱至宠。安禄山叛乱后，杨玉环在马嵬坡被逼迫而死，明皇肝肠寸断，最终魂魄升天，与爱妃在月宫相会。<br>场地：华清池内重演历史<br>《长恨歌》的演出地点就在华清池景区内。天色渐暗时，水中升起舞台，空中架起鹊桥，如梦似幻的场景让人恍若梦回大唐。<br>舞美：技术借景造情<br>演出的灯光和布景也让人惊艳，华清池的亭台、湖水等元素被巧妙地融入剧中，伴随着音乐，湖面上喷起浪花，燃起火海。舞台背后，灯光勾勒出骊山的轮廓，点点灯光好似漫天的星辰落在山体上。<br>开放时间<br>2023年5月23日-2023年5月31日 20:00-23:59；2023年6月1日-2023年10月31日 20:10-23:59；目前演出时间如下： 第一场20:10-21:20，第二场21:40-22:50，第三场23:10-00:20 为避免耽误观演，请游客按照下单所选场次对应开演时间至少提前30分钟换票进行安检入园，至少在开演前20分钟进入剧场</p>
+<blockquote>
+<p>第四天（7月19日）：华山<br>早上可以前往华山进行登山之旅，欣赏华山的壮丽景色和体验登山带来的挑战。在山顶可以欣赏到云海和日出美景。</p>
+</blockquote>
+<h2 id="华山介绍"><a href="#华山介绍" class="headerlink" title="华山介绍"></a>华山介绍</h2><p><img src="https://cdn.nlark.com/yuque/0/2023/jpeg/35935935/1688466209797-a698d6b5-0ecc-4f12-bc23-f7f3e5790597.jpeg?x-oss-process=image/interlace,1"><br>华山古称“西岳”，为中国有名的五岳之一，位于陕西省华阴市境内。华山又有“太华山”的雅称，是中华文明的发祥地，“中华”和“华夏”之“华”，就源于华山。“奇险”两字是华山风光的精髓。“自古华山一条道”形容的就是华山的险峻，景区有长空栈道、鹞子翻身以及在峭壁绝崖上凿出的千尺幢、百尺峡、老君犁沟等多处惊险刺激的景点，亲临其境者，无不叹为观止。<br>华山景区面积辽阔，包括主峰景区、西岳庙景区、仙峪景区等。其中主峰景区是华山的核心景区，包括“华山一条路”和东南西北中五大主峰。大多数人心中的华山，指的就是主峰景区。<br>五大主峰<br>东峰海拔约2100米，因位置居东得名。峰顶有一平台，居高临险，视野开阔，是观看日出的好地方，人称朝阳台，东峰也因之被称为朝阳峰。东峰由一主三仆四个峰头组成，朝阳台所在的峰头较高，玉女峰在西，石楼峰居东，博台偏南。东峰有景观数十余处，位于东石楼峰侧的崖壁上有天然石纹，形似一巨型掌印，这就是被列为关中八景之首的华岳仙掌，巨灵神开山导河的故事就源于此。<br>西峰海拔约2000米，因峰巅有巨石形状好似莲花瓣，古代文人多称其为莲花峰、芙蓉峰。徐霞客《游太华山日记》中记述：“峰上石耸起，有石片覆其上，如荷花。”当指此石。西峰上景观比比皆是，有翠云宫、莲花洞、巨灵足、斧劈石、舍身崖等，并伴有许多美丽的神话传说，其中家喻户晓的沉香劈山救母的故事就流传于此。<br>南峰海拔2100余米，是华山较高主峰，古人称它是“华山元首”。 南峰一侧是千丈绝壁，直立如削，下临断层深壑，同三公、三凤山隔绝。南峰由一峰二顶组成，东侧叫松桧峰，西侧为落雁峰。落雁峰名称的来由，传说是因为回归大雁常在这里落下歇息。<br>北峰海拔约1600米，四面悬绝，上冠景云，下通地脉，巍然独秀，因有若云台，又名云台峰。唐李白《西岳云台歌送丹丘子》诗曾写到：“三峰却立如欲摧，翠崖丹谷高掌。白帝金精运元气，石作莲花云作台。”有名的“智取华山”的故事，就发生在这里。山上景观颇多，有名的有真武殿、焦公石室、长春石室、老君挂犁处等。</p>
+<p>中峰是去其它四峰必经的之地，居东、西、南三峰中央。峰上树林郁郁葱葱，环境清幽。峰头有道舍名玉女祠，传说是春秋时秦穆公女弄玉的修身之地，因此又被称为玉女峰。</p>
+<p>主要景观：<br>华山有名的景区多达210余处，从古至今，无数文人墨客在此留下各种经典诗词。<br>·                      长空栈道<br>长空栈道位于华山南峰东侧山腰上，是华山派宗师——元代贺志真道长为远离尘世静修成仙，在悬崖绝壁上镶嵌石桩，铺上木板而成。走到栈道尽头，能够看到贺掌门修身的“贺祖洞”。修路者在峭壁上凿出石孔，孔中楔进石桩，石桩之间铺上宽约40厘米的木板，游客通过这里，必须身贴崖壁，手拉铁链，脚踏木板，侧身缓慢向前移动。<br>·                         西岳庙<br>西岳庙又名华岳庙，是历代帝王供奉和祭祀西岳大帝“少昊”的庙宇。它始建于汉武帝元光年间（公元前134-前129年），当时建在华山脚下的黄神谷（今黄甫峪）口。东汉桓帝时（公元147-167年）迁于现址，改为今名，唐宋明清历朝多次重修。<br>·                         苍龙岭<br>苍龙岭上的台阶只有2尺多宽，两旁万丈深壑，势陡如刀削斧劈。岭脊上下高差约500米，坡度在45度以上。在这里遥望青松白云，耳听风声大作，令人心惊目眩。<br>·                         金锁关<br>金锁关为华山五关之一，建在三峰口的一座石拱门上，是由五云峰通往东、西、南、中四峰的咽喉要道，锁关后则无路可通，所以又称为通天门。道家认为，华岳为仙乡神府，只有过了通天门，才算进入仙境。所以有“过了金锁关，另是一重天”的民谣。<br>·                         自古华山一条路<br>“自古华山一条路”即为“华山峪”登山道，包括了自古以来华山登山道上的沿途各景点，连起来就是通常所说的“自古华山一条路”。<br>游览方式<br>华山有两个山门（进山口）：东山门和西山门（也称华山门）。坐索道上山，前往东山门；如步行登山，从西山门进入。华山目前有东、西线两条索道，分别到达北峰和西峰（购票前请提前规划好登山线路，购买对应票型，中途不可更改。）。<br>线路一：徒步登山路线<br>自古华山一条路，最古老的登山路，全长12.5公里，有9567级台阶，用时4小时左右。由玉泉院徒步出发，经五里关、莎萝坪（夜爬临休）、千尺幢、百尺峡等到达北峰，然后自北峰开始游览。<br>线路二：“西上西下”，适合老人和带小孩游客的登山路线<br>这条路线是华山西峰索道上，西峰索道下，即西上西下，整条线路用时相对较短，4小时左右，也较省体力，对于老人与带孩子的游客比较友好。<br>线路三：“西上北下”，80%游客选择的一日游玩登山路线<br>这条路线是华山西峰索道上，北峰索道下，即西上北下，整条线路是经典的一日游线路，用时6小时左右，不走回头路，各处景点都可以游览到，大部分游客选此条线路还有一点，是因为这条路几乎是一直往下的，相比上山路，轻松、快一点。<br>线路四：“北上北下”，省时、经济、观全景的登山路线<br>这条路线是华山北峰索道上，北峰索道下，即北上北下，整条线路是费用相对低的索道登山线路，如果游览时间有限，可以选择此线路，在北峰游览，北峰有纪念亭、擦耳崖、苍龙岭、华山论剑碑、全景华山等景点。<br>开放时间<br>全年 全天开放；华山西峰索道、北峰索道运营时间：淡季11月1日-2月28日08:00-16:00；旺季3月1日-11月30日07:00-20:00 步行登山全天24小时开放</p>
+<blockquote>
+<p>第五天（7月20日）：秦始皇帝陵博物院(兵马俑)<br><img src="https://cdn.nlark.com/yuque/0/2023/jpeg/35935935/1688466210201-ec891622-ce81-4e1d-80e7-5365d92fd62a.jpeg?x-oss-process=image/interlace,1"></p>
+</blockquote>
+<h2 id="秦始皇陵兵马俑介绍"><a href="#秦始皇陵兵马俑介绍" class="headerlink" title="秦始皇陵兵马俑介绍"></a>秦始皇陵兵马俑介绍</h2><p>秦始皇兵马俑博物馆又称兵马俑、秦兵马俑。它是秦始皇陵的陪葬坑，与秦始皇帝陵一同组成了：秦始皇帝陵博物院。<br>秦始皇兵马俑素有世界第八大奇迹之称。这里出土的一千多个士兵陶俑，形象各不相同，神态生动，是中国古代雕塑艺术史上的一颗璀璨明珠，被誉为“二十世纪考古史上的伟大发现之一”。</p>
+<p>历史背景<br>秦始皇从13岁即位时就开始营建陵园，前后将近使用了72万人力，修筑时间长达38年，工程浩大。直至秦始皇去世陵园都未修建完成，由秦二世胡亥继续修建1年多才完成。<br>传闻中，秦始皇耗费无数人力物力财力，为自己建造了一个地宫，而兵马俑就是地宫的守卫者。<br>秦兵马俑可谓以俑代人殉葬的典型。秦俑之所以在规模、写实程度上达到如此的高度，除了工匠的智慧之外，还与这个皇帝的意志分不开。</p>
+<p>1974年3月，陕西省临潼区西杨村的农民打井时偶然发现了一些陶俑的残片，经考古工作者一年多的勘探和试掘，确认它是一座大型的俑坑，这就是举世闻名的一号兵马俑坑。<br>1976年4月、5月在一号俑坑的两侧，又发现了二号、三号兵马俑坑，每个坑的大小形状、出土器具各有不同。有学者认为，三号坑是统帅一、二号兵马俑坑的指挥部，古代称为“军幕”。<br>在秦兵马俑陪葬坑遗址上建立的秦始皇兵马俑博物馆1979年正式开放，主要参观点包括秦兵马俑一、二、三号坑、铜车马陈列厅及相关临时展览。</p>
+<p>参观导览博物馆门票可以参观包括一号坑在内的三个兵马俑坑和出土文物陈列室、铜车马展厅、秦始皇陵。这里出土的兵马俑根据装束、神态、发式的不同，可分为将军俑，武士俑，车士俑等，每一个陶俑的脸型、发型、体态、神情都各不相同。陶俑、陶马原本都是彩绘，由于后来的火烧和浸泡，大多已剥落变色。</p>
+<p>·                      一号坑<br>景区中的一号俑坑是较早发掘出来的。俑坑东西长约230米，南北宽约62米。根据试掘已出土陶俑、陶马的排列密度推算，一号兵马俑坑内约埋藏陶俑、陶马六千件，同时还有大量的青铜兵器。<br>一号坑也是目前拼凑完成较令人震撼的一个展厅，你可以看到庞大的士兵陶俑军队矗立在俑坑内，形态各异，据说光是胡子的造型就有三十多种。仔细观察，每一个士兵都栩栩如生，从盔甲到表情，从武器到手掌上的纹路，无一不令人惊叹。</p>
+<p>·                         二号坑和三号坑<br>二号坑和三号坑分别在一号坑的两旁。和一号坑一样有真人、真马大小相似的陶俑、陶马近二千件。有车兵、骑兵和步兵等不同的兵种，排列整齐有序。震撼虽然不如一号坑，但是因为每个俑坑的队伍、作用都不同，所以同样值得一看。<br>兵马俑的塑造，是以现实生活为基础而创作，艺术手法细腻，陶俑装束、神态各异，具有鲜明的个性和强烈的时代特征。俑坑内出土的青铜兵器有剑、铍、矛、戈、戟、殳、弩机以及大量的箭镞等，大部分兵器历经两千多年依然锋刃锐利，表明当时已经有了很高的冶金技术。</p>
+<p>·                         铜车马展厅<br>1980年12月，考古工作者在秦始皇帝陵封土西侧二十米左右、距地表约七米深的地下发掘出了两乘大型彩绘铜车马，这是我国考古史上发现较早、体形较大、保存较为完整的青铜车马，对我国秦代冶炼与青铜制造技术、车辆结构等具有重要的研究价值。每乘车前驾有四马，车上各有一御官俑。铜车马造型逼真，装饰华美，大量使用金银为饰品和构件，制作非常精巧，被誉为“青铜之冠”。<br>出行提示<br>秦始皇兵马俑博物馆天天游客如织，在参观时可以避开高峰，先从三号坑开始游玩。游玩完毕后，游客可以乘坐景区的旅游专车前往秦始皇陵。<br>开放时间<br>2023年5月4日-2023年11月15日 08:30-18:00（17:00停止入园）；2023年11月16日-次年2023年3月15日 08:30-16:30（16:30停止入园）；2023年4月29日-2023年5月3日 07:30-18:30（17:30停止入园）</p>
+<blockquote>
+<p>第六天（7月21日）：返程</p>
+</blockquote>
+<h2 id="返程"><a href="#返程" class="headerlink" title="返程"></a>返程</h2><p><img src="https://cdn.nlark.com/yuque/0/2023/png/35935935/1688466210672-dae48f70-fd4e-44ef-a5a9-32646295b8a6.png">
+ </p>
+]]></content>
+      <tags>
+        <tag>其他</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Youreln工具箱上线</title>
+    <url>/2023/06/11/youreln%E5%B7%A5%E5%85%B7%E7%AE%B1/</url>
+    <content><![CDATA[<p>经过了好久的开发，终于搞了一个看起来还行的工具箱<br><img src="https://pic.imgdb.cn/item/64856ae71ddac507cc6a9e12.jpg"></p>
+<span id="more"></span>
+<p>1、二维码生成解码美化器<br><img src="https://pic.imgdb.cn/item/64856b171ddac507cc6aef33.jpg"><br>2、摩斯电码生成和解码工具<br><img src="https://pic.imgdb.cn/item/64856b4a1ddac507cc6b5b37.jpg"><br>3、倒计时工具<br><img src="https://pic.imgdb.cn/item/64856b801ddac507cc6bb69f.jpg"><br>4、番茄时钟<br><img src="https://pic.imgdb.cn/item/64856ba41ddac507cc6bf8cf.jpg"><br>。。。。。<br>还在开发，还没写完自己看累死了<a href="http://youreln.rth1.one/">http://youreln.rth1.one</a></p>
+<iframe src="https://youreln.rth1.one/pc.html" width="100%" height="500px" frameborder="0"></iframe>
+2023/7/1 14:04:53 
+开发完毕自己看]]></content>
+      <tags>
+        <tag>技术</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>xiaopf教育app正式上线！</title>
+    <url>/2023/05/01/xiaopf%E6%95%99%E8%82%B2app%E6%AD%A3%E5%BC%8F%E4%B8%8A%E7%BA%BF%EF%BC%81/</url>
+    <content><![CDATA[<p>经过我的不懈努力，中梧教育app正式上线！！！<br>要下载的话可以点这儿哦➡<a href="https://baby2020.lanzoub.com/iJoRU0ugepmd">下载</a><br>或者识别下方二维码下载<br><img src="https://img1.imgtp.com/2023/05/02/iedeEmpE.png"><br>密码：xiaopf<br>现在开放公测！！！<br>感谢<a href="https://space.bilibili.com/1372117931">@xiaopf</a></p>
 ]]></content>
       <tags>
         <tag>技术</tag>
