@@ -1,6 +1,34 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title>Youreln工具箱APP2.0版本发布！</title>
+    <url>/2023/07/28/Youreln%E5%B7%A5%E5%85%B7%E7%AE%B12.0%E7%89%88%E6%9C%AC%E6%9B%B4%E6%96%B0/</url>
+    <content><![CDATA[<p>这是一个长期版本，以后可能不会再有大更新了。。。<br>废话不说，先上下载链接：<a href="https://youreln.rth1.link/">youreln.rth1.link</a><br>旧版本APP会提示更新<br><img src="https://pic.imgdb.cn/item/64c3982f1ddac507cc7039e1.jpg"><br>但是有些系统不兼容，无法在应用内下载，还得去网站下载<br>讲讲这次的超级大更新，几乎所有应用都进行了重制，铲除了大量bug。</p>
+<h2 id="新增功能："><a href="#新增功能：" class="headerlink" title="新增功能："></a>新增功能：</h2><ul>
+<li>代码编辑器：现在可以在应用中编写和编辑代码，提供更多自定义功能。</li>
+<li>IP天气签名档：在签名档中显示当前IP所在地的天气信息，方便用户获取实时天气情况。</li>
+<li>垃圾分类查询功能：添加了垃圾分类查询功能，帮助用户准确了解垃圾该如何分类处理。</li>
+<li>QQ昵称头像获取工具：快速获取指定QQ号的头像（暂时停止获取昵称，因为腾讯的风控）</li>
+<li>云CDN服务提供，给开发者提供可靠的FontAwesome图标源<h2 id="修复和优化："><a href="#修复和优化：" class="headerlink" title="修复和优化："></a>修复和优化：</h2></li>
+<li>修复了扫雷输了以后还能继续游戏的BUG：修复了扫雷游戏中输了后仍然可以继续游戏的问题，保证游戏逻辑正确性。</li>
+<li>修复了迷宫角色无法显示的问题：修复了在迷宫游戏中角色无法正确显示的Bug，确保游戏体验完整性。</li>
+<li>优化小记的分享流程：对小记应用中的分享流程进行了优化，更加简洁快捷。</li>
+<li>优化电脑版函数绘制流程：改进了电脑版应用中的函数绘制流程，提升了用户的使用体验。</li>
+<li>对函数图像绘制工具进行了重制</li>
+<li>优化成绩分析的表格保存</li>
+<li>重制了小记的界面</li>
+<li>优化山鸡跳跳乐的流畅度：针对山鸡跳跳乐游戏进行了性能优化，提高了游戏的流畅度。</li>
+<li>修复了二维码生成失败的问题</li>
+<li>优化了app的按钮交互</li>
+<li>优化了手机端数字华容道的分享</li>
+<li>修复了快递无法查询的bug</li>
+</ul>
+]]></content>
+      <tags>
+        <tag>技术</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>护青园法治夏令营活动记录</title>
     <url>/2023/07/14/%E6%8A%A4%E9%9D%92%E5%9B%AD%E6%B3%95%E6%B2%BB%E5%A4%8F%E4%BB%A4%E8%90%A5/</url>
     <content><![CDATA[<p>#本文由Youreln原创撰写#<br><a href="https://www.jianpian.cn/a/ozyyllp?sd=3&a_uid=6486056&s_uid=11537844&package_type=&sc=groupmessage"><br>  <img src="https://pic.imgdb.cn/item/64b139921ddac507cceba44f.jpg" alt="查看文章"><br></a><br>这是段长写的，不过我是第一人称式讲解哦</p>
