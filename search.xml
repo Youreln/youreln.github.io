@@ -1,6 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title>Youreln工具箱二创开发必知</title>
+    <url>/2023/08/07/Youreln%E5%B7%A5%E5%85%B7%E7%AE%B1%E4%BA%8C%E5%88%9B%E5%BC%80%E5%8F%91%E5%BF%85%E7%9F%A5/</url>
+    <content><![CDATA[<p>Youreln工具箱自上线以来就受到了开发者的欢迎（而不是用户😅）<br>如果你是用户，请不要看了，去看<a href="/2023/06/26/%E7%94%A8%E6%88%B7%E6%8C%87%E5%8D%97/">用户手册</a></p>
+<span id="more"></span>
+<p>开源仓库地址（你必须知道，这是拉取代码的地方，包括主页、工具等）<br><a href="https://gitee.com/Youreln/youreln-toolbox">https://gitee.com/Youreln/youreln-toolbox</a><br>要明确的是，开发语言是HTML，里面使用的都是使用一些开放的api和开源库<br>新版工具箱大部分工具应该没什么bug，但是仓库里的旧版有些许bug，修复完可以提交lssues。<br>点击建议提交<br><a href="https://gitee.com/Youreln/youreln-toolbox/issues">https://gitee.com/Youreln/youreln-toolbox/issues</a><br>开发完新版工具箱最好可以注明仓库地址方便后来的开发者！</p>
+<h2 id="敲重点！"><a href="#敲重点！" class="headerlink" title="敲重点！"></a>敲重点！</h2><p>必须遵守开源协议，二创后最好也开源<br>本项目使用GNU General Public License v2.0开源协议<br><a href="https://gitee.com/Youreln/youreln-toolbox/fosseye_scans">https://gitee.com/Youreln/youreln-toolbox/fosseye_scans</a><br>禁止开发后进行商业行为！<br>图标开源库网址：<a href="https://fontawesome.com/">https://fontawesome.com</a><br>国内站：<a href="https://fontawesome.com.cn/v4">https://fontawesome.com.cn/v4</a><br>因为我用的是Font Awesome的5版本的图标，所以图标会少些，可以去fontawesome.com.cn/v4找，有些前缀要改成fas<br>其他没什么，开发完可以在本仓库留下足迹，或者跟我说一声</p>
+]]></content>
+      <tags>
+        <tag>技术</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>Youreln工具箱APP2.0版本发布！</title>
     <url>/2023/07/28/Youreln%E5%B7%A5%E5%85%B7%E7%AE%B12.0%E7%89%88%E6%9C%AC%E6%9B%B4%E6%96%B0/</url>
     <content><![CDATA[<p>这是一个长期版本，以后可能不会再有大更新了。。。<br>废话不说，先上下载链接：<a href="https://youreln.rth1.link/">youreln.rth1.link</a><br>旧版本APP会提示更新<br><img src="https://pic.imgdb.cn/item/64c3982f1ddac507cc7039e1.jpg"><br>但是有些系统不兼容，无法在应用内下载，还得去网站下载<br>讲讲这次的超级大更新，几乎所有应用都进行了重制，铲除了大量bug。</p>
