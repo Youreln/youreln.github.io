@@ -234,6 +234,254 @@ var _hmt = _hmt || [];
 
     
     <article
+  id="post-饼图代码设计"
+  class="article article-type-post"
+  itemscope
+  itemprop="blogPost"
+  data-scroll-reveal
+>
+  <div class="article-inner">
+    
+    <header class="article-header">
+       
+<h2 itemprop="name">
+  <a class="article-title" href="/2024/08/31/%E9%A5%BC%E5%9B%BE%E4%BB%A3%E7%A0%81%E8%AE%BE%E8%AE%A1/"
+    >饼图生成器的构想</a> 
+</h2>
+ 
+
+      
+    </header>
+     
+    <div class="article-meta">
+      <a href="/2024/08/31/%E9%A5%BC%E5%9B%BE%E4%BB%A3%E7%A0%81%E8%AE%BE%E8%AE%A1/" class="article-date">
+  <time datetime="2024-08-31T08:48:50.000Z" itemprop="datePublished">2024-08-31</time>
+</a>    
+    </div>
+      
+    <div class="article-entry" itemprop="articleBody">
+       
+  <h1 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h1><p>今天分班结果出来了，我在十一班，我们班同学各奔东西。<br><img src="https://pic.imgdb.cn/item/66d2dbadd9c307b7e91e651d.jpg" alt="我的班级"><br><img src="https://pic.imgdb.cn/item/66d2dbfed9c307b7e91f2260.png" alt="老总的班级"><br>那么如何直观看出同学们都去哪了呢，这就要用到饼图了。</p>
+<h1 id="实现方式"><a href="#实现方式" class="headerlink" title="实现方式"></a>实现方式</h1><p>要实现一个饼图生成器，可以使用HTML、CSS和JavaScript。使用Chart.js库来创建立体的饼图。用户可以输入数据到表格，实时更新图表，并通过上传Excel文件（.xls或.xlsx）来生成饼状图。<br>首先，需要在HTML文件中引入Chart.js库：<br><!DOCTYPE html></p>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Pie Chart Generator</title>
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+<!-- 在这里添加你的代码 -->
+</body>
+</html>
+
+<p>接下来，添加一个表格和一个按钮，用于输入数据和上传文件：</p>
+<table id="data-table">
+<tr>
+<th>Label</th>
+<th>Value</th>
+</tr>
+<tr>
+<td><input type="text" class="label"></td>
+<td><input type="number" class="value"></td>
+</tr>
+</table>
+<button id="add-row">Add Row</button>
+<button id="upload-file">Upload Excel File</button>
+
+<p>然后，添加一个canvas元素，用于显示饼图：<br><canvas id="pie-chart"></canvas></p>
+<p>接下来，使用JavaScript编写功能，包括添加行、实时更新图表和上传Excel文件：</p>
+<script>
+// 获取DOM元素
+const dataTable = document.getElementById('data-table');
+const addRowButton = document.getElementById('add-row');
+const uploadFileButton = document.getElementById('upload-file');
+const pieChartCanvas = document.getElementById('pie-chart').getContext('2d');
+
+// 初始化图表
+const chart = new Chart(pieChartCanvas, {
+type: 'pie',
+data: {
+labels: [],
+datasets: [{
+data: [],
+backgroundColor: [
+'rgba(255, 99, 132, 0.2)',
+'rgba(54, 162, 235, 0.2)',
+'rgba(255, 206, 86, 0.2)',
+'rgba(75, 192, 192, 0.2)',
+'rgba(153, 102, 255, 0.2)',
+'rgba(255, 159, 64, 0.2)'
+],
+borderColor: [
+'rgba(255, 99, 132, 1)',
+'rgba(54, 162, 235, 1)',
+'rgba(255, 206, 86, 1)',
+'rgba(75, 192, 192, 1)',
+'rgba(153, 102, 255, 1)',
+'rgba(255, 159, 64, 1)'
+],
+borderWidth: 1
+}]
+},
+options: {
+responsive: true,
+maintainAspectRatio: false,
+animation: {
+duration: 500,
+easing: 'easeInOutQuart'
+}
+}
+});
+
+// 添加行事件
+addRowButton.addEventListener('click', () => {
+const newRow = dataTable.insertRow(-1);
+const labelCell = newRow.insertCell(0);
+const valueCell = newRow.insertCell(1);
+labelCell.innerHTML = `<input type="text" class="label">`;
+valueCell.innerHTML = `<input type="number" class="value">`;
+});
+
+// 实时更新图表事件
+dataTable.addEventListener('input', () => {
+const labels = Array.from(document.querySelectorAll('.label')).map(input => input.value);
+const values = Array.from(document.querySelectorAll('.value')).map(input => parseInt(input.value));
+chart.data.labels = labels;
+chart.data.datasets[0].data = values;
+chart.update();
+});
+
+// 上传Excel文件事件（需要安装xlsx库）
+uploadFileButton.addEventListener('click', () => {
+const fileInput = document.createElement('input');
+fileInput.type = 'file';
+fileInput.accept = '.xls,.xlsx';
+fileInput.onchange = (event) => {
+const file = event.target.files[0];
+const reader = new FileReader();
+reader.onload = (e) => {
+const data = new Uint8Array(e.target.result);
+const workbook = XLSX.read(data, { type: 'array' });
+const sheetName = workbook.SheetNames[0];
+const sheet = workbook.Sheets[sheetName];
+const jsonData = XLSX.utils.sheet_to_json(sheet, { header: 1 });
+const labels = jsonData.slice(1).map(row => row[0]);
+const values = jsonData.slice(1).map(row => parseInt(row[1]));
+chart.data.labels = labels;
+chart.data.datasets[0].data = values;
+chart.update();
+};
+reader.readAsArrayBuffer(file);
+};
+fileInput.click();
+});
+</script>
+
+<p><em>注意：这个示例使用了xlsx库来处理Excel文件，你需要在项目中安装它：</em><br>npm install xlsx</p>
+<p>然后将上述代码中的<script>标签替换为以下内容：</p>
+<script src="https://unpkg.com/xlsx/dist/xlsx.full.min.js"></script> #Javascript库
+<h1 id="美化思路"><a href="#美化思路" class="headerlink" title="美化思路"></a>美化思路</h1><p>但是这样，UI非常丑，功能也非常简陋，没有错误检查，容易报错，需要进一步调整<br><img src="https://pic.imgdb.cn/item/66d2dd73d9c307b7e9223f25.png" alt="美化前的第一版"><br>为了实现一个具有更美观的UI、错误检查以及客户端解析Excel文件的功能，我们需要做几个改进。首先，我们将使用CSS来美化界面，并引入一个JavaScript库，如SheetJS（xlsx.js），来处理文件上传和解析Excel文件。此外，我们还需要添加一些JavaScript代码来验证用户输入。<br>我采用了分离方式编写。</p>
+<h2 id="功能"><a href="#功能" class="headerlink" title="功能"></a>功能</h2><p>这一版加入了文件上传功能，允许用户上传.xls或.xlsx文件来生成饼图。当用户上传文件后，loadFile函数会被调用，读取文件内容并将其转换为JSON格式的数据。这些数据随后被用来填充表格，之后用户可以通过点击“从文件生成图表”按钮来更新饼图。<br>JavaScript脚本（script.js）：<br>// script.js</p>
+<p>// 初始化ECharts实例<br>var chart = echarts.init(document.getElementById(‘chart’));</p>
+<p>// 更新图表函数<br>function updateChart() {<br>var title = document.getElementById(‘title’).value;<br>var subtitle = document.getElementById(‘subtitle’).value;<br>var data = [];</p>
+<p>// 遍历所有输入行<br>document.querySelectorAll(‘#dataRows tr’).forEach((row, index) =&gt; {<br>var labelInput = row.querySelector(‘.labelInput’);<br>var valueInput = row.querySelector(‘.valueInput’);</p>
+<p>// 检查是否有空标签或非数字的值<br>if (labelInput.value.trim() === ‘’ || isNaN(valueInput.value.trim()) || valueInput.value.trim() === ‘’) {<br>alert(“请确保每行都有有效的标签和数值！”);<br>return;<br>}</p>
+<p>// 添加到数据数组<br>data.push({<br>name: labelInput.value.trim(),<br>value: parseFloat(valueInput.value.trim())<br>});<br>});</p>
+<p>// 设置图表选项<br>var option = {<br>tooltip: {},<br>title: {<br>text: title,<br>subtext: subtitle<br>},<br>series: [{<br>type: ‘pie’,<br>radius: ‘55%’,<br>center: [‘50%’, ‘60%’],<br>data: data,<br>emphasis: {<br>itemStyle: {<br>shadowBlur: 10,<br>shadowOffsetX: 0,<br>shadowColor: ‘rgba(0, 0, 0, 0.5)’<br>}<br>}<br>}]<br>};</p>
+<p>// 更新图表<br>chart.setOption(option);<br>}</p>
+<p>// 添加行<br>function addRow() {<br>var tableBody = document.getElementById(‘dataRows’);<br>var newRow = document.createElement(‘tr’);<br>newRow.innerHTML = `</p>
+<td><input type="text" class="labelInput" placeholder="标签"></td>
+<td><input type="number" class="valueInput" placeholder="值"></td>`;
+tableBody.appendChild(newRow);
+}
+
+<p>// 删除最后一行<br>function removeLastRow() {<br>var tableBody = document.getElementById(‘dataRows’);<br>if (tableBody.rows.length &gt; 1) {<br>tableBody.deleteRow(-1);<br>}<br>}</p>
+<p>// 文件加载事件处理器<br>function loadFile(event) {<br>var file = event.target.files[0];<br>if (!file) return;</p>
+<p>if (/.xls$|.xlsx$/.test(file.name)) {<br>var reader = new FileReader();<br>reader.onload = function(e) {<br>/* 读取工作簿 */<br>var bstr = e.target.result;<br>var wb = XLSX.read(bstr, { type: ‘binary’ });</p>
+<p>/* 获取第一个工作表 */<br>var wsname = wb.SheetNames[0];<br>var ws = wb.Sheets[wsname];</p>
+<p>/* 转换为数组 */<br>var data = XLSX.utils.sheet_to_json(ws);</p>
+<p>/* 清除当前表格并填充新数据 */<br>var tableBody = document.getElementById(‘dataRows’);<br>while (tableBody.firstChild) {<br>tableBody.removeChild(tableBody.firstChild);<br>}<br>data.forEach(item =&gt; {<br>addRow();<br>document.querySelectorAll(‘#dataRows .labelInput’)[<br>document.querySelectorAll(‘#dataRows .labelInput’).length - 1<br>].value = item.label || ‘’;<br>document.querySelectorAll(‘#dataRows .valueInput’)[<br>document.querySelectorAll(‘#dataRows .valueInput’).length - 1<br>].value = item.value || ‘’;<br>});<br>};<br>reader.readAsBinaryString(file);<br>} else {<br>document.getElementById(‘fileErrors’).innerText = ‘请选择正确的文件格式（.xls 或 .xlsx）’;<br>}<br>}</p>
+<p>// 解析文件<br>function parseFile() {<br>updateChart();<br>document.getElementById(‘fileErrors’).innerText = ‘’;<br>}</p>
+<p>// 初始化图表<br>updateChart();</p>
+<p>HTML结构（index.html）：<br><!DOCTYPE html></p>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<title>饼图生成器</title>
+<!-- 引入 ECharts 和 xlsx.js -->
+<script src="https://cdn.bootcdn.net/ajax/libs/echarts/5.4.0/echarts.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.17.0/xlsx.full.min.js"></script>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div class="container">
+<h1>饼图生成器</h1>
+<form id="dataForm">
+<label for="title">标题:</label><input type="text" id="title" placeholder="请输入标题">
+<label for="subtitle">副标题:</label><input type="text" id="subtitle" placeholder="请输入副标题">
+<table>
+<thead>
+<tr>
+<th>标签</th>
+<th>值</th>
+</tr>
+</thead>
+<tbody id="dataRows">
+<tr>
+<td><input type="text" class="labelInput" placeholder="标签"></td>
+<td><input type="number" class="valueInput" placeholder="值"></td>
+</tr>
+</tbody>
+</table>
+<button type="button" onclick="addRow()">添加行</button>
+<button type="button" onclick="removeLastRow()">删除最后一行</button>
+<button type="button" onclick="updateChart()">更新图表</button>
+<input type="file" id="fileUpload" accept=".xls,.xlsx" onchange="loadFile(event)">
+<button type="button" onclick="parseFile()">从文件生成图表</button>
+<div id="fileErrors" class="error"></div>
+</form>
+<div id="chart"></div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
+![功能实现](https://pic.imgdb.cn/item/66d2df73d9c307b7e92717df.png)
+## UI ##
+CSS样式表（style.css）：
+/* styles.css */
+
+<p>body {<br>font-family: Arial, sans-serif;<br>background: #f5f5f5;<br>}</p>
+<p>#chart {<br>width: 600px;<br>height: 400px;<br>margin: 20px auto;<br>}</p>
+<p>.container {<br>max-width: 800px;<br>margin: 0 auto;<br>padding: 20px;<br>background: white;<br>border-radius: 10px;<br>box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);<br>}</p>
+<p>input[type=”text”], input[type=”number”] {<br>width: 100%;<br>padding: 8px;<br>margin: 5px 0;<br>border: 1px solid #ccc;<br>border-radius: 4px;<br>}</p>
+<p>button {<br>display: block;<br>width: 100%;<br>padding: 10px;<br>margin-top: 10px;<br>background-color: #4CAF50;<br>color: white;<br>border: none;<br>border-radius: 4px;<br>cursor: pointer;<br>}</p>
+<p>button:hover {<br>background-color: #45a049;<br>}</p>
+<p>.error {<br>color: red;<br>}<br><img src="https://pic.imgdb.cn/item/66d2df92d9c307b7e927593b.png" alt="UI美化完的效果"></p>
+ 
+      <!-- reward -->
+      
+    </div>
+    
+
+    <!-- copyright -->
+    
+    <footer class="article-footer">
+       
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E6%8A%80%E6%9C%AF/" rel="tag">技术</a></li></ul>
+
+    </footer>
+  </div>
+
+    
+ 
+   
+  
+</article>
+
+    
+    <article
   id="post-photography"
   class="article article-type-post"
   itemscope
@@ -649,82 +897,6 @@ var _hmt = _hmt || [];
     <footer class="article-footer">
        
   <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E6%91%84%E5%BD%B1/" rel="tag">摄影</a></li></ul>
-
-    </footer>
-  </div>
-
-    
- 
-   
-  
-</article>
-
-    
-    <article
-  id="post-红包封面"
-  class="article article-type-post"
-  itemscope
-  itemprop="blogPost"
-  data-scroll-reveal
->
-  <div class="article-inner">
-    
-    <header class="article-header">
-       
-<h2 itemprop="name">
-  <a class="article-title" href="/2024/01/24/%E7%BA%A2%E5%8C%85%E5%B0%81%E9%9D%A2/"
-    >红包封面</a> 
-</h2>
- 
-
-      
-    </header>
-     
-    <div class="article-meta">
-      <a href="/2024/01/24/%E7%BA%A2%E5%8C%85%E5%B0%81%E9%9D%A2/" class="article-date">
-  <time datetime="2024-01-24T06:17:22.000Z" itemprop="datePublished">2024-01-24</time>
-</a>    
-    </div>
-      
-    <div class="article-entry" itemprop="articleBody">
-       
-  <p>新年快乐<br><a target="_blank" rel="noopener" href="https://cover.weixin.qq.com/preview?key=AwAAAOeFS4zLnHbvgxGrOw">点击预览</a></p>
-<style>
-   .beautiful-button {
-   background-color: #4CAF50;
-   border: none;
-   color: white;
-   padding: 15px 32px;
-   text-align: center;
-   text-decoration: none;
-   display: inline-block;
-   font-size: 16px;
-   margin: 4px 2px;
-   cursor: pointer;
-   transition-duration: 0.4s;
-   }
-
-   .beautiful-button:hover {
-   background-color: #45a049;
-   }
-</style>
-</head>
-<body>
-   <h1>期末考考完了，为了感谢大家，特此制作红包封面送给大家</h1>
-   <p>试用封面看下方↓</p>
-   <a target="_blank" rel="noopener" href="https://cover.weixin.qq.com/preview?key=AwAAAOeFS4zLnHbvgxGrOw" class="beautiful-button">点击预览</a>
-   <iframe src="https://www.yuque.com/yuqueyonghucnfmve/youreln/qg8zk2smmawy3pkv?singleDoc#" width="100%" height="600" frameborder="0" scrolling="yes"></iframe>
-</body> 
-      <!-- reward -->
-      
-    </div>
-    
-
-    <!-- copyright -->
-    
-    <footer class="article-footer">
-       
-  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E5%85%B6%E5%AE%83/" rel="tag">其它</a></li></ul>
 
     </footer>
   </div>

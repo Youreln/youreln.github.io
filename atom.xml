@@ -6,7 +6,7 @@
   <link href="https://youreln.github.io/atom.xml" rel="self"/>
   
   <link href="https://youreln.github.io/"/>
-  <updated>2024-08-31T05:09:44.121Z</updated>
+  <updated>2024-08-31T09:18:06.581Z</updated>
   <id>https://youreln.github.io/</id>
   
   <author>
@@ -15,6 +15,29 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>饼图生成器的构想</title>
+    <link href="https://youreln.github.io/2024/08/31/%E9%A5%BC%E5%9B%BE%E4%BB%A3%E7%A0%81%E8%AE%BE%E8%AE%A1/"/>
+    <id>https://youreln.github.io/2024/08/31/%E9%A5%BC%E5%9B%BE%E4%BB%A3%E7%A0%81%E8%AE%BE%E8%AE%A1/</id>
+    <published>2024-08-31T08:48:50.000Z</published>
+    <updated>2024-08-31T09:18:06.581Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h1 id=&quot;前言&quot;&gt;&lt;a href=&quot;#前言&quot; class=&quot;headerlink&quot; title=&quot;前言&quot;&gt;&lt;/a&gt;前言&lt;/h1&gt;&lt;p&gt;今天分班结果出来了，我在十一班，我们班同学各奔东西。&lt;br&gt;&lt;img</summary>
+        
+      
+    
+    
+    
+    
+    <category term="技术" scheme="https://youreln.github.io/tags/%E6%8A%80%E6%9C%AF/"/>
+    
+  </entry>
   
   <entry>
     <title>一些精选照片</title>
@@ -362,25 +385,6 @@
     
     <summary type="html">&lt;p&gt;用户手册：&lt;a href=&quot;https://youreln.gitee.io/2023/06/26/%E7%94%A8%E6%88%B7%E6%8C%87%E5%8D%97/&quot;&gt;点此查看&lt;/a&gt;&lt;br&gt;在经过了一个多月的内测，修复了大量bug后，我的工具箱app正式上线！&lt;br&gt;开发代码就已经非常大量了&lt;br&gt;&lt;img src=&quot;https://pic.imgdb.cn/item/649fb3c31ddac507cc4afdc3.jpg&quot;&gt;&lt;br&gt;目前已经完全开源使用，开源仓库：&lt;a href=&quot;https://gitee.com/Youreln/youreln-toolbox&quot;&gt;https://gitee.com/Youreln/youreln-toolbox&lt;/a&gt;&lt;/p&gt;
 &lt;h2 id=&quot;下载&quot;&gt;&lt;a href=&quot;#下载&quot; class=&quot;headerlink&quot; title=&quot;下载&quot;&gt;&lt;/a&gt;下载&lt;/h2&gt;&lt;p&gt;下载app请点击下方按钮&lt;br&gt;    &lt;button onclick=&quot;window.location.href=&#39;https://gitee.com/Youreln/youreln-toolbox/releases/tag/v1.2&#39;&quot;&gt;点击下载&lt;/button&gt;&lt;br&gt;也提供网页版：&lt;a href=&quot;https://youreln.rth1.one/&quot;&gt;https://youreln.rth1.one/&lt;/a&gt;&lt;br&gt;但app提供不一样的界面哦&lt;/p&gt;</summary>
-    
-    
-    
-    
-    <category term="技术" scheme="https://youreln.github.io/tags/%E6%8A%80%E6%9C%AF/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Youreln工具箱正式开源以及用户手册</title>
-    <link href="https://youreln.github.io/2023/06/26/%E7%94%A8%E6%88%B7%E6%8C%87%E5%8D%97/"/>
-    <id>https://youreln.github.io/2023/06/26/%E7%94%A8%E6%88%B7%E6%8C%87%E5%8D%97/</id>
-    <published>2023-06-26T06:38:44.000Z</published>
-    <updated>2023-07-28T09:19:41.193Z</updated>
-    
-    
-    <summary type="html">&lt;h1 id=&quot;Youreln工具箱&quot;&gt;&lt;a href=&quot;#Youreln工具箱&quot; class=&quot;headerlink&quot; title=&quot;Youreln工具箱&quot;&gt;&lt;/a&gt;Youreln工具箱&lt;/h1&gt;&lt;p&gt;开源地址：&lt;a href=&quot;https://gitee.com/Youreln/youreln-toolbox&quot;&gt;https://gitee.com/Youreln/youreln-toolbox&lt;/a&gt;&lt;/p&gt;
-&lt;h4 id=&quot;介绍&quot;&gt;&lt;a href=&quot;#介绍&quot; class=&quot;headerlink&quot; title=&quot;介绍&quot;&gt;&lt;/a&gt;介绍&lt;/h4&gt;&lt;p&gt;一个使用HTML开发的工具箱，里面还有小游戏，完全开源&lt;/p&gt;
-&lt;h4 id=&quot;软件架构&quot;&gt;&lt;a href=&quot;#软件架构&quot; class=&quot;headerlink&quot; title=&quot;软件架构&quot;&gt;&lt;/a&gt;软件架构&lt;/h4&gt;&lt;p&gt;完全纯HTML+JavaScript开发&lt;/p&gt;</summary>
     
     
     
