@@ -1,0 +1,736 @@
+<!DOCTYPE html>
+
+
+<html lang="zh-CN">
+  
+
+    <head><!-- hexo injector head_begin start -->
+<link rel="stylesheet" href="/css/bilicard.css">
+<!-- hexo injector head_begin end -->
+      <meta charset="utf-8" />
+        
+      <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1, maximum-scale=1"
+      />
+      <title>Youreln工具箱正式开源以及用户手册 |  Youreln官网</title>
+  <meta name="generator" content="hexo-theme-ayer">
+      
+      <link rel="shortcut icon" href="https://pic1.imgdb.cn/item/6468b9e4e03e90d874288273.jpg" />
+       
+<link rel="stylesheet" href="/dist/main.css">
+
+      
+<link rel="stylesheet" href="/css/fonts/remixicon.css">
+
+      
+<link rel="stylesheet" href="/css/custom.css">
+ 
+      <script src="https://cdn.staticfile.org/pace/1.2.4/pace.min.js"></script>
+       
+ 
+<script>
+var _hmt = _hmt || [];
+(function() {
+	var hm = document.createElement("script");
+	hm.src = "https://hm.baidu.com/hm.js?b1ad243c21b58de28ec5de57e94b1a39";
+	var s = document.getElementsByTagName("script")[0]; 
+	s.parentNode.insertBefore(hm, s);
+})();
+</script>
+
+
+      <link
+        rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/@sweetalert2/theme-bulma@5.0.1/bulma.min.css"
+      />
+      <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.0.19/dist/sweetalert2.min.js"></script>
+
+      <!-- mermaid -->
+      
+      <style>
+        .swal2-styled.swal2-confirm {
+          font-size: 1.6rem;
+        }
+      </style>
+    <link rel="alternate" href="/atom.xml" title="Youreln官网" type="application/atom+xml">
+</head>
+  </html>
+</html>
+
+
+<body>
+  <div id="app">
+    
+      
+      <canvas width="1777" height="841"
+        style="position: fixed; left: 0px; top: 0px; z-index: 99999; pointer-events: none;"></canvas>
+      
+    <main class="content on">
+      <section class="outer">
+  <article
+  id="post-用户指南"
+  class="article article-type-post"
+  itemscope
+  itemprop="blogPost"
+  data-scroll-reveal
+>
+  <div class="article-inner">
+    
+    <header class="article-header">
+       
+<h1 class="article-title sea-center" style="border-left:0" itemprop="name">
+  Youreln工具箱正式开源以及用户手册
+</h1>
+ 
+
+      
+    </header>
+     
+    <div class="article-meta">
+      <a href="/2023/06/26/%E7%94%A8%E6%88%B7%E6%8C%87%E5%8D%97/" class="article-date">
+  <time datetime="2023-06-26T06:38:44.000Z" itemprop="datePublished">2023-06-26</time>
+</a>   
+<div class="word_count">
+    <span class="post-time">
+        <span class="post-meta-item-icon">
+            <i class="ri-quill-pen-line"></i>
+            <span class="post-meta-item-text"> 字数统计:</span>
+            <span class="post-count">2k</span>
+        </span>
+    </span>
+
+    <span class="post-time">
+        &nbsp; | &nbsp;
+        <span class="post-meta-item-icon">
+            <i class="ri-book-open-line"></i>
+            <span class="post-meta-item-text"> 阅读时长≈</span>
+            <span class="post-count">6 分钟</span>
+        </span>
+    </span>
+</div>
+ 
+    </div>
+      
+    <div class="tocbot"></div>
+
+
+
+
+  
+    <div class="article-entry" itemprop="articleBody">
+       
+  <h1 id="Youreln工具箱"><a href="#Youreln工具箱" class="headerlink" title="Youreln工具箱"></a>Youreln工具箱</h1><p>开源地址：<a target="_blank" rel="noopener" href="https://gitee.com/Youreln/youreln-toolbox">https://gitee.com/Youreln/youreln-toolbox</a></p>
+<h4 id="介绍"><a href="#介绍" class="headerlink" title="介绍"></a>介绍</h4><p>一个使用HTML开发的工具箱，里面还有小游戏，完全开源</p>
+<h4 id="软件架构"><a href="#软件架构" class="headerlink" title="软件架构"></a>软件架构</h4><p>完全纯HTML+JavaScript开发</p>
+<span id="more"></span>
+
+<h4 id="安装教程"><a href="#安装教程" class="headerlink" title="安装教程"></a>安装教程</h4><p>即点即用，推荐用热铁盒网址：<a target="_blank" rel="noopener" href="https://youreln.rth1.one/">热铁盒</a><br>也可以使用Gitee Pages的网页：<a target="_blank" rel="noopener" href="https://youreln.gitee.io/youreln-toolbox">Pages</a></p>
+<h4 id="使用说明"><a href="#使用说明" class="headerlink" title="使用说明"></a>使用说明</h4><p>进入会自动根据UA跳转，电脑版的是pc.html，手机版是app-h5.html，因为有些只能在手机上用，才进行划分</p>
+<h4 id="参与贡献"><a href="#参与贡献" class="headerlink" title="参与贡献"></a>参与贡献</h4><ol>
+<li> Fork 本仓库</li>
+<li> 提交lssues</li>
+<li> 提交代码</li>
+<li> 新建 Pull Request</li>
+</ol>
+<h4 id="特技"><a href="#特技" class="headerlink" title="特技"></a>特技</h4><ol>
+<li> 完全使用 HTML 来开发，即使断网在本地也可运行（前提要保存到本地）</li>
+<li> 小游戏是真无聊，非常适合打发时间<table>
+<thead>
+<tr>
+<th>工具</th>
+<th>游戏</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>倒计时</td>
+<td>扫雷</td>
+</tr>
+<tr>
+<td>单位转换</td>
+<td>文字游戏</td>
+</tr>
+<tr>
+<td>密码生成器</td>
+<td>山鸡跳跳乐</td>
+</tr>
+<tr>
+<td>网络测速</td>
+<td>点击方块</td>
+</tr>
+<tr>
+<td>计算器</td>
+<td>打砖块</td>
+</tr>
+<tr>
+<td>函数绘制</td>
+<td>猜拳游戏</td>
+</tr>
+<tr>
+<td>冷静草稿框</td>
+<td>数字华容道</td>
+</tr>
+<tr>
+<td>二维码生成器</td>
+<td></td>
+</tr>
+<tr>
+<td>and so on…</td>
+<td></td>
+</tr>
+</tbody></table>
+</li>
+</ol>
+<p><img src="https://pic.imgdb.cn/item/649931f21ddac507ccd56f23.jpg" alt="电脑版页面" title="在这里输入图片标题"></p>
+<h2 id="用户手册"><a href="#用户手册" class="headerlink" title="用户手册"></a>用户手册</h2><p>[用户手册目标受众]：<br>本手册适用于使用Youreln工具箱的所有用户。</p>
+<p>[用户手册内容]：</p>
+<p>介绍Youreln工具箱<br>Youreln工具箱是一个纯HTML开发的多功能工具箱，包含多种工具和游戏。它可以帮助您计算亲戚关系、体重BMI、倒计时、进行单位转换、生成密码、转换摩斯电码、将文字转换为语音、设置番茄时钟、测试网络速度、进行计算、查询银行卡类型、绘制函数、分析成绩、将HTML转换为PDF、进行屏幕测试、生成二维码、创建冷静草稿框以及查询快递等。此外，您还可以玩扫雷、猜拳、数字华容道、点击方块、山鸡跳跳乐、打砖块和文字游戏等。</p>
+<h2 id="工具"><a href="#工具" class="headerlink" title="工具"></a>工具</h2><p>抽奖：你可以在这里找到一个随机的数字或字母抽奖程序，是小型活动的绝佳选择。<br>体重BMI计算器：帮助你计算身体质量指数，并为你提供健康体重范围的建议。<br>倒计时：设置时间，以倒计时的方式进行计时。<br>单位转换器：快速、准确地进行长度、重量、速度等单位之间的转换。<br>密码生成器：生成安全、复杂的且容易记忆的密码。<br>摩斯电码：将你的消息转换成摩斯电码，是无线电通信的理想选择。<br>代码编辑器：编写和编辑各种类型的代码，适合程序员和编码爱好者。<br>IP天气签名档：根据你的IP地址，获取你所在地的点的天气预报，并生成签名档。<br>番茄时钟：帮助你提高工作效率，采用25分钟工作、5分钟休息的番茄工作法。<br>网络测速：测试你的网络连接速度，以便了解你的网络连接状况。<br>计算器：进行基本数学计算，包括加减乘除和更复杂的的功能。<br>垃圾分类查询：输入垃圾的种类和数量，就能查找到垃圾应该投放到哪个垃圾桶。<br>函数绘制：可以绘制各种函数图形，帮助你更好地理解函数的性质。<br>成绩分析：输入你的考试成绩，它可以帮助你分析你的成绩，找出你的弱点并制定提高计划。<br>QQ头像获取工具：可以根据QQ号码自动获取头像，让你的聊天窗口更加生动。<br>灵魂涂鸦：这是一个有趣的艺术工具，你可以用简单的涂鸦画出精美的图案。<br>小记：这是一个记事本，可以方便你随时记录重要的信息。<br>查IP：输入域名或者IP地址，快速查询对应的IP信息, 包括IP地址、子网掩码、默认网关和DNS信息等。<br>二维码生成：可以生成各种类型的二维码，包括URL、文本和日期等。<br>冷静草稿框：帮助你在工作或学习时冷静下来，让你的思绪更加清晰。<br>屏幕测试：测试你的电脑屏幕是否正常，确保最佳的显示效果。<br>查快递：输入快递单号，可以查询快递的状态和位置。</p>
+<h2 id="游戏"><a href="#游戏" class="headerlink" title="游戏"></a>游戏</h2><p>此外，我还为你准备了一系列的小游戏，包括：<br>扫雷：经典的益智游戏，考验你的逻辑和推理能力。<br>猜拳游戏：与电脑或其他玩家进行石头、剪刀、布的游戏。<br>山鸡跳跳乐：帮助山鸡跨越障碍，收集食物和金币。<br>走迷宫：解决迷宫谜题，找到出口。<br>文字游戏：玩各种有趣的文字游戏，锻炼你的大脑。<br>猜数字：猜出电脑随机生成的数字，提高你的数学技巧。<br>打砖块：用弹球把砖块打碎，是一款令人上瘾的休闲游戏。</p>
+<h2 id="指南-模板-："><a href="#指南-模板-：" class="headerlink" title="[指南/模板] ##："></a>[指南/模板] ##：</h2><p>在使用Youreln工具箱之前，建议您先阅读用户手册，以便了解所有功能和选项。如果您有任何问题或疑虑，可以参考常见问题解答或联系我。</p>
+<h2 id="常见问题解答-："><a href="#常见问题解答-：" class="headerlink" title="[常见问题解答] ##："></a>[常见问题解答] ##：</h2><p>我们的常见问题解答可以帮助您解决使用Youreln工具箱时遇到的问题。如果您有任何问题或疑虑，请随时查看常见问题解答。<br>问题1：如何使用Youreln工具箱？<br>答：您可以通过访问Youreln工具箱的网站（<a target="_blank" rel="noopener" href="https://youreln.rth1.one)或gitee/">https://youreln.rth1.one）或Gitee</a> Page页面（<a target="_blank" rel="noopener" href="https://youreln.gitee.io/youreln-toolbox)%E6%9D%A5%E4%BD%BF%E7%94%A8%E8%AF%A5%E5%B7%A5%E5%85%B7%E7%AE%B1%E3%80%82%E5%9C%A8%E7%BD%91%E7%AB%99%E4%B8%8A%EF%BC%8C%E6%82%A8%E5%8F%AF%E4%BB%A5%E6%B5%8F%E8%A7%88%E4%B8%8D%E5%90%8C%E7%9A%84tools%E5%92%8C%E5%8A%9F%E8%83%BD%EF%BC%8C%E5%B9%B6%E6%8C%89%E7%85%A7%E6%8C%87%E5%BC%95%E6%9D%A5%E4%BD%BF%E7%94%A8%E5%AE%83%E4%BB%AC%E3%80%82">https://youreln.gitee.io/youreln-toolbox)来使用该工具箱。在网站上，您可以浏览不同的tools和功能，并按照指引来使用它们。</a></p>
+<p>问题2：Youreln工具箱是否完全免费？<br>答：是的，Youreln工具箱是完全免费的。您无需支付任何费用就可以使用该工具箱提供所有功能和tools。</p>
+<p>问题3：是否需要注册或登录才能使用Youreln工具箱？<br>答：不需要。您可以直接访问Youreln工具箱的网站，并立即开始使用工具箱提供的功能，无需注册或登录。</p>
+<p>问题4：如何更新Youreln工具箱到最新版本？<br>答：为了获得Youreln工具箱的最新功能和改进，您可以按照以下步骤更新：</p>
+<p>进入app时会自动提示更新<br>或前往官网<a target="_blank" rel="noopener" href="https://youreln.rth1.link/">https://youreln.rth1.link/</a><br>    <script src="https://youreln.rth1.one/toolbox.js"></script><br>如果是网页请重新加载您的网页，以使更新生效。</p>
+<p>问题5：我在使用Youreln工具箱时遇到了Bug，该怎么办？<br>答：如果您在使用Youreln工具箱时遇到了Bug，请按照以下步骤报告问题：</p>
+<p>详细描述问题，包括您的操作步骤和预期结果。<br>将问题报告发送至 <a href="mailto:youreln@qq.com?subject=Bug%20Report">youreln@qq.com</a>，并提供尽可能多的相关信息，例如浏览器类型和版本、操作系统等。或者在开源地址提交lssues<br>我将尽快回复并寻找解决方案。</p>
+<p>问题6：Youreln工具箱支持哪些浏览器？<br>答：Youreln工具箱支持现代主流浏览器，包括Google Chrome、Mozilla Firefox、Microsoft Edge、Safari等。</p>
+<p>问题7：Youreln工具箱有哪些特点？<br>答：Youreln工具箱具有多种特点，包括易于使用、多种实用工具、适用于各种场景、完全免费等。此外，它还具有良好的性能和可靠性，能够满足各种需求。</p>
+<p>问题8：Youreln工具箱有哪些实用工具？<br>答：Youreln工具箱包括多种实用工具，例如抽奖、体重BMI计算器、倒计时、单位转换、密码生成器、摩斯电码、代码编辑器、IP天气签名档、番茄时钟、网络测速、计算器、垃圾分类查询、函数绘制、成绩分析、QQ头像获取工具、灵魂涂鸦、小记、查IP、二维码生成、冷静草稿框、屏幕测试、查快递等。</p>
+ 
+      <!-- reward -->
+      
+      <div id="reword-out">
+        <div id="reward-btn">
+          打赏
+        </div>
+      </div>
+      
+    </div>
+    
+
+    <!-- copyright -->
+    
+    <footer class="article-footer">
+       
+<div class="share-btn">
+      <span class="share-sns share-outer">
+        <i class="ri-share-forward-line"></i>
+        分享
+      </span>
+      <div class="share-wrap">
+        <i class="arrow"></i>
+        <div class="share-icons">
+          
+          <a class="weibo share-sns" href="javascript:;" data-type="weibo">
+            <i class="ri-weibo-fill"></i>
+          </a>
+          <a class="weixin share-sns wxFab" href="javascript:;" data-type="weixin">
+            <i class="ri-wechat-fill"></i>
+          </a>
+          <a class="qq share-sns" href="javascript:;" data-type="qq">
+            <i class="ri-qq-fill"></i>
+          </a>
+          <a class="douban share-sns" href="javascript:;" data-type="douban">
+            <i class="ri-douban-line"></i>
+          </a>
+          <!-- <a class="qzone share-sns" href="javascript:;" data-type="qzone">
+            <i class="icon icon-qzone"></i>
+          </a> -->
+          
+          <a class="facebook share-sns" href="javascript:;" data-type="facebook">
+            <i class="ri-facebook-circle-fill"></i>
+          </a>
+          <a class="twitter share-sns" href="javascript:;" data-type="twitter">
+            <i class="ri-twitter-fill"></i>
+          </a>
+          <a class="google share-sns" href="javascript:;" data-type="google">
+            <i class="ri-google-fill"></i>
+          </a>
+        </div>
+      </div>
+</div>
+
+<div class="wx-share-modal">
+    <a class="modal-close" href="javascript:;"><i class="ri-close-circle-line"></i></a>
+    <p>扫一扫，分享到微信</p>
+    <div class="wx-qrcode">
+      <img src="//api.qrserver.com/v1/create-qr-code/?size=150x150&data=https://youreln.github.io/2023/06/26/%E7%94%A8%E6%88%B7%E6%8C%87%E5%8D%97/" alt="微信分享二维码">
+    </div>
+</div>
+
+<div id="share-mask"></div>  
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E6%8A%80%E6%9C%AF/" rel="tag">技术</a></li></ul>
+
+    </footer>
+  </div>
+
+   
+  <nav class="article-nav">
+    
+      <a href="/2023/07/01/Youreln%E5%B7%A5%E5%85%B7%E7%AE%B1%E6%AD%A3%E5%BC%8F%E5%8F%91%E5%B8%83/" class="article-nav-link">
+        <strong class="article-nav-caption">上一篇</strong>
+        <div class="article-nav-title">
+          
+            Youreln工具箱app正式上线！
+          
+        </div>
+      </a>
+    
+    
+      <a href="/2023/06/25/%E6%98%86%E8%99%AB%E8%AE%B0%E5%B0%8F%E5%86%8C%E5%AD%90/" class="article-nav-link">
+        <strong class="article-nav-caption">下一篇</strong>
+        <div class="article-nav-title">《昆虫记》中考必刷题</div>
+      </a>
+    
+  </nav>
+
+   
+<!-- valine评论 -->
+<div id="vcomments-box">
+  <div id="vcomments"></div>
+</div>
+<script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
+<script src="https://cdn.staticfile.org/valine/1.4.16/Valine.min.js"></script>
+<script>
+  new Valine({
+    el: "#vcomments",
+    app_id: "tSvFkeR3miHqu23420fymLQw-gzGzoHsz",
+    app_key: "nfmIuqgZkOMa0zqK7CGuBn9d",
+    path: window.location.pathname,
+    avatar: "monsterid",
+    placeholder: "给我的文章加点评论吧~",
+    recordIP: true,
+  });
+  const infoEle = document.querySelector("#vcomments .info");
+  if (infoEle && infoEle.childNodes && infoEle.childNodes.length > 0) {
+    infoEle.childNodes.forEach(function (item) {
+      item.parentNode.removeChild(item);
+    });
+  }
+</script>
+<style>
+  #vcomments-box {
+    padding: 5px 30px;
+  }
+
+  @media screen and (max-width: 800px) {
+    #vcomments-box {
+      padding: 5px 0px;
+    }
+  }
+
+  #vcomments-box #vcomments {
+    background-color: #fff;
+  }
+
+  .v .vlist .vcard .vh {
+    padding-right: 20px;
+  }
+
+  .v .vlist .vcard {
+    padding-left: 10px;
+  }
+</style>
+
+ 
+   
+  
+    
+</article>
+
+</section>
+      <footer class="footer">
+  <div class="outer">
+    <ul>
+      <li>
+        Copyrights &copy;
+        2022-2024
+        <i class="ri-heart-fill heart_icon"></i> Youreln
+      </li>
+    </ul>
+    <ul>
+      <li>
+        
+      </li>
+    </ul>
+    <ul>
+      <li>
+        
+        
+        <span>
+  <span><i class="ri-user-3-fill"></i>访问人数:<span id="busuanzi_value_site_uv"></span></span>
+  <span class="division">|</span>
+  <span><i class="ri-eye-fill"></i>浏览次数:<span id="busuanzi_value_page_pv"></span></span>
+</span>
+        
+      </li>
+    </ul>
+    <ul>
+      
+    </ul>
+    <ul>
+      
+    </ul>
+    <ul>
+      <li>
+        <!-- cnzz统计 -->
+        
+        <script type="text/javascript" src='https://s9.cnzz.com/z_stat.php?id=1278069914&amp;web_id=1278069914'></script>
+        
+      </li>
+    </ul>
+  </div>
+</footer>    
+    </main>
+    <div class="float_btns">
+      <div class="totop" id="totop">
+  <i class="ri-arrow-up-line"></i>
+</div>
+
+<div class="todark" id="todark">
+  <i class="ri-moon-line"></i>
+</div>
+
+    </div>
+    <aside class="sidebar on">
+      <button class="navbar-toggle"></button>
+<nav class="navbar">
+  
+  <div class="logo">
+    <a href="/"><img src="https://pic.imgdb.cn/item/66977362d9c307b7e9090424.jpg" alt="Youreln官网"></a>
+  </div>
+  
+  <ul class="nav nav-main">
+    
+    <li class="nav-item">
+      <a class="nav-item-link" href="/">主页</a>
+    </li>
+    
+    <li class="nav-item">
+      <a class="nav-item-link" href="/archives">归档</a>
+    </li>
+    
+    <li class="nav-item">
+      <a class="nav-item-link" href="/categories">分类</a>
+    </li>
+    
+    <li class="nav-item">
+      <a class="nav-item-link" href="/tags">标签</a>
+    </li>
+    
+    <li class="nav-item">
+      <a class="nav-item-link" target="_blank" rel="noopener" href="https://727952.yichafen.com/">查询系统</a>
+    </li>
+    
+    <li class="nav-item">
+      <a class="nav-item-link" target="_blank" rel="noopener" href="https://support.qq.com/product/502768">中梧教育</a>
+    </li>
+    
+    <li class="nav-item">
+      <a class="nav-item-link" href="https://youreln.github.io/youreln-toolbox">工具箱</a>
+    </li>
+    
+    <li class="nav-item">
+      <a class="nav-item-link" href="/2023/04/22/%E5%85%B3%E4%BA%8E%E6%88%91/">关于我</a>
+    </li>
+    
+    <li class="nav-item">
+      <a class="nav-item-link" href="/2024/08/31/photography/">精选照片</a>
+    </li>
+    
+  </ul>
+</nav>
+<nav class="navbar navbar-bottom">
+  <ul class="nav">
+    <li class="nav-item">
+      
+      <a class="nav-item-link nav-item-search"  title="搜索">
+        <i class="ri-search-line"></i>
+      </a>
+      
+      
+      <a class="nav-item-link" target="_blank" href="/atom.xml" title="RSS Feed">
+        <i class="ri-rss-line"></i>
+      </a>
+      
+    </li>
+  </ul>
+</nav>
+<div class="search-form-wrap">
+  <div class="local-search local-search-plugin">
+  <input type="search" id="local-search-input" class="local-search-input" placeholder="Search...">
+  <div id="local-search-result" class="local-search-result"></div>
+</div>
+</div>
+    </aside>
+    <div id="mask"></div>
+
+<!-- #reward -->
+<div id="reward">
+  <span class="close"><i class="ri-close-line"></i></span>
+  <p class="reward-p"><i class="ri-cup-line"></i>请我喝杯咖啡吧~</p>
+  <div class="reward-box">
+    
+    <div class="reward-item">
+      <img class="reward-img" src="/images/alipay.png">
+      <span class="reward-type">支付宝</span>
+    </div>
+    
+    
+    <div class="reward-item">
+      <img class="reward-img" src="/images/wechat.png">
+      <span class="reward-type">微信</span>
+    </div>
+    
+  </div>
+</div>
+    
+<script src="/js/jquery-3.6.0.min.js"></script>
+ 
+<script src="/js/lazyload.min.js"></script>
+
+<!-- Tocbot -->
+ 
+<script src="/js/tocbot.min.js"></script>
+
+<script>
+  tocbot.init({
+    tocSelector: ".tocbot",
+    contentSelector: ".article-entry",
+    headingSelector: "h1, h2, h3, h4, h5, h6",
+    hasInnerContainers: true,
+    scrollSmooth: true,
+    scrollContainer: "main",
+    positionFixedSelector: ".tocbot",
+    positionFixedClass: "is-position-fixed",
+    fixedSidebarOffset: "auto",
+  });
+</script>
+
+<script src="https://cdn.staticfile.org/jquery-modal/0.9.2/jquery.modal.min.js"></script>
+<link
+  rel="stylesheet"
+  href="https://cdn.staticfile.org/jquery-modal/0.9.2/jquery.modal.min.css"
+/>
+<script src="https://cdn.staticfile.org/justifiedGallery/3.8.1/js/jquery.justifiedGallery.min.js"></script>
+
+<script src="/dist/main.js"></script>
+
+<!-- ImageViewer -->
+ <!-- Root element of PhotoSwipe. Must have class pswp. -->
+<div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+
+    <!-- Background of PhotoSwipe. 
+         It's a separate element as animating opacity is faster than rgba(). -->
+    <div class="pswp__bg"></div>
+
+    <!-- Slides wrapper with overflow:hidden. -->
+    <div class="pswp__scroll-wrap">
+
+        <!-- Container that holds slides. 
+            PhotoSwipe keeps only 3 of them in the DOM to save memory.
+            Don't modify these 3 pswp__item elements, data is added later on. -->
+        <div class="pswp__container">
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+        </div>
+
+        <!-- Default (PhotoSwipeUI_Default) interface on top of sliding area. Can be changed. -->
+        <div class="pswp__ui pswp__ui--hidden">
+
+            <div class="pswp__top-bar">
+
+                <!--  Controls are self-explanatory. Order can be changed. -->
+
+                <div class="pswp__counter"></div>
+
+                <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+
+                <button class="pswp__button pswp__button--share" style="display:none" title="Share"></button>
+
+                <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+
+                <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+
+                <!-- Preloader demo http://codepen.io/dimsemenov/pen/yyBWoR -->
+                <!-- element will get class pswp__preloader--active when preloader is running -->
+                <div class="pswp__preloader">
+                    <div class="pswp__preloader__icn">
+                        <div class="pswp__preloader__cut">
+                            <div class="pswp__preloader__donut"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+                <div class="pswp__share-tooltip"></div>
+            </div>
+
+            <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+            </button>
+
+            <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
+            </button>
+
+            <div class="pswp__caption">
+                <div class="pswp__caption__center"></div>
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+<link rel="stylesheet" href="https://cdn.staticfile.org/photoswipe/4.1.3/photoswipe.min.css">
+<link rel="stylesheet" href="https://cdn.staticfile.org/photoswipe/4.1.3/default-skin/default-skin.min.css">
+<script src="https://cdn.staticfile.org/photoswipe/4.1.3/photoswipe.min.js"></script>
+<script src="https://cdn.staticfile.org/photoswipe/4.1.3/photoswipe-ui-default.min.js"></script>
+
+<script>
+    function viewer_init() {
+        let pswpElement = document.querySelectorAll('.pswp')[0];
+        let $imgArr = document.querySelectorAll(('.article-entry img:not(.reward-img)'))
+
+        $imgArr.forEach(($em, i) => {
+            $em.onclick = () => {
+                // slider展开状态
+                // todo: 这样不好，后面改成状态
+                if (document.querySelector('.left-col.show')) return
+                let items = []
+                $imgArr.forEach(($em2, i2) => {
+                    let img = $em2.getAttribute('data-idx', i2)
+                    let src = $em2.getAttribute('data-target') || $em2.getAttribute('src')
+                    let title = $em2.getAttribute('alt')
+                    // 获得原图尺寸
+                    const image = new Image()
+                    image.src = src
+                    items.push({
+                        src: src,
+                        w: image.width || $em2.width,
+                        h: image.height || $em2.height,
+                        title: title
+                    })
+                })
+                var gallery = new PhotoSwipe(pswpElement, PhotoSwipeUI_Default, items, {
+                    index: parseInt(i)
+                });
+                gallery.init()
+            }
+        })
+    }
+    viewer_init()
+</script> 
+<!-- MathJax -->
+
+<!-- Katex -->
+
+<!-- busuanzi  -->
+ 
+<script src="/js/busuanzi-2.3.pure.min.js"></script>
+ 
+<!-- ClickLove -->
+
+<!-- ClickBoom1 -->
+
+<!-- ClickBoom2 -->
+ 
+<script src="/js/clickBoom2.js"></script>
+ 
+<!-- CodeCopy -->
+ 
+<link rel="stylesheet" href="/css/clipboard.css">
+ <script src="https://cdn.staticfile.org/clipboard.js/2.0.10/clipboard.min.js"></script>
+<script>
+  function wait(callback, seconds) {
+    var timelag = null;
+    timelag = window.setTimeout(callback, seconds);
+  }
+  !function (e, t, a) {
+    var initCopyCode = function(){
+      var copyHtml = '';
+      copyHtml += '<button class="btn-copy" data-clipboard-snippet="">';
+      copyHtml += '<i class="ri-file-copy-2-line"></i><span>COPY</span>';
+      copyHtml += '</button>';
+      $(".highlight .code pre").before(copyHtml);
+      $(".article pre code").before(copyHtml);
+      var clipboard = new ClipboardJS('.btn-copy', {
+        target: function(trigger) {
+          return trigger.nextElementSibling;
+        }
+      });
+      clipboard.on('success', function(e) {
+        let $btn = $(e.trigger);
+        $btn.addClass('copied');
+        let $icon = $($btn.find('i'));
+        $icon.removeClass('ri-file-copy-2-line');
+        $icon.addClass('ri-checkbox-circle-line');
+        let $span = $($btn.find('span'));
+        $span[0].innerText = 'COPIED';
+        
+        wait(function () { // 等待两秒钟后恢复
+          $icon.removeClass('ri-checkbox-circle-line');
+          $icon.addClass('ri-file-copy-2-line');
+          $span[0].innerText = 'COPY';
+        }, 2000);
+      });
+      clipboard.on('error', function(e) {
+        e.clearSelection();
+        let $btn = $(e.trigger);
+        $btn.addClass('copy-failed');
+        let $icon = $($btn.find('i'));
+        $icon.removeClass('ri-file-copy-2-line');
+        $icon.addClass('ri-time-line');
+        let $span = $($btn.find('span'));
+        $span[0].innerText = 'COPY FAILED';
+        
+        wait(function () { // 等待两秒钟后恢复
+          $icon.removeClass('ri-time-line');
+          $icon.addClass('ri-file-copy-2-line');
+          $span[0].innerText = 'COPY';
+        }, 2000);
+      });
+    }
+    initCopyCode();
+  }(window, document);
+</script>
+ 
+<!-- CanvasBackground -->
+ 
+<script src="/js/dz.js"></script>
+ 
+<script>
+  if (window.mermaid) {
+    mermaid.initialize({ theme: "forest" });
+  }
+</script>
+
+
+    
+    <div id="music">
+    
+    
+    
+    <iframe frameborder="no" border="1" marginwidth="0" marginheight="0" width="200" height="52"
+        src="//music.163.com/outchain/player?type=2&id=1482647103&auto=1&height=32"></iframe>
+</div>
+
+<style>
+    #music {
+        position: fixed;
+        right: 15px;
+        bottom: 0;
+        z-index: 998;
+    }
+</style>
+    
+    
+
+  </div>
+</body>
+
+</html>
