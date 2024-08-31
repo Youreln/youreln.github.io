@@ -1,6 +1,298 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title>Youreln工具箱二创开发必知</title>
+    <url>/2023/08/07/Youreln%E5%B7%A5%E5%85%B7%E7%AE%B1%E4%BA%8C%E5%88%9B%E5%BC%80%E5%8F%91%E5%BF%85%E7%9F%A5/</url>
+    <content><![CDATA[<p>Youreln工具箱自上线以来就受到了开发者的欢迎（而不是用户😅）<br>如果你是用户，请不要看了，去看<a href="/2023/06/26/%E7%94%A8%E6%88%B7%E6%8C%87%E5%8D%97/">用户手册</a></p>
+<span id="more"></span>
+<p>开源仓库地址（你必须知道，这是拉取代码的地方，包括主页、工具等）<br><a href="https://gitee.com/Youreln/youreln-toolbox">https://gitee.com/Youreln/youreln-toolbox</a><br>要明确的是，开发语言是HTML，里面使用的都是使用一些开放的api和开源库<br>新版工具箱大部分工具应该没什么bug，但是仓库里的旧版有些许bug，修复完可以提交lssues。<br>点击建议提交<br><a href="https://gitee.com/Youreln/youreln-toolbox/issues">https://gitee.com/Youreln/youreln-toolbox/issues</a><br>开发完新版工具箱最好可以注明仓库地址方便后来的开发者！</p>
+<h2 id="敲重点！"><a href="#敲重点！" class="headerlink" title="敲重点！"></a>敲重点！</h2><p>必须遵守开源协议，二创后最好也开源<br>本项目使用GNU General Public License v2.0开源协议<br><a href="https://gitee.com/Youreln/youreln-toolbox/fosseye_scans">https://gitee.com/Youreln/youreln-toolbox/fosseye_scans</a><br>禁止开发后进行商业行为！<br>图标开源库网址：<a href="https://fontawesome.com/">https://fontawesome.com</a><br>国内站：<a href="https://fontawesome.com.cn/v4">https://fontawesome.com.cn/v4</a><br>因为我用的是Font Awesome的5版本的图标，所以图标会少些，可以去fontawesome.com.cn/v4找，有些前缀要改成fas<br>其他没什么，开发完可以在本仓库留下足迹，或者跟我说一声</p>
+]]></content>
+      <tags>
+        <tag>技术</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>一些精选照片</title>
+    <url>/2024/08/31/photography/</url>
+    <content><![CDATA[<p>全是高清大图！！！</p>
+<h1 id="风光"><a href="#风光" class="headerlink" title="风光"></a>风光</h1><p><img src="/photo005.jpg" alt="宏村"><br><img src="/photo006.jpg" alt="黄山光明顶日落"><br><img src="/photo009.jpg" alt="西安鼓楼"></p>
+<h1 id="人像"><a href="#人像" class="headerlink" title="人像"></a>人像</h1><p><img src="/photo001.jpg" alt="大田夜空@婧"><br><img src="/photo002.jpg" alt="白岩塔@婧"><br><img src="/photo004.jpg" alt="半夜惊魂@^yycy^zl"></p>
+<h1 id="人文"><a href="#人文" class="headerlink" title="人文"></a>人文</h1><p><img src="/photo003.jpg" alt="黄山白云宾馆徽州民俗表演"><br><img src="/photo007.jpg" alt="福州三坊七巷"><br><img src="/photo008.jpg" alt="南昌滕王阁南广场"><br><img src="/photo010.jpg" alt="西安站"></p>
+]]></content>
+      <tags>
+        <tag>摄影</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>工具箱安卓端效果实现方法</title>
+    <url>/2024/08/26/%E5%B7%A5%E5%85%B7%E7%AE%B1%E5%AE%89%E5%8D%93APP%E6%95%88%E6%9E%9C%E5%AE%9E%E7%8E%B0%E6%96%B9%E6%B3%95/</url>
+    <content><![CDATA[<p>前端效果实现lua</p>
+<span id="more"></span>
+<figure class="highlight lua"><table><tr><td class="code"><pre><span class="line"><span class="built_in">require</span> <span class="string">&quot;import&quot;</span></span><br><span class="line"></span><br><span class="line">import <span class="string">&quot;android.os.*&quot;</span></span><br><span class="line"></span><br><span class="line">import <span class="string">&quot;android.widget.*&quot;</span></span><br><span class="line"></span><br><span class="line">import <span class="string">&quot;android.view.*&quot;</span></span><br><span class="line"></span><br><span class="line">import <span class="string">&quot;android.content.*&quot;</span></span><br><span class="line"></span><br><span class="line">import <span class="string">&quot;android.net.*&quot;</span></span><br><span class="line"></span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">onDrawerListItemClick</span><span class="params">(data, recyclerView, listIndex, itemIndex)</span></span></span><br><span class="line"></span><br><span class="line">  <span class="keyword">local</span> listData = data.get(listIndex);</span><br><span class="line"></span><br><span class="line">  <span class="keyword">local</span> itemData = listData.get(itemIndex);</span><br><span class="line"></span><br><span class="line">  <span class="keyword">local</span> itemTitle = itemData.getTitle();</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"></span><br><span class="line">  <span class="built_in">print</span>(<span class="string">&quot;Click: &quot;</span> .. itemTitle)</span><br><span class="line"></span><br><span class="line"><span class="keyword">end</span></span><br><span class="line"></span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">onSearchEvent</span><span class="params">(keyword)</span></span></span><br><span class="line"></span><br><span class="line">  <span class="built_in">print</span>(<span class="string">&quot;Search keyword: &quot;</span> .. keyword)</span><br><span class="line"></span><br><span class="line"><span class="keyword">end</span></span><br><span class="line"></span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">onMenuItemClick</span><span class="params">(title)</span></span></span><br><span class="line"></span><br><span class="line">  switch(title) <span class="keyword">do</span></span><br><span class="line"></span><br><span class="line">    case <span class="string">&quot;清除缓存并重新进入&quot;</span></span><br><span class="line"></span><br><span class="line">    clearCache()</span><br><span class="line"></span><br><span class="line">    restartApplication()</span><br><span class="line"></span><br><span class="line">    case <span class="string">&quot;用户手册&quot;</span></span><br><span class="line"></span><br><span class="line">    openUserManual()</span><br><span class="line"></span><br><span class="line">    default</span><br><span class="line"></span><br><span class="line">    <span class="built_in">print</span>(<span class="string">&quot;Click: &quot;</span> .. title)</span><br><span class="line"></span><br><span class="line">  <span class="keyword">end</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">end</span></span><br><span class="line"></span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">clearCache</span><span class="params">()</span></span></span><br><span class="line"></span><br><span class="line">  <span class="comment">-- 执行清除缓存的逻辑</span></span><br><span class="line"></span><br><span class="line">  <span class="comment">-- 这里可以使用合适的方法或API来清除应用的缓存</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">end</span></span><br><span class="line"></span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">restartApplication</span><span class="params">()</span></span></span><br><span class="line"></span><br><span class="line">  <span class="keyword">local</span> intent = activity.getPackageManager().getLaunchIntentForPackage(activity.getPackageName())</span><br><span class="line"></span><br><span class="line">  intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP)</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"></span><br><span class="line">  activity.startActivity(intent)</span><br><span class="line"></span><br><span class="line">  activity.finish()</span><br><span class="line"></span><br><span class="line"><span class="keyword">end</span></span><br><span class="line"></span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">openUserManual</span><span class="params">()</span></span></span><br><span class="line"></span><br><span class="line">  <span class="keyword">local</span> url = <span class="string">&quot;https://youreln.gitee.io/2023/06/26/%E7%94%A8%E6%88%B7%E6%8C%87%E5%8D%97/&quot;</span></span><br><span class="line"></span><br><span class="line"></span><br><span class="line"></span><br><span class="line">  <span class="keyword">local</span> intent = Intent(Intent.ACTION_VIEW, Uri.parse(url))</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"></span><br><span class="line">  activity.startActivity(intent)</span><br><span class="line"></span><br><span class="line"><span class="keyword">end</span></span><br><span class="line"></span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">openOldVersion</span><span class="params">()</span></span></span><br><span class="line"></span><br><span class="line">  <span class="keyword">local</span> url = <span class="string">&quot;https://youreln.gitee.io/youreln-toolbox/app-h5.html&quot;</span></span><br><span class="line"></span><br><span class="line">  <span class="keyword">local</span> intent = Intent(activity, activity.getClass());</span><br><span class="line"></span><br><span class="line">  intent.setData(Uri.parse(url));</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"></span><br><span class="line">  activity.startActivity(intent)</span><br><span class="line"></span><br><span class="line"><span class="keyword">end</span></span><br><span class="line"></span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">onFloatingActionButtonClick</span><span class="params">(v)</span></span></span><br><span class="line"></span><br><span class="line">  <span class="keyword">local</span> url = <span class="string">&quot;https://youreln.gitee.io/youreln-toolbox/&quot;</span></span><br><span class="line"></span><br><span class="line"></span><br><span class="line"></span><br><span class="line">  <span class="keyword">local</span> intent = Intent(Intent.ACTION_VIEW, Uri.parse(url))</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"></span><br><span class="line">  activity.startActivity(intent)</span><br><span class="line"></span><br><span class="line"><span class="keyword">end</span></span><br><span class="line"></span><br><span class="line"></span><br></pre></td></tr></table></figure>
+<p>在Fusion app里写的具体见下<br /><img src="https://cdn.nlark.com/yuque/0/2024/jpeg/35935935/1724645793662-4c1d7af7-d1fd-4597-83c2-2e3fddb6c877.jpeg#averageHue=%23fcfcfc&from=url&id=gExTF&originHeight=2688&originWidth=1216&originalType=binary&ratio=1&rotation=0&showTitle=false&size=128357&status=done&style=none&title=" alt="1892724727.jpg"><br /><img src="https://cdn.nlark.com/yuque/0/2024/jpeg/35935935/1724645795234-16fe72c2-cafc-4ec1-adf9-510f147e8c49.jpeg#averageHue=%23fbfbfb&from=url&id=sWX8B&originHeight=4384&originWidth=1216&originalType=binary&ratio=1&rotation=0&showTitle=false&size=312697&status=done&style=none&title=" alt="1068237311.jpg"><br /><img src="https://cdn.nlark.com/yuque/0/2024/jpeg/35935935/1724645796553-e3d53385-f786-44f7-a6d8-2f07e2a38e6d.jpeg#averageHue=%23fafafa&from=url&id=s0Vme&originHeight=2688&originWidth=1216&originalType=binary&ratio=1&rotation=0&showTitle=false&size=236531&status=done&style=none&title=" alt="2096362136.jpg"><br /><img src="https://cdn.nlark.com/yuque/0/2024/jpeg/35935935/1724645798211-16a167bb-aaf2-46dd-8933-d5ca4565f440.jpeg#averageHue=%23f9f9f9&from=url&id=TVWol&originHeight=2688&originWidth=1216&originalType=binary&ratio=1&rotation=0&showTitle=false&size=248641&status=done&style=none&title=" alt="1911012831.jpg"><br />app-longterm是因为我不想写了，剩下都留给你们了，源码我网站和Gitee还有Github都有，自取。<br />须知在我网站有</p>
+]]></content>
+      <tags>
+        <tag>技术</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>换源公告</title>
+    <url>/2024/07/17/%E6%8D%A2%E6%BA%90%E5%85%AC%E5%91%8A/</url>
+    <content><![CDATA[<p>由于Gitee Pages停止服务，已全部转移到Github了，望周知</p>
+]]></content>
+      <tags>
+        <tag>其他</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>大田五中×集美大学“音乐之翼”活动</title>
+    <url>/2024/07/14/%E9%9F%B3%E4%B9%90%E4%B9%8B%E7%BF%BC/</url>
+    <content><![CDATA[<h1 id="汇演视频"><a href="#汇演视频" class="headerlink" title="汇演视频"></a>汇演视频</h1><span id="more"></span>
+   <iframe src="//player.bilibili.com/player.html?isOutside=true&aid=1456137013&bvid=BV1bi421Y75w&cid=1611738384&p=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"></iframe>
+
+<hr>
+<h1 id="海量照片、资料"><a href="#海量照片、资料" class="headerlink" title="海量照片、资料"></a>海量照片、资料</h1><pre><code>链接： https://caiyun.139.com/m/i?075CgOLV778bd 提取码：hyZ1 复制内容打开中国移动云盘手机APP，操作更方便哦
+</code></pre>
+<p><strong>服务器运营不下去了，只能用移动云盘，敬请谅解！所有原片都在这里</strong><br><img src="https://pic.imgdb.cn/item/66977504d9c307b7e90ce21e.jpg" alt="二维码已包含提取码！"></p>
+<h1 id="报道"><a href="#报道" class="headerlink" title="报道"></a>报道</h1><div style="display: flex; justify-content: center; align-items: center; height: 100vh; background-color: #f0f0f0;">
+    <div class="card" style="width: 300px; height: 400px; background-image: linear-gradient(to bottom right, #ff9966, #ff5e62); border-radius: 10px; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); position: relative; overflow: hidden; transition: all 0.3s ease;">
+        <a href="https://mp.weixin.qq.com/mp/appmsgalbum?action=getalbum&__biz=MzkwNjcxMjY5OA==&scene=1&album_id=3544527381736456193&count=3#wechat_redirect" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; z-index: 2;"></a>
+        <img src="https://pic.imgdb.cn/item/6697761fd9c307b7e90f3422.jpg" alt="点击跳转">
+        <img alt="点击跳转" style="width: 100%; height: 100%; object-fit: cover;">
+    </div>
+</div>
+
+<hr>
+<div style="display: flex; flex-wrap: wrap; justify-content: center;">
+    <div class="card" style="border: 1px solid #ccc; border-radius: 5px; padding: 10px; margin: 10px; width: 300px; text-align: center; background-color: #f9f9f9; box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);">
+        <a href="https://www.xwkx.net/e/wap/show.php?id=186955">报道1</a>
+    </div>
+    <div class="card" style="border: 1px solid #ccc; border-radius: 5px; padding: 10px; margin: 10px; width: 300px; text-align: center; background-color: #f9f9f9; box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);">
+        <a href="http://m.taihainet.com/lifeid/cssh/2024-07-14/2784794.html">报道2</a>
+    </div>
+    <div class="card" style="border: 1px solid #ccc; border-radius: 5px; padding: 10px; margin: 10px; width: 300px; text-align: center; background-color: #f9f9f9; box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);">
+        <a href="http://life.china.com.cn/gonggao/zixun/detail2_2024_07/14/4436733.html">报道3</a>
+    </div>
+    <div class="card" style="border: 1px solid #ccc; border-radius: 5px; padding: 10px; margin: 10px; width: 300px; text-align: center; background-color: #f9f9f9; box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);">
+        <a href="https://cj.sina.com.cn/articles/view/5764894621/1579d4f9d001016gx2">报道4</a>
+    </div>
+    <div class="card" style="border: 1px solid #ccc; border-radius: 5px; padding: 10px; margin: 10px; width: 300px; text-align: center; background-color: #f9f9f9; box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);">
+        <a href="https://life.china.com/2024-07/14/content_336121.html">报道5</a>
+    </div>
+</div>
+]]></content>
+      <tags>
+        <tag>摄影</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>黄山旅游攻略</title>
+    <url>/2024/07/12/%E9%BB%84%E5%B1%B1%E6%97%85%E6%B8%B8%E6%94%BB%E7%95%A5/</url>
+    <content><![CDATA[<p><a href="https://www.yuque.com/yuqueyonghucnfmve/youreln/bvu3wn21kxaexaf0?singleDoc">语雀的完整攻略</a></p>
+<span id="more"></span>
+<p><a name="wZsD7"></a></p>
+<h2 id="简介"><a href="#简介" class="headerlink" title="简介"></a>简介</h2><blockquote>
+<p>本攻略综合自百度地图、携程、大众点评<br><img src="https://cdn.nlark.com/yuque/0/2024/jpeg/35935935/1720273749142-d4838be5-626d-4bac-96e3-151b2b233375.jpeg#averageHue=%23616363&from=url&id=CYGYn&originHeight=1161&originWidth=1080&originalType=binary&ratio=1&rotation=0&showTitle=false&size=505867&status=done&style=none&title=" alt="-305088705.jpg"></p>
+</blockquote>
+<p><a name="DD6Nr"></a></p>
+<h2 id="注意事项"><a href="#注意事项" class="headerlink" title="注意事项"></a>注意事项<img src="https://cdn.nlark.com/yuque/0/2024/png/35935935/1720187351694-0d5fe98d-b606-435d-b1d7-96f1cd3e8e2e.png#averageHue=%23327fe5&clientId=udec829b6-7f3f-4&from=paste&height=25&id=ubd9ced92&originHeight=32&originWidth=32&originalType=url&ratio=1&rotation=0&showTitle=false&status=done&style=none&taskId=u9f199e4f-d5e8-42f3-8bd3-398eae339a2&title=&width=25"></h2><ol>
+<li>交通：出门在外，安全第一。打车要选正规出租车或平台网约车，避免上黑车的当。别忘了，出发地和目的地一定要确认清楚哦！</li>
+<li>鞋子：好的鞋子能带你走更远的路。爬山记得穿运动鞋或平底鞋，保证舒适度，让你行走如飞！</li>
+<li>景点：别错过黄山的美丽山景，也别忘了去周边的古村落感受一下古朴与宁静。西溪南、宏村、西递，都是不错的选择。</li>
+<li>购物：买特产别在景区，去大型超市看看，明码标价更放心。</li>
+<li>日出日落：想要欣赏美丽的日出日落，最好自己爬山上去。虽然累一点，但绝对值得！</li>
+<li>导游：街边的野导和一日游导游不靠谱，出租车司机推荐的餐厅也要三思。相信自己的判断，别被忽悠了。</li>
+<li>索道时间：下山索道 17:00 就停了，不想山上过夜的话，记得早点去排队。</li>
+<li>山顶酒店：一定要提前预订，至少提前 5 天，不然可能会没房哦。</li>
+<li>学生证：别忘了带上学生证，很多景点都能打折呢。</li>
+<li>徒步路线：如果你喜欢徒步，可以选择云谷寺到白鹅岭这条路线，相对轻松一些。</li>
+<li>假扮卡通人物：遇到假扮的卡通人物要合照，赶紧拒绝，他们可是要收费的。</li>
+<li>翡翠谷：路面较滑，游玩时要小心，注意安全。</li>
+<li>住宿：时间充裕的话，在宏村住一晚是个不错的选择，能让你更深入地感受当地风土人情。</li>
+<li>热情搭讪：保持警惕，很多热情搭讪的人可能是为了推销。</li>
+<li>气温：即使是夏天，黄山上的气温也可能较低，带上薄外套，以防着凉。</li>
+<li>晕车药：景点之间距离较远，晕车的朋友记得带上晕车药。</li>
+<li>落地站：选择黄山北站，高铁经停，还有去景区的线路车，方便又快捷。</li>
+<li>安全意识：在旅途中，时刻保持安全意识，保护好自己和财物。<br><a name="a4ap6"></a><h2 id="山顶天气（点击下方）"><a href="#山顶天气（点击下方）" class="headerlink" title="山顶天气（点击下方）"></a>山顶天气（点击下方）</h2><a href="https://you.ctrip.com/weather/huangshan19.html"><img src="https://cdn.nlark.com/yuque/0/2024/png/35935935/1720188337642-4a8e88b3-a7ff-4573-8a3d-704ea82f3423.png#averageHue=%23dedbd4&clientId=udec829b6-7f3f-4&from=paste&height=83&id=uf1622c24&originHeight=83&originWidth=586&originalType=binary&ratio=1&rotation=0&showTitle=false&size=29947&status=done&style=none&taskId=u8b667d8f-3c6e-4e31-88ae-97274792f9e&title=&width=586" alt="image.png"></a><br><a name="WidpW"></a><h2 id="交通方式"><a href="#交通方式" class="headerlink" title="交通方式"></a>交通方式</h2></li>
+</ol>
+<p><strong>出发：</strong><br /><strong>三明北站</strong><br /><a href="https://ditu.amap.com/dir?from%5Badcode%5D=350425&from%5Bname%5D=%E7%A6%8F%E5%BB%BA%E7%9C%81%E4%B8%89%E6%98%8E%E5%B8%82%E5%A4%A7%E7%94%B0%E5%8E%BF&from%5Bid%5D=3504251719299059334&from%5Bpoitype%5D=&from%5Blnglat%5D=117.84682800000002,25.692535&from%5Bmodxy%5D=&to%5Bname%5D=%E4%B8%89%E6%98%8E%E5%8C%97%E7%AB%99&to%5Blnglat%5D=117.806783,26.375556&to%5Bid%5D=B02560QA7R-to&to%5Bpoitype%5D=&to%5Badcode%5D=350400&to%5Bmodxy%5D=117.806783,26.375556&type=car&policy=1">点击查看【amap】</a><br>:::warning<br>G1510      **14:05  **2时14分    <strong>16:19</strong><br />G304    **12:10   **2时21分      <strong>14:47</strong><br>:::<br><a name="gGhZl"></a></p>
+<h2 id="行程安排"><a href="#行程安排" class="headerlink" title="行程安排"></a>行程安排</h2><p><a name="zWkI6"></a></p>
+<h3 id="Day-1-·-屯溪老街"><a href="#Day-1-·-屯溪老街" class="headerlink" title="Day 1 · 屯溪老街"></a>Day 1 · 屯溪老街</h3><p><a name="FJKJ1"></a></p>
+<h4 id="酒店"><a href="#酒店" class="headerlink" title="酒店"></a>酒店</h4><p>16:30 前往酒店<br /><img src="https://cdn.nlark.com/yuque/0/2023/png/35935935/1699165004267-029de869-6bc7-4b1a-8e29-135141632470.png#averageHue=%23eb997b&clientId=ue7b0bf01-6f44-4&from=paste&height=284&id=ud99744a9&originHeight=284&originWidth=340&originalType=binary&ratio=1&rotation=0&showTitle=false&size=22646&status=done&style=none&taskId=u70e5e251-2ea0-4860-a633-24d4bd55147&title=&width=340" alt="image.png"><br />18:00 入住酒店<br><a name="PYAKZ"></a></p>
+<h5 id="备选酒店"><a href="#备选酒店" class="headerlink" title="备选酒店"></a>备选酒店</h5><p><a name="fmU9u"></a></p>
+<h4 id="屯溪老街"><a href="#屯溪老街" class="headerlink" title="屯溪老街"></a>屯溪老街</h4><p><img src="https://cdn.nlark.com/yuque/0/2024/png/35935935/1719223598578-79c98c34-9148-41ed-a60b-0dab8a6e2bdf.png#averageHue=%2368705f&clientId=ue69e772d-0dc0-4&from=paste&id=u92811ec6&originHeight=452&originWidth=678&originalType=url&ratio=1&rotation=0&showTitle=false&size=649055&status=done&style=none&taskId=u6b05017d-60d9-4942-90df-c6d04e7fbf2&title=" alt="image.png"><br />屯溪老街的主街东西走向，全长八百余米，东端有一块牌坊和写有《屯溪老街记》的照壁，西至横江、率水、新安江汇流处的老大桥（镇海桥）。这里古时因三江汇流处的码头发展起来，繁荣于明清，现在街上依然有着过去的繁华。<br />白天来屯溪老街，能清晰地看到徽派建筑上精美的砖雕、木雕、石雕，并参观一些景点，有屯溪博物馆、万粹楼等。晚上的这里要比白天更热闹些，店铺开了灯，一串串红灯笼与白墙黑瓦相映，带个三脚架，吃饭、逛街之余可以拍拍夜景。<br />若要吃美食，新苏老徽馆（老街151号）挺有名气，你可以尝尝电视节目《舌尖上的中国》里介绍过的徽州特色菜毛豆腐、臭鳜鱼。此外，沿街有许多卖小吃的，有臭豆腐、烧饼、徽墨酥等，边吃边逛也是不错的选择，像徽墨酥买回家还能赠送亲朋好友。<br />从主街两旁叉出去的道路，也属于屯溪老街街区。如果你不喜欢购物，从岔路往南走，就能到达新安江畔，可以看江景；也可以步行至德阳楼，一边喝茶，一边看黄梅戏。<br><a name="Qd22v"></a></p>
+<h4 id="晚餐"><a href="#晚餐" class="headerlink" title="晚餐"></a>晚餐</h4><p><a href="https://m.ctrip.com/webapp/you/foods/120061/454891.html?seo=0&isHideNavBar=YES&ishideheader=true&source=share&openapp=5&s_guid=51b846bd-4ceb-4968-bec0-6fdbfab4a202"><img src="https://cdn.nlark.com/yuque/0/2024/jpeg/35935935/1719628222825-99d093d5-ca3e-4d71-bf4d-799d30493f59.jpeg#averageHue=%23ceb89f&clientId=u66698cfd-b688-4&from=drop&height=650&id=u4b134362&originHeight=2340&originWidth=1080&originalType=binary&ratio=1&rotation=0&showTitle=false&size=1014336&status=done&style=none&taskId=u13483434-e198-4288-a05a-160b0ad058e&title=&width=300" alt="566e9be817ec3783ddc3da71ee834d4.jpg"></a><a href="https://m.ctrip.com/webapp/you/foods/120061/58094.html?seo=0&isHideNavBar=YES&ishideheader=true&source=share&openapp=5&s_guid=6513b3f0-5572-4ae4-9848-7c98de9bc0f4"><img src="https://cdn.nlark.com/yuque/0/2024/jpeg/35935935/1719628268457-d2a53a8b-9139-441e-ae40-b7b8522e24e8.jpeg#averageHue=%23d5bfa7&clientId=u66698cfd-b688-4&from=paste&height=609&id=ub1cd515e&originHeight=2340&originWidth=1080&originalType=binary&ratio=1&rotation=0&showTitle=false&size=1057708&status=done&style=none&taskId=ue6482bde-12da-48dd-ad6b-02814dafd0b&title=&width=281" alt="a3dc797c9acb61ea7847cf20c3de68c.jpg"></a><br /><a href="https://m.ctrip.com/webapp/you/foods/120061/5574717.html?seo=0&isHideNavBar=YES&ishideheader=true&source=share&openapp=5&s_guid=46e1586c-1dd2-4082-aede-5f804ef9a378"><img src="https://cdn.nlark.com/yuque/0/2024/jpeg/35935935/1719628274928-370a4b95-21d0-43d4-b958-f064af92b177.jpeg#averageHue=%23dbcab7&clientId=u66698cfd-b688-4&from=paste&height=622&id=ud95418fb&originHeight=2340&originWidth=1080&originalType=binary&ratio=1&rotation=0&showTitle=false&size=1021160&status=done&style=none&taskId=ufda5a224-8152-42a3-9bb5-e8388b126be&title=&width=287" alt="b18657fe8708809cf6f441a8bbaf0a5.jpg"></a><a href="https://m.ctrip.com/webapp/you/foods/120061/11115508.html?seo=0&isHideNavBar=YES&ishideheader=true&source=share&openapp=5&s_guid=aa3390d9-8e4d-4c2b-9802-29af672da6c1"><img src="https://cdn.nlark.com/yuque/0/2024/jpeg/35935935/1719628281591-fc79f2a1-dd90-4624-943d-d430b1a2158c.jpeg#averageHue=%23a48c75&clientId=u66698cfd-b688-4&from=paste&height=633&id=uc75e2989&originHeight=2340&originWidth=1080&originalType=binary&ratio=1&rotation=0&showTitle=false&size=964951&status=done&style=none&taskId=uc9ef095b-15c6-4caa-82b8-ec745b4fb3e&title=&width=292" alt="a445c2019eea2055e4988464f088eb1.jpg"></a><br><a name="ukHNg"></a></p>
+<h4 id="新安江-夜游景点"><a href="#新安江-夜游景点" class="headerlink" title="新安江-夜游景点"></a>新安江-夜游景点</h4><p><a href="https://j.map.baidu.com/89/t9mJ"><img src="https://cdn.nlark.com/yuque/0/2024/jpeg/35935935/1719628819234-4e8e0d10-b56c-4de6-a38b-fbd92a9577f1.jpeg#averageHue=%2381866d&clientId=u66698cfd-b688-4&from=paste&height=756&id=ub7e22fb8&originHeight=2340&originWidth=1080&originalType=binary&ratio=1&rotation=0&showTitle=false&size=937318&status=done&style=none&taskId=uc739dac0-b7f7-46bb-8289-1379b920e86&title=&width=349" alt="ec95af5c1e428394fbb60c797448598.jpg"></a><br /><a href="https://ditu.amap.com/dir?from%5Badcode%5D=341002&from%5Bname%5D=%E8%8A%B1%E7%AD%91%C2%B7%E9%BB%84%E5%B1%B1%E8%A1%97%E5%A4%B4%E5%B7%B7%E5%B0%BE%E8%80%81%E8%A1%97%E8%87%BB%E5%93%81%E6%B0%91%E5%AE%BF(%E9%BB%8E%E9%98%B3%E8%80%81%E8%A1%97%C2%B7%E5%B1%AF%E6%BA%AA%E8%80%81%E8%A1%97%E8%A1%97%E5%8F%A3%E5%BA%97)&from%5Bid%5D=B0JAL7BEFU&from%5Bpoitype%5D=100000&from%5Blnglat%5D=118.31071099999997,29.707339&from%5Bmodxy%5D=118.31056,29.706837&to%5Badcode%5D=341002&to%5Bname%5D=%E6%B1%9F%E5%BF%83%E6%B4%B2%E5%B9%BF%E5%9C%BA&to%5Bid%5D=B022F0021V&to%5Bpoitype%5D=110105&to%5Blnglat%5D=118.31440399999997,29.70503&to%5Bmodxy%5D=118.312582,29.704813&type=walk&policy=0&dateTime=now">点击查看【amap】</a><br /><a href="https://j.map.baidu.com/d8/ey8J"><img src="https://cdn.nlark.com/yuque/0/2024/jpeg/35935935/1719628952455-160d21dd-fca3-46c4-80fc-1f2e585712d1.jpeg#averageHue=%23a29f96&clientId=u66698cfd-b688-4&from=paste&height=852&id=udbb80d81&originHeight=2340&originWidth=1080&originalType=binary&ratio=1&rotation=0&showTitle=false&size=815509&status=done&style=none&taskId=u68830f4f-4a67-482a-9c57-249f875413f&title=&width=393" alt="87624d7f71ddb792dc8be23a3e13c54.jpg"></a><br /><a href="https://ditu.amap.com/dir?from%5Badcode%5D=341002&from%5Bname%5D=%E8%8A%B1%E7%AD%91%C2%B7%E9%BB%84%E5%B1%B1%E8%A1%97%E5%A4%B4%E5%B7%B7%E5%B0%BE%E8%80%81%E8%A1%97%E8%87%BB%E5%93%81%E6%B0%91%E5%AE%BF(%E9%BB%8E%E9%98%B3%E8%80%81%E8%A1%97%C2%B7%E5%B1%AF%E6%BA%AA%E8%80%81%E8%A1%97%E8%A1%97%E5%8F%A3%E5%BA%97)&from%5Bid%5D=B0JAL7BEFU-from&from%5Bpoitype%5D=100000&from%5Blnglat%5D=118.31071099999997,29.707339&from%5Bmodxy%5D=118.31056,29.706837&to%5Badcode%5D=341002&to%5Bname%5D=%E5%B1%AF%E6%BA%AA%E5%8D%9A%E7%89%A9%E9%A6%86(%E6%9A%82%E5%81%9C%E5%BC%80%E6%94%BE)&to%5Bid%5D=B022F004PX&to%5Bpoitype%5D=140100&to%5Blnglat%5D=118.30687599999999,29.707987&to%5Bmodxy%5D=&type=walk&policy=0&dateTime=now">点击查看【amap】</a><br><a name="qzh66"></a></p>
+<h3 id="Day-2-·-黄山"><a href="#Day-2-·-黄山" class="headerlink" title="Day 2 · 黄山"></a>Day 2 · 黄山</h3><p><a name="lM58O"></a></p>
+<h3 id="交通方式-1"><a href="#交通方式-1" class="headerlink" title="交通方式"></a>交通方式</h3><p><a name="oCfKv"></a></p>
+<h4 id="高铁"><a href="#高铁" class="headerlink" title="高铁"></a>高铁</h4><p><img src="https://cdn.nlark.com/yuque/0/2024/jpeg/35935935/1719629445565-7893f211-2324-4635-b08e-af7550c066b2.jpeg#averageHue=%23f2ebdd&clientId=u66698cfd-b688-4&from=paste&height=572&id=u12337cba&originHeight=1920&originWidth=1080&originalType=binary&ratio=1&rotation=0&showTitle=false&size=139576&status=done&style=none&taskId=ub9e14dcc-8ae9-4c86-9813-8dd41f07f18&title=&width=322" alt="459f0be9b080763bfc02bc58066862c.jpg"><img src="https://cdn.nlark.com/yuque/0/2024/jpeg/35935935/1719629165915-6f386e50-7f59-4546-a3ea-afc620b8ba6f.jpeg#averageHue=%23f4f4f4&clientId=u66698cfd-b688-4&from=paste&height=845&id=h5Ibz&originHeight=2340&originWidth=1080&originalType=binary&ratio=1&rotation=0&showTitle=false&size=587950&status=done&style=none&taskId=ubcaaab57-a5dd-4f21-bed4-370eff2857c&title=&width=390" alt="ff3715bad2a24086fa90168cf720362.jpg"></p>
+<p><img src="https://cdn.nlark.com/yuque/0/2024/jpeg/35935935/1719629475350-9e071ec8-3b11-47c3-8fad-1ab49b1b5130.jpeg#averageHue=%23daf7d3&clientId=u66698cfd-b688-4&from=paste&height=1172&id=u47d7c6f0&originHeight=3606&originWidth=1080&originalType=binary&ratio=1&rotation=0&showTitle=false&size=604646&status=done&style=none&taskId=u624f506f-3e27-4076-abb4-60a311e7ccc&title=&width=351" alt="f4ea42d1bd992749f14a37c2e38e684.jpg"><img src="https://cdn.nlark.com/yuque/0/2024/jpeg/35935935/1719629636187-78333f2a-c0c3-409b-b0af-c13e4773a18c.jpeg#averageHue=%23eaf4f7&clientId=u66698cfd-b688-4&from=paste&height=709&id=u9373b4e9&originHeight=2340&originWidth=1080&originalType=binary&ratio=1&rotation=0&showTitle=false&size=427434&status=done&style=none&taskId=ubd27299f-f0de-4b3e-a329-a9b9c570c3c&title=&width=327" alt="9a0108401af7f38eb651e75de2808c9.jpg"><br><a name="BARBU"></a></p>
+<h4 id="路线"><a href="#路线" class="headerlink" title="路线"></a>路线</h4><p><img src="https://cdn.nlark.com/yuque/0/2024/jpeg/35935935/1719632410461-98533a46-a8eb-409f-89cb-e5957ad54111.jpeg#averageHue=%23cbb376&from=url&id=gTvTX&originHeight=2214&originWidth=3000&originalType=binary&ratio=1&rotation=0&showTitle=false&size=1721312&status=done&style=none&title=" alt="1684664499.jpg"></p>
+<p><strong>西海大峡谷二日游路线</strong><br />如果您住在后山的酒店(狮林，排云型旅或西海饭店)<br /><strong>第一天</strong> 可选择乘坐云谷索道或太平索道上山，入住后山酒店。<br /><img src="https://cdn.nlark.com/yuque/0/2024/jpeg/35935935/1719630480446-a7146d8c-6967-49cc-b0ee-7d4368e11bd0.jpeg#averageHue=%2387e7af&clientId=u66698cfd-b688-4&from=paste&height=631&id=u9149daac&originHeight=2340&originWidth=1080&originalType=binary&ratio=1&rotation=0&showTitle=false&size=602074&status=done&style=none&taskId=u29756dc1-bb46-4073-8e71-0d7183869a3&title=&width=291" alt="7f4b0e841ebb1b4806b54f6992b4cf2.jpg"><br /><strong>第二天</strong> 早起，选择丹霞峰或清凉台看日出，后由排云亭→西海大峡谷北入口(途中可远观光明顶，飞来石等景点)→一环→二环→谷底→乘坐西海观光缆车→天海→经海心亭→鳌鱼峰→玉屏景区，游览迎客松后乘坐玉屏索道下山。<br /><img src="https://cdn.nlark.com/yuque/0/2024/jpeg/35935935/1719630787856-cfeed5f3-8c99-48c4-b447-3c48099abc51.jpeg#averageHue=%2360dd94&clientId=u66698cfd-b688-4&from=paste&height=639&id=u501307ed&originHeight=2340&originWidth=1080&originalType=binary&ratio=1&rotation=0&showTitle=false&size=334210&status=done&style=none&taskId=u8a56798b-936e-4ac5-9d80-a2f241cf828&title=&width=295" alt="631b7c6ccce5b8221c16cf4e109abb0.jpg"><img src="https://cdn.nlark.com/yuque/0/2024/jpeg/35935935/1719631221940-7f23f3c5-830f-42a4-8bf3-9f1bc0ee8084.jpeg#averageHue=%2374e2a2&clientId=u66698cfd-b688-4&from=paste&height=431&id=u98013800&originHeight=904&originWidth=855&originalType=binary&ratio=1&rotation=0&showTitle=false&size=151488&status=done&style=none&taskId=ucee72416-3b07-4c8b-a906-71cc429f508&title=&width=408" alt="db12739f4550b74dce211f0e701f1d0.jpg"><br />如果您住在天海(白云宾馆)<br /><strong>第一天</strong> 可选择乘坐云谷索道或太平索道上山，再由排云亭→西海大峡谷北入口(途中可远观光明顶，飞来石等景点)→一环→二环→谷底→乘坐西海观光缆车→天海，入住白云宾馆。<br /><strong>第二天</strong> 可以选择在光明顶或猴子观海观看日出，从猴子观海至云谷寺景区，乘坐云谷索道下山。<br /><img src="https://cdn.nlark.com/yuque/0/2024/jpeg/35935935/1719631501012-e713c14e-b7f3-4c83-ae02-2e1c52c2d596.jpeg#averageHue=%2371e1a0&clientId=u28904010-f1f6-4&from=paste&height=907&id=ua2d2e285&originHeight=907&originWidth=864&originalType=binary&ratio=1&rotation=0&showTitle=false&size=150337&status=done&style=none&taskId=u24018a9e-5788-4bf6-9860-7389e6115a3&title=&width=864" alt="0bab25f9736fad6f96b40d3424c6ad3.jpg"><br><a name="y3LyR"></a></p>
+<h3 id="吃饭"><a href="#吃饭" class="headerlink" title="吃饭"></a>吃饭</h3><p><img src="https://cdn.nlark.com/yuque/0/2024/jpeg/35935935/1719633072352-54224d87-0b48-408d-a225-85b3a58631d9.jpeg#averageHue=%23ede7e3&from=url&id=wpxeH&originHeight=7597&originWidth=1080&originalType=binary&ratio=1&rotation=0&showTitle=false&size=2355408&status=done&style=none&title=" alt="974072789.jpg"><br><a name="TbpI2"></a></p>
+<h3 id="景区简介"><a href="#景区简介" class="headerlink" title="景区简介"></a>景区简介</h3><p><a href="https://player.bilibili.com/player.html?bvid=BV1F14y1d77o&autoplay=0">点击查看【bilibili】</a><br /><img src="https://cdn.nlark.com/yuque/0/2023/png/35935935/1699166314274-8fd9e9be-7249-41ca-81a5-6318eaf04ec9.png#averageHue=%23416786&clientId=u355cf227-f536-4&from=paste&id=u9516ef33&originHeight=1162&originWidth=2500&originalType=url&ratio=1&rotation=0&showTitle=false&size=3606938&status=done&style=none&taskId=uded2f7cc-d0e1-4c6a-901d-a273d1c7577&title=" alt="image.png"><br />黄山风景区坐落于黄山市黄山区汤口镇境内。黄山自古以来就是中国数一数二的名山，奇松、怪石、云海、温泉被称为黄山的“四绝”。除此之外，雾凇、雪景、日出也是游人不会错过的景观，古人有“五岳归来不看山，黄山归来不看岳”的说法。<br />景区内分为南门、西门和北门，绝大多数游客都会从南门出入，南门又有前山后山两个出入口，都靠近山脚下的汤口镇。镇上也成了游玩黄山的中转站，很多游客都会提前赶到这里住宿一晚。汤口镇上到景区门口需乘黄山新国线班车，在前山山门（慈光阁）、后山山门（云谷寺）、黄山温泉都会停靠。<br />景区游览主要分为前山、后山两条上山路线，都通向主峰之一光明顶，在光明顶的另一侧，还有一条环线-西海大峡谷。<br><a name="UliLN"></a></p>
+<h4 id="前山"><a href="#前山" class="headerlink" title="前山"></a><strong>前山</strong></h4><p><img src="https://cdn.nlark.com/yuque/0/2024/png/35935935/1720157571999-757a26f8-8d21-4e35-bdac-e683842af663.png#averageHue=%234a5543&clientId=u41b9c3e6-3dfe-4&from=paste&id=u9dd44e78&originHeight=853&originWidth=1280&originalType=url&ratio=1&rotation=0&showTitle=false&size=1545282&status=done&style=none&taskId=uef51d559-903e-4a85-b900-b7f871dee88&title=" alt="image.png"><br />前山指慈光阁开始到山顶玉屏楼的登山路线（可乘玉屏索道直达），还有山顶的莲花峰、天都峰区域。前山风景大气，很适合乘索道俯瞰。高峰莲花峰和另一主峰天都峰都在这里（两峰交替开放），还迎客松、鲫鱼背、百步云梯、一线天、天海等经典景点。<br><a name="q48HP"></a></p>
+<h4 id="后山"><a href="#后山" class="headerlink" title="后山"></a><strong>后山</strong></h4><p><img src="https://cdn.nlark.com/yuque/0/2024/png/35935935/1720157608535-5317f83e-a0ee-4c45-9fb4-25d5dcb87734.png#averageHue=%23877448&clientId=u41b9c3e6-3dfe-4&from=paste&id=ua1ed0579&originHeight=640&originWidth=360&originalType=url&ratio=1&rotation=0&showTitle=false&size=427741&status=done&style=none&taskId=udd3c8851-7618-4819-8975-e2f19fa3ec6&title=" alt="image.png"><br />后山是指云谷寺到白鹅岭的登山路线（可乘云谷索道直达），以及白鹅岭后面的始信峰、狮子峰、排云亭等山顶区域，后山风景多是精巧的山景，适合步行一路观赏。飞来石、猴子观海都在这里。<br><a name="k8GlK"></a></p>
+<h4 id="西海大峡谷"><a href="#西海大峡谷" class="headerlink" title="西海大峡谷"></a><strong>西海大峡谷</strong></h4><p><img src="https://cdn.nlark.com/yuque/0/2024/jpeg/35935935/1720157137682-12361b57-b86f-43c2-a2b9-82dd64317a81.jpeg#averageHue=%23818c8c&clientId=u41b9c3e6-3dfe-4&from=paste&height=1620&id=uca6a7765&originHeight=1620&originWidth=1080&originalType=binary&ratio=1&rotation=0&showTitle=false&size=276494&status=done&style=none&taskId=u43d47c87-e616-4dcb-87e5-8e04ccebefb&title=&width=1080" alt="98ee1338edc660ef64964f09fa3dba7.jpg"><br />西海大峡谷是近些年新开放的景区，谷内幽深，风景非常壮丽，被称为黄山真正的精华风光集合地。西海大峡谷可以从后山山顶区域的排云亭进入，谷内环绕一圈后回到主峰天海处。从排云亭步行下到谷底大约2小时左右，然后可乘坐缆车到天海。<br><a name="TrXb2"></a></p>
+<h4 id="酒店（山上）"><a href="#酒店（山上）" class="headerlink" title="酒店（山上）"></a>酒店（山上）</h4><p><a name="cEsy3"></a></p>
+<h4 id="酒店（山下）"><a href="#酒店（山下）" class="headerlink" title="酒店（山下）"></a>酒店（山下）</h4><p><img src="https://cdn.nlark.com/yuque/0/2024/jpeg/35935935/1719631849277-22cd9254-762d-4b2a-ad73-787dfff656ea.jpeg#averageHue=%23e1edd4&clientId=u28904010-f1f6-4&from=paste&height=3214&id=u3836e43d&originHeight=3214&originWidth=1080&originalType=binary&ratio=1&rotation=0&showTitle=false&size=1028187&status=done&style=none&taskId=u1fc79eb4-bc39-4717-ba3e-583fe9c8698&title=&width=1080" alt="ac7cd395cbf50483bdb88138d7c97c0.jpg"><br><a name="N3obQ"></a></p>
+<h3 id="Day-3-·-宏村"><a href="#Day-3-·-宏村" class="headerlink" title="Day 3 ·  宏村"></a>Day 3 ·  宏村</h3><p><a name="alfwE"></a></p>
+<h3 id="交通方式-2"><a href="#交通方式-2" class="headerlink" title="交通方式"></a>交通方式</h3><p><img src="https://cdn.nlark.com/yuque/0/2024/jpeg/35935935/1719630996028-f0427393-3f5e-4de5-96e8-f31f66e456b6.jpeg#averageHue=%23e5ede6&clientId=u66698cfd-b688-4&from=paste&height=520&id=u91201078&originHeight=1010&originWidth=1080&originalType=binary&ratio=1&rotation=0&showTitle=false&size=272267&status=done&style=none&taskId=uba6593d9-cf19-4168-915a-de703d0e5bc&title=&width=556" alt="d696d98e263f8f536f1250448505b80.jpg"><br /><img src="https://cdn.nlark.com/yuque/0/2024/jpeg/35935935/1719631283183-a5622efe-9437-4962-bad1-dd3e1254c1ef.jpeg#averageHue=%23f2f2f0&clientId=u66698cfd-b688-4&from=paste&height=2340&id=u6ae4a394&originHeight=2340&originWidth=1080&originalType=binary&ratio=1&rotation=0&showTitle=false&size=577931&status=done&style=none&taskId=ub29808bf-b23b-4047-bf7a-026d0e8b0bc&title=&width=1080" alt="cd3f37937dc1248fdc44cc433418bfc.jpg"><br /><img src="https://cdn.nlark.com/yuque/0/2024/jpeg/35935935/1719631270862-391b66d3-ad8b-415e-86ff-476063a61f4e.jpeg#averageHue=%23b0cea6&clientId=u66698cfd-b688-4&from=paste&height=4337&id=u3e611109&originHeight=4337&originWidth=7285&originalType=binary&ratio=1&rotation=0&showTitle=false&size=5556484&status=done&style=none&taskId=u8e4d7a4a-dd16-4509-b6c7-82c314e8b66&title=&width=7285" alt="e60b27bc3475dd0b191770cb25a0ecb.jpg"><br><a name="noAnK"></a></p>
+<h3 id="景区简介-1"><a href="#景区简介-1" class="headerlink" title="景区简介"></a>景区简介</h3><p><img src="https://cdn.nlark.com/yuque/0/2024/png/35935935/1719225103691-ebb740d7-10f4-42eb-ba48-833b71786dfe.png#averageHue=%23416a49&clientId=u82eecd7b-55ef-4&from=paste&id=uff09e98b&originHeight=462&originWidth=1180&originalType=url&ratio=1&rotation=0&showTitle=false&size=1375297&status=done&style=none&taskId=u6114d87b-5be8-4601-8082-023b8d03e96&title=" alt="image.png"><br />宏村景区是徽派古村中的代表，有“中国画里乡村”的美誉。来宏村一是看水利系统带来的水景，南湖、月沼是精华所在；二是看建筑上的徽派三雕，砖雕、石雕、木雕，像剪纸一样精细，人文景观与自然景观很好地融为一体。<br />宏村位于黟县东北11公里，黄山市西北68公里处，始建于南宋绍兴年间（公元1131年-1162年），从明永乐年间（公元1403年-1424年）开始，逐步发展成了神奇的“牛形村”的样子。村口的古树是“牛角”，村中房屋鳞次栉比的明清徽派建筑是“牛身”，村西溪水上四座桥是“牛腿”，月沼是“牛胃”，南湖是“牛肚”，流经家家户户的水圳（导引清泉的水沟）则是“牛肠”。<br />村中道路四通八达，入口有多个，主要的有三个，一个是村西当地人口中的“村口”，栽有红杨和银杏两颗古树；一个是南湖西边际泗桥通向的入口；还有一个是南湖东边，有停车场的入口，这是宏村较大的入口，也是正门所在，一般游客从此门进入，由南到北游览古村。<br />先欣赏位于宏村南端的精华景点之一南湖，是开凿于明万历丁未年（公元1607年）的弓形人工湖，水面开阔，穿湖而过的画桥为电影《卧虎藏龙》里李慕白牵马走过的地方。湖北岸有南湖书院，清朝时把原来湖边的六所私塾合并为一个书院，所以书院显得非常宽敞。看完南湖向北走，可顺道游览敬德堂、汪大燮故居（振绮堂）。<br />接着来到宏村中心位置的精华景点——开凿于明永乐年间的月沼，周围的徽派建筑倒映其中，是很好的拍照地。遗憾的是，月沼边往往聚满游客，想要拍张没人的照片比较困难。月沼北岸正中有祠堂乐叙堂，宏村的居民多姓汪，所以又叫汪氏宗祠。村中其他的屋子都是清代的，只有乐叙堂是明代的，比起清代建筑的繁复，明代建筑显得简约。月沼北侧西首还有建于清代的敬修堂。<br />继续向北走，参观宏村曾经的富豪建筑，清末大盐商汪定贵的住宅承志堂。承志堂里书房、厨房、马厩、保镖房、男女佣人房俱全，甚至还有搓麻将牌的“排山阁”。屋内自带池塘、水井，用水不出屋。而很值得一看的是精美的徽派三雕，有些木雕上还涂着金粉，可谓富丽堂皇。其他你还可以看下村中的德义堂、树人堂、桃源居等古建筑。<br><a name="BtrEd"></a></p>
+<h4 id="吃饭-1"><a href="#吃饭-1" class="headerlink" title="吃饭"></a>吃饭</h4><p><img src="https://cdn.nlark.com/yuque/0/2024/jpeg/35935935/1719633297263-1ef27576-a4b6-4a52-b393-0153660cacec.jpeg#averageHue=%23c39072&from=url&id=BY3Ev&originHeight=8982&originWidth=1080&originalType=binary&ratio=1&rotation=0&showTitle=false&size=3364418&status=done&style=none&title=" alt="-1420543280.jpg"></p>
+<p><a name="OhGDi"></a></p>
+<h4 id="酒店-1"><a href="#酒店-1" class="headerlink" title="酒店"></a>酒店</h4><p><img src="https://cdn.nlark.com/yuque/0/2024/jpeg/35935935/1719631354931-2397726f-884d-46d4-ba89-06c9681c9dfd.jpeg#averageHue=%23f5f4f4&clientId=u66698cfd-b688-4&from=paste&height=391&id=ltuZ6&originHeight=391&originWidth=1080&originalType=binary&ratio=1&rotation=0&showTitle=false&size=109259&status=done&style=none&taskId=u2604421d-19a3-44a9-94b7-d35f0d569a5&title=&width=1080" alt="0811ee45e99935bd8c606b3beaa7967.jpg"></p>
+]]></content>
+      <tags>
+        <tag>其他</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>音乐剧设计</title>
+    <url>/2024/07/05/%E9%9F%B3%E4%B9%90%E5%89%A7%E8%AE%BE%E8%AE%A1%E5%AE%89%E6%8E%92/</url>
+    <content><![CDATA[<p>故事背景:<br />在大田五中，有一群充满着青春活力的少年们。新的学期到来，他们对未来充满着疑惑，他们都来自不同的家庭、有着不同的梦想、但是却有着同一个目的——找到自己的梦想是什么，并付之努力实现梦想。在一次体育课上，为筹备运动会，体育老师与班主任一起陪同学生们练习，大课间休息时，同学们围坐在一起，他们谈起了自己的困扰，聊起了自己的梦想，他们互相鼓励。在班主任老师和体育老师的帮助下，他们在家长会上说服了自己的家长，让父母真正的认识到了他们的决心与天赋。学生们从此正式走向了圆梦的道路上。</p>
+<span id="more"></span>
+<p>故事主角:<br />（尤韧）1.张扬（热爱体育的少年，是体育生，但由于父母想要让他学习文化课，不支持他想要走体育道路的想法，在新的学期里，他闷闷不乐，他不知道自己以后要去做什么，又该为了什么而努力，在一次体育课上，季萧萧和同学们谈起了热爱与梦想一词，发现原来不只他没有得到家庭的理解，他们决定寻求老师的帮助，希望老师能够召开一次家长会，让孩子们站在讲台上，大声的告诉父母他们的梦想，他们想要努力的决心）</p>
+<p>（林子婧）2.温暖（班级的班长，学习成绩优异，但时常处在焦虑当中，害怕自己的成绩下降。新的学期，她看到热爱音乐并坚持音乐的季萧萧，觉得季萧萧很幸福快乐，因为他不知道自己有什么梦想，她只知道不能让成绩下降，却不知道自己到底热爱着什么）</p>
+<p>（黄依）3.季萧萧（艺术特长生，性格乐观活泼，有点话痨，爱表现自己，乐于助人。新的学期里，她也遇到了一点问题，她的文化课成绩并不理想，因此妈妈提出成绩如果再不理想，要停掉她的艺术课程，于是她找到了班长温暖，想要补习文化课知识，从而了解到了温暖的困境，并和同学们一起帮助她）<br />4.体育老师（李尚坤）<br />5.班主任（李佳慧）<br />6.林雨缘（季萧萧母亲）<br />7.郭书畅（张扬母亲）<br />8.张陆垚（温暖父亲）<br />具体情节:<br />《第一幕:青春活力的少年们》<br />（游宇宸）旁白：在大田五中，有一群充满着青春活力的少年们。新学期到来，高二的他们对未来充满着疑惑，他们都来自不同的家庭、有着不同的梦想、但是却有着同一个目的——找到自己的梦想是什么，并付之努力实现梦想。<br />开场舞——《我的未来式》【3分11秒】<br />第一场:多人合唱《少年》<br />角色——全体学生<br />（舞台设计）同学们有不同的站位、一组为开学在校门口打招呼、说话；一组为开学拉着行李箱；<br />（大屏幕）：校门口图片<br /><img src="https://cdn.nlark.com/yuque/0/2024/jpeg/35935935/1724644763988-ebbf38cb-ae01-48cc-9fb6-1ddb500e70c0.jpeg#averageHue=%23505f3d&id=x4JWp&originHeight=778&originWidth=1552&originalType=binary&ratio=1&rotation=0&showTitle=false&status=done&style=none&title="><br />（背景音频）：“好久不见”“假期作业写完了吗”“我假期出去旅游了”“我一个假期都在上兴趣班”…<br />第二场:《你们好，我的名字是张扬》（介绍故事背景主角人物）<br />角色:张扬、季萧萧、温暖、张扬母亲<br />①张扬——（场景）：校门口；（背景音乐：This summer）<br />张扬母亲：新的学期你就进入高二下学期了，很快你就要高考了，不要再跟无线电训练队一起训练了，文化课才是你最重要的事情。<br />张扬：我不要！我们才刚拿了全国一等奖！<br />张扬母亲：一等奖有什么用，能让你上大学吗？你现在那点儿分数能上个什么好大学？<br />张扬：我可以走体育考试，通过体育上大学啊。妈妈，我喜欢体育，这也是我擅长、热爱的东西，我…(被打断)<br />张扬母亲：热爱有什么用，我还不了解你，连文化课都还没学好，你能坚持得下来体育吗。<br />张扬：我可以的。<br />张扬母亲：好了，去上学吧，希望能看到你成绩进步，我会和你们班主任联系不许你再去训练队训练了。<br />【张扬进入校园遇到温暖和季萧萧】<br />———-黑幕————–转场—————<br />②温暖、季萧萧、张扬——（场景：教室内）（背景音乐：月光皎洁）<br />季萧萧：哎，明明是新学期，却一点动力都没有啊。<br />温暖：怎么啦，你可是小开心果啊，今天怎么这么丧。而且奇怪的是，张扬今天也是一副沉闷样子。<br />季萧萧：我妈妈说，新学期考试，如果我的文化课成绩没有达到500分，就要停掉我的声乐课了，我上哪里学够500分啊！<br />张扬（张扬此时听到，转过头）：那你可还比好多了，还有余地，达到500分还允许你学，我一点儿条件都讲不了啊）<br />温暖：我只知道萧萧是要学习艺术，准备走艺考的，你？要学什么？<br />张扬：体育啊，这是我的擅长项。<br />季萧萧：听完你的话我心里好受多了，但是不多。<br />张扬、季萧萧：哎….<br />温暖:好啦！马上就要上课了，大家快准备一下。<br />———-黑幕————–转场—————</p>
+<p>③开始重唱《你们好，我们的名字是》<br />———-黑幕————–转场—————</p>
+<p>第三场:女生二重唱《同学，可以帮我个忙吗》<br />角色:季萧萧、温暖<br />（场景：教室）<br />（背景音乐：下课铃声（老师再见！）；《10°C》）<br />①情景剧<br />季萧萧：温暖！我有个忙想你帮我！<br />温暖：你说吧，只要我能做到的我都会无条件帮助你！<br />季萧萧：上天有好生之德！让我拥有你这么一个好同桌！好班长！<br />温暖：好啦，说吧，什么忙需要我？<br />季萧萧：我想你帮我补习补习，我一定要努力考到500分！<br />温暖：可以啊！小音乐家！<br />季萧萧：温暖啊，你以后想做什么呢？<br />温暖：读大学，找工作。<br />季萧萧：读什么专业呢？做什么工作呢？<br />温暖：不知道，要先看我考的分数。<br />季萧萧：你有什么梦想吗？<br />温暖：emmm，考上好大学算不算？<br />季萧萧：梦想啊，是你喜欢什么，喜欢到你愿意为它付出巨大的努力。就像我，我喜欢音乐，我愿意为她努力考到500分！<br />温暖：emmmm，我也不知道我喜欢什么，我还是想考好大学。<br />季萧萧：嗯？不可能！每个人都有自己的梦想的！<br />温暖：可是我…..嗯，至少现在不知道是什么，我会努力想想的，我先给你补习吧！<br />季萧萧：我也会帮助你的！我们一定要一起找到你的梦想！<br />温暖：好的，小音乐家萧萧！<br />———-黑幕————–转场—————<br />②开始演唱女生二重唱《同学，可以帮我个忙吗？》<br />第四场:男女三重唱《我们的困扰》<br />角色:张扬、季萧萧、温暖<br />旁白：在一次体育课，他们又谈起了新阶段的困扰<br />①场景：操场体育课上<br />背景音乐：<br />体育老师（李尚坤）：同学们，接下来的课程还剩下30分钟，大家原地休息一下吧！<br />背景音：喧嚷声<br />张扬：温暖，<br />温暖：怎么了<br />张扬：我听说你最近在帮萧萧补课，你（停顿）可不可以也帮帮我，我想试试，用分数证明我自己，如果分数达到了，我想我也许能劝动我妈妈。<br />温暖：可以啊！萧萧最近也有了些进步！我们可以一起学习！<br />季萧萧：温暖，我的神！我现在距离500分还有！额，50分…….<br />张扬：看来我比你有希望，我上次月考考了480 分.<br />季萧萧：我会努力的！<br />温暖：看到你们干劲十足，我也好有动力哈哈。<br />季萧萧：萧萧，你喜欢小朋友吗？<br />温暖：喜欢啊，小朋友多可爱。<br />季萧萧：其实我觉得你，很适合当老师，你乐于助人，责任心强，学习又好，是我心中的完美小老师。<br />张扬:对啊，温暖，你以后想干什么呢？<br />温暖：其实，我也不知道我想干什么，不过，这确实提供了一个思路，说实话，我还挺喜欢讲课的，讲课的我最自信！<br />季萧萧：前路征途漫漫啊！<br />张扬：加油，50分！<br />季萧萧：张扬！<br />———-黑幕————–转场—————</p>
+<p>②开始演唱男女三重唱《我们的困扰》<br />《第二幕:我喜欢的都是什么》<br />第一场:多人重唱《来谈谈我们的梦想与热爱吧!》<br />角色——张扬、季萧萧、温暖、同班同学沈森、<br />①（场景：教室）<br />班主任：新的学期，想必同学们都已经对未来的学习生活做好了充分准备，新学期新气象，我们决定召开一次家长会，大家有需要在家长会上传达的内容，同意汇报到班长那里，我会帮大家传递心声的。<br />学生：谢谢李老师！<br />班主任：好，下课<br />————————————————老师离场———————————————————<br />张扬：温暖！请帮我记录“张扬正在努力学习！他真的很喜欢体育，他想继续和无线电运动训练队一起训练！他想未来也一直学习体育！<br />季萧萧：张扬，你跟温暖在聊什么呢？聊的这么开心。<br />张扬：我在叫温暖记录我的心声呢！<br />季萧萧：温暖！请帮我记录“萧萧距离500分还差20分！一定会考到500分的，请不要在停止她的声乐课了”<br />沈森：班长，请帮我记录<br />XX：班长，也请帮我记录一下………<br />—————————————————黑幕————————————————————<br />②开始多人重唱《来谈谈我们的梦想吧》<br />第二场:教师独唱《我喜欢》<br />角色——班主任<br />班主任：这帮孩子啊，青春、有活力，每个人有都有自己的梦想，存在即合理，就让我来帮助他们吧！<br />教师独唱《我喜欢》<br />———-黑幕————–转场—————<br />第三场:多人合唱《我喜欢》<br />角色——全体学生<br />—————————————————黑幕————————————————————</p>
+<p>《第三幕:你的梦想实现了吗》——多人重唱<br />第一场:多人重唱《我理解并选择支持你》<br />角色——季萧萧母亲，张扬母亲，温暖父亲<br />①（场景：家长会）（背景音乐：）<br />班主任：最后，在这次家长会的结尾，我想和各位家长谈一谈孩子们的梦想。<br />张扬妈妈和季萧萧的妈妈在哪里？<br />张扬母亲：老师，您好，我是张扬的妈妈！<br />班主任：在这次的“传递学生心声”中，有两位同学的心声，我想和两位妈妈说一下，同时，其他家长也可以认真听一下。<br />张扬同学在这次的期中考试中，考了550分，他在之前可是从来没有超越过500分，他在定向运动比赛“无线电运动”全国比赛中获得了一等奖，他的努力我们都看在眼里，他适合体育、热爱体育，他是很适合选择体育道路的。<br />另外，萧萧妈妈，萧萧说她还差20分就达到500分了，最近希望可以提前恢复她的声乐课，她想去参加一个声乐比赛。<br />或许家长们都认为，梦想这个词，过于虚无缥缈了。但是我想和各位家长说的是，如果没有梦想作为信仰支撑，哪怕进入了大学，他们依然会陷入迷茫，没有方向的前行，注定会迷路。<br />—————————————————家长会后——————————————————<br />②张扬母亲和萧萧母亲分作两场唱《我理解并选择支持你》</p>
+<p>第二场:多人重唱《与光同行》<br />朗诵稿《我们都是追梦人》<br />角色——张扬、季萧萧、温暖<br />诗朗诵稿</p>
+<p>第三场:多人合唱《圆梦》<br />角色——全体学生教师<br />旁白：高三一班毕业了，张扬考上了理想的北京体育大学，季萧萧考上了自己喜欢的上海音乐学院，温暖考上了北京师范大学，她选择了未来从事教师事业。至此，圆梦。<br />演唱：《圆梦》</p>
+]]></content>
+      <tags>
+        <tag>其他</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>大型纪录片《卡脚》</title>
+    <url>/2024/06/29/%E5%A4%A7%E5%9E%8B%E7%BA%AA%E5%BD%95%E7%89%87%E3%80%8A%E5%8D%A1%E8%84%9A%E3%80%8B%E8%84%9A%E6%9C%AC/</url>
+    <content><![CDATA[<p>不是剪刀买不起，而是洗洁精更有性价比。近日，在大田情人谷，一位同学太过调皮，下河抓鱼，脚卡拖鞋里，岸上人都在吃瓜，他的好兄弟在那拔，吃瓜群众下河救人，众人齐心协力，还是拔不出来，这位同学请求大家拿来剪刀，最后一位UP主拿来洗洁精，终于，艰难的把拖鞋拔了出来。五星上将麦克阿瑟这样评价：果然，高手在民间，失手在阴间。</p>
+]]></content>
+      <tags>
+        <tag>其他</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>爬楼看云</title>
+    <url>/2024/04/04/%E7%88%AC%E6%A5%BC%E7%9C%8B%E4%BA%91/</url>
+    <content><![CDATA[<p>今天爬到楼顶，看了一些云，没想到楼顶这么好看，先把视频奉上</p>
+<span id="more"></span>
+<pre><code>&lt;iframe src=&quot;//player.bilibili.com/player.html?aid=1752535966&amp;bvid=BV1Lx421D75B&amp;cid=1493205755&amp;p=1&quot; scrolling=&quot;no&quot; border=&quot;0&quot; frameborder=&quot;no&quot; framespacing=&quot;0&quot; allowfullscreen=&quot;true&quot;&gt; &lt;/iframe&gt;
+</code></pre>
+<hr>
+<p>再来一些大图，微信有点菜，自建服务器OSS来存<br>（请横屏观看👇）<br><img src="https://www.freeimg.cn/i/2024/04/04/660e45b84a314.jpg"></p>
+]]></content>
+      <tags>
+        <tag>摄影</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>红包封面</title>
+    <url>/2024/01/24/%E7%BA%A2%E5%8C%85%E5%B0%81%E9%9D%A2/</url>
+    <content><![CDATA[<p>新年快乐<br><a href="https://cover.weixin.qq.com/preview?key=AwAAAOeFS4zLnHbvgxGrOw">点击预览</a></p>
+<style>
+   .beautiful-button {
+   background-color: #4CAF50;
+   border: none;
+   color: white;
+   padding: 15px 32px;
+   text-align: center;
+   text-decoration: none;
+   display: inline-block;
+   font-size: 16px;
+   margin: 4px 2px;
+   cursor: pointer;
+   transition-duration: 0.4s;
+   }
+
+   .beautiful-button:hover {
+   background-color: #45a049;
+   }
+</style>
+</head>
+<body>
+   <h1>期末考考完了，为了感谢大家，特此制作红包封面送给大家</h1>
+   <p>试用封面看下方↓</p>
+   <a href="https://cover.weixin.qq.com/preview?key=AwAAAOeFS4zLnHbvgxGrOw" class="beautiful-button">点击预览</a>
+   <iframe src="https://www.yuque.com/yuqueyonghucnfmve/youreln/qg8zk2smmawy3pkv?singleDoc#" width="100%" height="600" frameborder="0" scrolling="yes"></iframe>
+</body>]]></content>
+      <tags>
+        <tag>其它</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>新年快乐</title>
+    <url>/2024/01/01/%E6%96%B0%E5%B9%B4%E5%BF%AB%E4%B9%90/</url>
+    <content><![CDATA[<p><img src="https://cdn.nlark.com/yuque/0/2024/png/35935935/1704069524334-5316745c-ac2d-422a-b40b-ebff2ac6c92a.png?x-oss-process=image/resize,w_750,limit_0" alt="海报"></p>
+<span id="more"></span>
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>新年快乐</title>
+    <style>
+        .button {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #4CAF50;
+            color: white;
+            text-align: center;
+            text-decoration: none;
+            font-size: 16px;
+            margin: 4px 2px;
+            cursor: pointer;
+            border-radius: 4px;
+        }
+    </style>
+</head>
+<body>
+    <a href="https://www.yuque.com/yuqueyonghucnfmve/youreln/yub25x0s8abokazs?singleDoc#%20%E3%80%8A%E6%96%B0%E5%B9%B4%E5%BF%AB%E4%B9%90%E3%80%8B" class="button">新年快乐</a>
+</body>
+</html>
+]]></content>
+      <tags>
+        <tag>其它</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>京台 1990</title>
+    <url>/2023/11/26/%E4%BA%AC%E5%8F%B0%201990/</url>
+    <content><![CDATA[<p><strong>本文来自B站UP主：吴际崖</strong><br>有一天，我路过南五环，我看见京台高速的路牌。<br><img src="https://pic.imgdb.cn/item/6562f969c458853aef56578c.jpg"><br>我以为是到台州，实际是到台北。<br><img src="https://pic.imgdb.cn/item/6562f96cc458853aef5661dc.jpg"></p>
+<span id="more"></span>
+<p>台湾对于我来说是一个又近又远的地方。<br><img src="https://pic.imgdb.cn/item/6562f970c458853aef566fd7.jpg"><br>我想看看到底有多远。<br><img src="https://pic.imgdb.cn/item/6562f974c458853aef567cb1.jpg"><br>出发那天天气很好。<br><img src="https://pic.imgdb.cn/item/6562f977c458853aef568616.jpg"><br>第一次走这么远的路。<br><img src="https://pic.imgdb.cn/item/6562f97ac458853aef569266.jpg"><br>希望一切顺利。<br><img src="https://pic.imgdb.cn/item/6562f97ec458853aef569fd6.jpg"><br>沂蒙山，八百里<br><img src="https://pic.imgdb.cn/item/6562f981c458853aef56a9e4.jpg"><br>里里都是故事。<br><img src="https://pic.imgdb.cn/item/6562f984c458853aef56b4b4.jpg"><br><img src="https://pic.imgdb.cn/item/6562f98cc458853aef56cf7b.jpg"><br><img src="https://pic.imgdb.cn/item/6562f98ec458853aef56d875.jpg"><br><img src="https://pic.imgdb.cn/item/6562f991c458853aef56e2e9.jpg"><br>到山东<br><img src="https://pic.imgdb.cn/item/6562f994c458853aef56ee59.jpg"><br>不能错过的是煎饼。<br><img src="https://pic.imgdb.cn/item/6562f996c458853aef56f77c.jpg"><br>在临沂<br><img src="https://pic.imgdb.cn/item/6562f999c458853aef56ff4f.jpg"><br><img src="https://pic.imgdb.cn/item/6562f99cc458853aef570b18.jpg"><br>不能错过的是炒鸡。<br><img src="https://pic.imgdb.cn/item/6562f9a0c458853aef5718e7.jpg"><br><img src="https://pic.imgdb.cn/item/6562f9a2c458853aef571f37.jpg"><br>还有豆沫。<br><img src="https://pic.imgdb.cn/item/6562f9a4c458853aef572968.jpg"><br>也没有葱花姜，就是纯鲜肉。<br><img src="https://pic.imgdb.cn/item/6562f9a6c458853aef572f49.jpg"><br><img src="https://pic.imgdb.cn/item/6562f9a8c458853aef57364f.jpg"><br>那种调味品能把这个肉的味道盖住。<br><img src="https://pic.imgdb.cn/item/6562f9acc458853aef57433e.jpg"><br>“不忘初心，回归自然。”老爷子说，<br><img src="https://pic.imgdb.cn/item/6562f9aec458853aef574a75.jpg"><br>“只要用心去做，人人都可以。”<br><img src="https://pic.imgdb.cn/item/6562f9b0c458853aef57509d.jpg"><br><img src="https://pic.imgdb.cn/item/6562f9b3c458853aef575930.jpg"><br>于是这一炉火，就烧了40年。<br><img src="https://pic.imgdb.cn/item/6562f9b6c458853aef576319.jpg"><br>柴火。<br><img src="https://pic.imgdb.cn/item/6562f9b9c458853aef576f59.jpg"><br>骨汤。<br><img src="https://pic.imgdb.cn/item/6562f9bcc458853aef577830.jpg"><br>鲜肉。<br><img src="https://pic.imgdb.cn/item/6562f9bdc458853aef577d9b.jpg"><br>真香。<br><img src="https://pic.imgdb.cn/item/6562f9c0c458853aef5788fb.jpg"><br>头一次早上吃汤圆，汤汁很浓。<br><img src="https://pic.imgdb.cn/item/6562f9c3c458853aef579259.jpg"><br>咬一口。<br><img src="https://pic.imgdb.cn/item/6562f9c6c458853aef579aa9.jpg"><br>满是芝麻香。<br><img src="https://pic.imgdb.cn/item/6562f9c8c458853aef57a119.jpg"><br>去了最想去的梧桐大道，<br><img src="https://pic.imgdb.cn/item/6562f9cbc458853aef57aca0.jpg"><br>带上了一份念想。<br><img src="https://pic.imgdb.cn/item/6562f9ccc458853aef57b1f5.jpg"><br><img src="https://pic.imgdb.cn/item/6562f9d0c458853aef57bdd0.jpg"><br><img src="https://pic.imgdb.cn/item/6562f9d4c458853aef57cc5d.jpg"><br><img src="https://pic.imgdb.cn/item/6562f9d6c458853aef57d47d.jpg"><br><img src="https://pic.imgdb.cn/item/6562f9d8c458853aef57da4e.jpg"><br><img src="https://pic.imgdb.cn/item/6562f9dbc458853aef57e57b.jpg"><br>我是一个爱吃火锅的人，<br><img src="https://pic.imgdb.cn/item/6562f9ddc458853aef57eb6d.jpg"><br>黄山一品锅<br><img src="https://pic.imgdb.cn/item/6562f9e0c458853aef57f4b4.jpg"><br>层层叠叠。<br><img src="https://pic.imgdb.cn/item/6562f9e4c458853aef5803ed.jpg"><br>一层菜，一层楼。<br><img src="https://pic.imgdb.cn/item/6562f9e6c458853aef580b05.jpg"><br>让人念念不忘。<br><img src="https://pic.imgdb.cn/item/6562f9e9c458853aef58157b.jpg"><br>这条路的尽头。<br><img src="https://pic.imgdb.cn/item/6562f9ebc458853aef581f30.jpg"><br>平潭县，<br><img src="https://pic.imgdb.cn/item/6562f9edc458853aef58251f.jpg"><br>但还不是终点。<br><img src="https://pic.imgdb.cn/item/6562f9f0c458853aef582d9f.jpg"><br>天有多大，<br><img src="https://pic.imgdb.cn/item/6562f9f0c458853aef582d9f.jpg"><br>海有多阔。<br><img src="https://pic.imgdb.cn/item/6562f9f5c458853aef583f30.jpg"><br>讨海的人。<br><img src="https://pic.imgdb.cn/item/6562f9f7c458853aef584690.jpg"><br>赶潮落水。<br><img src="https://pic.imgdb.cn/item/6562f9f9c458853aef584f91.jpg"><br>一叶知秋。<br><img src="https://pic.imgdb.cn/item/6562fefdc458853aef68876e.jpg"><br>落叶，<br><img src="https://pic.imgdb.cn/item/6562ff01c458853aef689435.jpg"><br>终会归根。<br><img src="https://pic.imgdb.cn/item/6562ff57c458853aef69a3ba.jpg"><br>下一次，我想走完这条路。<br><img src="https://pic.imgdb.cn/item/6562ff71c458853aef69f15b.jpg"></p>
+]]></content>
+      <tags>
+        <tag>其他</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>中梧教育页面重写！</title>
+    <url>/2023/11/25/%E4%B8%AD%E6%A2%A7%E6%95%99%E8%82%B2%E5%9B%9E%E5%BD%92/</url>
+    <content><![CDATA[<p>今天重写了中梧教育，<a href="http://lc-tsvfker3.cn-n1.lcfile.com/4Pn8to3mVOpTLngUrjaJq4bFYfhyqk3e/%E4%B8%AD%E6%A2%A7%E6%95%99%E8%82%B2_1.0.0_release.apk">点此下载</a><br>不忘初心，重新开始1.0.0版本，签名重制，请卸载原版本后重装<br><img src="https://pic.imgdb.cn/item/6561e743c458853aef30f896.jpg"></p>
+<span id="more"></span>
+<p><img src="https://pic.imgdb.cn/item/6561e75bc458853aef315662.jpg"><br><img src="https://pic.imgdb.cn/item/6561e758c458853aef314a20.jpg"><br><img src="https://pic.imgdb.cn/item/6561e755c458853aef313f11.jpg"><br><img src="https://pic.imgdb.cn/item/6561e751c458853aef313229.jpg"></p>
+]]></content>
+      <tags>
+        <tag>技术</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>妙趣横生，温暖关怀：记采访政教处主任陈开榄</title>
+    <url>/2023/10/07/%E9%87%87%E8%AE%BF%E6%A6%84%E5%93%A5/</url>
+    <content><![CDATA[<p>陈开榄老师，想必大家已经不陌生了，他是我们的政教处主任，他总是能够准确地把握学生的需求，为他们提供最合适的帮助和指导。无论是在课堂上还是在课外活动中，他总是能够与学生们建立起良好的关系，成为他们信任的朋友和导师，同学们亲切地称他为榄哥。<br>10月5日下午，我们一行同学来到了政教处，对其进行了1个小时的采访，让我们了解了榄哥的工作经历以及他对各种事情的观点。</p>
+<span id="more"></span>
+<p>刚来到政教处，同学们都感到有些紧张，但是榄哥对我们亲切的问候让同学们感到宾至如归。他面带微笑，请同学们坐下，一些同学紧张得不敢坐下，榄哥则在一旁静静地泡茶。泡完以后，他微笑地请紧张的同学们坐下，主动起身移开椅子让他们经过坐下，大家都没有了那一份紧张。他给同学们倒了茶，便说：“你们的按你们的问题来问哈。”于是，我们便开始了采访。<br>榄哥是政教处主任，于是我们从大家最关心的话题开始切入。我向他提出了第一个问题：“您是如何进入政教处的呢？然后您在政教处呢工作多少年？在工作中遇到最大困难和收获是什么呢？”他啜了口茶，开始娓娓道来。“到政教处是怎么来的呢？其实主要是根据学校的工作需要和我自己本身的一个工作的积累。因为长期以来的话我都是一直在从事着这一个学生的德育教育、德育管理的这块。学校的德育工作只有两大部分在负责，一个是政教一个就是团委。”同学们听得入了神，他就开始讲起了他的故事。“那进入学校的团委工作的时间我就长了。2009年的时候你们都还没出生。2009年的时候，我就到学校的团委工作了，那时候我主要是负责少先队，当学校团委副书记。一直到后来，也就因为工作的需要在岗位调整到政教处。那政教处里呢，工作的性质其实是一样的啊，主要就是负责学校的德育建设、学生的德育管理。因为原来的这个政教处主任做岗位的调整，然后我就从团委呢就到了政教处。”<br>同学们做好了笔记。我想在当政教处主任途中，一定会遇到困难，也会有收获，于是我们向他提出了第二个问题：“您在工作途中遇到了哪些困难的还有哪些收获呢？”叶涵没笔在一旁很紧张，在我提完问题以后，榄哥就递给他一支笔，继续慢慢地讲起了他的故事。“那不管是政教还是在团委，其实学校德育工作也是一种发展，每一个阶段，每一个时间学校管理的这个侧重点不一。所以不管是在政教还是团委来讲，我觉得面临的最大的困难就是在于不同的这个时间，学生的思想品德变化不太一样，特点不一样。所以呢在工作中呢也必须得叫与时俱进，不能够总是用经验主义来解决来解决一些新的问题。”为了让我们更加容易理解接下来对我们说的内容，他对我们说：“可能比如说不太了解政教处是干什么？简单来讲，绝大部分的人觉得政教处是干嘛的？收拾坏人！”幽默易懂的语言让同学们轻松明白了政教处的职责。“那倒是比如讲的话我们好多孩子不同年龄段的孩子都有它不同的特征。比如说在十年之前学生管理很大的一个问题在哪里啊？政教处的最大的压力是在哪里呢？学生的沉迷网络，这个沉迷网络是干嘛的？好多的孩子会半夜常常跑到网吧去上网。当时智能手机没有像现在这么普及和发展，那好多孩子呢为了这个玩网络游戏。那时候十点多老师查房的时候回去睡觉，等到十一点多，他就翻墙跑出去上网了。然后通宵第二天才回来，上课那肯定就无精打采的了。可以这么说，原来在网吧就好比现在的奶茶店，原来的网吧的话那就是一个乌烟瘴气的一个地方，我看现在奶茶店也是个乌烟瘴气的地方。”这使同学们简明地了解了奶茶店的人员混杂。“很多的奶茶店都是一些不良的社会青年聚集的，包括现在派出所反馈过来的，好多的奶茶店就融入了一些不良的社会青年。然后在里面呢，就计划一些如何实施诈骗、如何实施欺凌等等的这些东西。”接着，他进行了总结“所以每一个时代每一个时间段，因为社会的发展和变化，孩子的特点也不一样。所以说呢我们政教处所要面临的就是不确定性的东西很多。比如现在你看一下我们现在做的最大的一个现在我们政教处比如说做的很多的一个精力方面放在哪里？反诈骗、防欺凌、反性侵啊。”<br>讲到这里，他就顺着这条脉络，回答了我们对严抓交通安全的看法的问题。“比如说未满16周岁不能够骑电动车，就是电动自行车、助力车也不行。非机动车不能驶入机动车道、必须佩戴头盔这些都是我们国家的的《中华人民共和国道路交通安全法》所明确规定的。那为什么要定在16周岁才可以骑电动车？为什么要佩戴头盔？这一部法律的实施不是说交警部门为了罚款来制定这部法律。这部法律的实施那是什么书写出来的啊？那是伤者的痛、死者的命、亲人的泪水、事故发生后的后悔，书写了这一步法律！”同学们大受了震撼，他就讲起了自己的事情。“我孩子今年上高一，未满十六周岁。他也想找我要电动自行车。我首先我就跟他说，‘你未年满十六周岁，爸爸是不会给你买的。’这本身是法律所规定的，那你都不具备法律所允许的条件，做人做事要合法合规是一个底线。”，“所以说抓这个安全规范的骑停车，政教处这几年来的话是花了很大的精力，但是我们也可以看到，随着这个经济发展生活水平的提高，骑电动车的现象越来越多。那对于高中生的话，年满十六周的，我们不反对你骑电动车，但是必须要做到什么？通常的头盔要戴是不是？停车要规范要有序嘛，也不能因为自己要停车，然后把居民出入的路口，以及我们公共的道路给占用，是不是？我们这样子就很自私了，不能为了自己的方便而影响了别人。我历来我都很反感这样的行为。我们如果不能够为别人，不能够为我们这个社会起到一些帮助，没有力量去帮助别人，起码我觉得那我们可以做好自己，不要去影响、干扰别人，包括对班级。我觉得做这个如果做人的境界应该做的好的境界，高的境界。那就让自己能够成为一个什么呢——让别人觉得我们的存在他而感到幸福。”<br>叶涵就向他提出了下一个问题：“您认为政教处在学校工作中的角色是什么？您是如何理解的？这个角色在学校工作的重要性呢？”他先问了我们一句：“你们怎么看待学校的政教工作？”我便回答：“就是管理学校的纪律问题、德育工作的一个处室。”他又给我们做了一个比喻：“表面上来看政教处的工作呢，政教处像消防员。学校嘞，哪里有危机，哪里有突发事件，那都是政教处的工作的这个范围。目前，其实政教处的中心的工作是哪里呢？那其实就是等于安全。”他就让我们看了看政教处墙上的标语：“育人为本 德育为先”。“育人对于我们国家来讲，这是涉及到什么呢？百年根基。那德育为什么要德育？有一些德育简单理解，其实也就是思想品德的事情，是不是？德育啊，其实就是品德教育嘛，就是一个思想品德 。那为什么想要德育为先？可以想象一下，一个三观不正、品德不端的人，他的学习能力越强，今后他对我们这个社会，对我们这个国家的破坏也就越强。所以对于我们这个青少年来说，，三观要正。那其实大家也可以看到，不仅仅是说我们是管理一些坏的学生。你们班主任每一次开展的这个主题班会也是政教处布置下去的。那我们开主题班会，这是一个班主任对你们的一种思想品德的教育其实就是在帮助你们树立正确的三观，是不是？养成良好的习惯，培养文明素养。那这些工作的话其实也是这个政教工作的内容之一。所以除了这个建立，第二个的话其实就是一个维护。那你们所看到的比较多的，就是我们在维护校园的安全稳定。班主任实施了一些这个学生思想品德教育的这些工作。”<br>他不想拘泥于这些问题，他说：“比如，利用今天这个我来陪你一个小时的时间你们有没有什么想知道一些你们很想知道的？不要局限于这边的这些问题，你突然你自己现在有突发奇想，你也可以问。”我们就问：“您是如何处理学生问题，怎么能够让他们深刻认识错误呢？”他就回答：“这个问这个问题有点大，并不是每个学生犯了错以后，他就一定会认识到自己的错误，也并不是说政教处进行了一番的教育他就一定能够转变啊。如果一经教育能够转变，那政教处的事情就不会这么忙，就不会这么累了，班主任的工作就不会那么辛苦，是不是啊？”我们不是很理解，他就说：“你们就想想看，当班级出现违纪的事情的时候，班主任进行了批评教育，很多的同学能够马上就改过来了吗”这句话真的很形象，同学们都感受到了政教工作的不易。为了让我们进一步理解，他就进一步来解释：“这世界上有两件最难的事情，一个是把你口袋的钱拿到我的口袋。第二件事情就是把我的想法，把我脑袋中的想法钻到你的脑袋去。所以政教处对于违纪处理确实很难，那我们根据学校的违纪处理办法进行处理。”为了让我们知道不能做违纪的事，他开始讲起了后果。“到了政教处，有一些事情，如果弄到政教处上来的话，那说明的话事情的性质已经比较严重了。正常的情况的话，同学们的违纪呢都是由班级年段处理。班级年段如果处理不下，那就政教处来处理。到政教处来处理，这说明已经性质比较严重了。然后到这边来处理的话，那基本上就要处分了啊。那一处分的话呢，档案就会跟着你们一辈子了。所以说我都一直告诫你们啊，因为我们现在是没有把这些处分材料给上网上去呢。那如果哪一天的话，把这些处分的决定如果统一的跟派出所联动起来。那你日后应聘上网调，你说对一些违禁的违法的他怎么认定，然后看到打人啊偷盗啊，你干的都是乱七八糟的事情，那就可以走人了。”他那里还有一个鲜活的案例“你说我们有一回叶文彬叶树建还有跟那个应该是跟鸿图的叶舟。有天大中午的喝酒醉，好像喝了一斤的白酒，在教堂附近把我们一个退休老师的孙子，才几岁呢，五岁。经过的时候就看人家不爽，一个大巴掌就把小朋友给摔过去啊，摔完自己也醉掉，就躺在路上。”说到这里，他又想到了：“好多好多孩子啊，就脱离学校，又脱离管教。偷，盗，抢啊，什么拉车门、当手机是不是？然后没钱花了，就肯定就要想办法了啊。去偷盗又涉嫌电信诈骗。”他发出了感叹：“其实大家要想一想，我们的爸爸妈妈已经把大家照顾的很好了。不要去搞七搞八。当然那几个孩子会变成那个样子，跟他的家庭有很大的关系。爸爸妈妈没管，好像都是抱养的，所以打小的话就缺少缺少家庭的关爱。”我们也认识到了我们是多幸福。“但不管怎么样，起码做人不能违纪违法，不能给别人带来伤害，是不是？我一直很反感的，就是要去影响破坏社会。那以前讲的学生半夜翻墙出去上网吧，那现在呢？现在就是怕你们沉迷于手机啊。所以对手机的管控啊真的是得靠自律啊！这个上半年几起跟永安约架要怎么约都是上手机。他们现在都快手约，南抖音北快手的。”他还说出了他的“卧底”身份。“我也在快手啊，我就是隐姓埋名，那我肯定能我在快手上我是不发任何东西的，然后我也不用我自己的手机注册。我几乎三天两天我都会在同城快手上去走一走逛一逛看一看。”让同学们知道网络不是法外之地，也不能做违法违纪的事。<br>访谈已接近尾声，我们想让他对学校德育工作做一下评价，“我看了也少了很多牵手照、宾馆照、纹身照、亲嘴照。”他结合我们班级的现状，提出了建议：“那现在学校这些学校得育的管理需要得到每一位同学的配合支持，不仅管好自己，还要尽量的把好的去影响别人。我赞成一个班级正气要竖起来。你看，一个班级没有凝聚力，松松垮垮的一盘散沙，这不是叫谁的责任？是每个人的责任！还有班级的同学，应该要拧成一股绳。对班级的一些不良的行为我们要去抵制，能够向着班级的集体的利益努力这个班级的战斗力才会强！”我们经过了一下午的访谈，获益良多。</p>
+]]></content>
+      <tags>
+        <tag>其他</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>Youreln工具箱APP2.0版本发布！</title>
     <url>/2023/07/28/Youreln%E5%B7%A5%E5%85%B7%E7%AE%B12.0%E7%89%88%E6%9C%AC%E6%9B%B4%E6%96%B0/</url>
     <content><![CDATA[<p>这是一个长期版本，以后可能不会再有大更新了。。。<br>废话不说，先上下载链接：<a href="https://youreln.rth1.link/">youreln.rth1.link</a><br>旧版本APP会提示更新<br><img src="https://pic.imgdb.cn/item/64c3982f1ddac507cc7039e1.jpg"><br>但是有些系统不兼容，无法在应用内下载，还得去网站下载<br>讲讲这次的超级大更新，几乎所有应用都进行了重制，铲除了大量bug。</p>
@@ -29,187 +321,20 @@
       </tags>
   </entry>
   <entry>
-    <title>Youreln</title>
-    <url>/2023/04/05/Youreln/</url>
-    <content><![CDATA[<p>新网站重建了！！！<br>但是，旧网站[youreln.top]也没了，域名已经释放了<br>都怪我手残<br>把数据库不小心毁了<br>算了，继续加油吧！！！<br>另外，中梧教育app也要上线了<br>设计稿给大家，点<a href="https://js.design/f/psph1t?p=GHPXNMnltV">这边</a><br>2023/5/2 10:11:02<br>已上线，看置顶文章</p>
-]]></content>
-      <tags>
-        <tag>其他</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Youreln工具箱app正式上线！</title>
-    <url>/2023/07/01/Youreln%E5%B7%A5%E5%85%B7%E7%AE%B1%E6%AD%A3%E5%BC%8F%E5%8F%91%E5%B8%83/</url>
-    <content><![CDATA[<p>用户手册：<a href="https://youreln.gitee.io/2023/06/26/%E7%94%A8%E6%88%B7%E6%8C%87%E5%8D%97/">点此查看</a><br>在经过了一个多月的内测，修复了大量bug后，我的工具箱app正式上线！<br>开发代码就已经非常大量了<br><img src="https://pic.imgdb.cn/item/649fb3c31ddac507cc4afdc3.jpg"><br>目前已经完全开源使用，开源仓库：<a href="https://gitee.com/Youreln/youreln-toolbox">https://gitee.com/Youreln/youreln-toolbox</a></p>
-<h2 id="下载"><a href="#下载" class="headerlink" title="下载"></a>下载</h2><p>下载app请点击下方按钮<br>    <button onclick="window.location.href='https://gitee.com/Youreln/youreln-toolbox/releases/tag/v1.2'">点击下载</button><br>也提供网页版：<a href="https://youreln.rth1.one/">https://youreln.rth1.one/</a><br>但app提供不一样的界面哦</p>
+    <title>护青园法治夏令营活动记录</title>
+    <url>/2023/07/14/%E6%8A%A4%E9%9D%92%E5%9B%AD%E6%B3%95%E6%B2%BB%E5%A4%8F%E4%BB%A4%E8%90%A5/</url>
+    <content><![CDATA[<p>#本文由Youreln原创撰写#<br><a href="https://www.jianpian.cn/a/ozyyllp?sd=3&a_uid=6486056&s_uid=11537844&package_type=&sc=groupmessage"><br>  <img src="https://pic.imgdb.cn/item/64b139921ddac507cceba44f.jpg" alt="查看文章"><br></a><br>这是段长写的，不过我是第一人称式讲解哦</p>
+<h2 id="7月12日上午，我们来到了大田六中"><a href="#7月12日上午，我们来到了大田六中" class="headerlink" title="7月12日上午，我们来到了大田六中"></a>7月12日上午，我们来到了大田六中</h2><p><img src="https://pic.imgdb.cn/item/64b122471ddac507cc8cfa05.jpg" alt="前往大田六中会议室"></p>
 <span id="more"></span>
-<p>下载方式如图<br><img src="https://pic.imgdb.cn/item/649fb4801ddac507cc4c4612.jpg"></p>
-<h2 id="工具列表"><a href="#工具列表" class="headerlink" title="工具列表"></a>工具列表</h2><p>-亲戚关系计算器</p>
-<ul>
-<li>体重BMI计算器</li>
-<li>倒计时</li>
-<li>单位转换</li>
-<li>密码生成器</li>
-<li>摩斯电码</li>
-<li>文字转语音</li>
-<li>番茄时钟</li>
-<li>网络测速</li>
-<li>计算器</li>
-<li>银行卡类型查询</li>
-<li>函数绘制</li>
-<li>成绩分析</li>
-<li>HTML转PDF</li>
-<li>灵魂涂鸦</li>
-<li>小记</li>
-<li>冷静草稿框</li>
-<li>二维码生成</li>
-<li>屏幕测试</li>
-<li>查快递</li>
-</ul>
-<p><strong>游戏</strong></p>
-<ul>
-<li>扫雷</li>
-<li>猜拳游戏</li>
-<li>数字华容道</li>
-<li>点击方块</li>
-<li>山鸡跳跳乐</li>
-<li>打砖块</li>
-<li>文字游戏</li>
-</ul>
+<p><img src="https://pic.imgdb.cn/item/64b122471ddac507cc8cfbaf.jpg" alt="来到会议室听介绍"><br>聆听了一场铁路安全讲座，大田铁路派出所小郭警官风趣的讲座让同学们知道了翻越铁路要负法律责任，<br>同时了解了铁路安全的相关法规，比如不能在铁路500米范围内放风筝等轻飘物等<br><img src="https://pic.imgdb.cn/item/64b122481ddac507cc8cfce0.jpg" alt="铁路安全讲座现场"><br>一场道路安全讲座，张和栋警长现场即兴讲座，同学们热情洋溢，让大家在乐中学到了道路安全常识和相关法规，并通过案例了解了违反交规的惨重后果<br>用一件件鲜活的事例，让同学们意识到遵守交规很重要。<br>一名公务员即将退休，结果因醉驾被免了职，养老金也没了<br><img src="https://pic.imgdb.cn/item/64b122481ddac507cc8cfd65.jpg" alt="道路安全讲座现场"><br>聆听反诈知识宣传讲座，汤江健警官通过给同学们观看大田反诈视频以及各学校制作的微视频，让同学们从视频中了解电信诈骗及其危害<br><img src="https://pic.imgdb.cn/item/64b1226a1ddac507cc8d74ef.jpg" alt="观看微视频"></p>
+<h2 id="7月12日下午，我们来到了汽车站的禁毒馆"><a href="#7月12日下午，我们来到了汽车站的禁毒馆" class="headerlink" title="7月12日下午，我们来到了汽车站的禁毒馆"></a>7月12日下午，我们来到了汽车站的禁毒馆</h2><p><img src="https://pic.imgdb.cn/item/64b1226b1ddac507cc8d75d5.jpg" alt="汽车站下集合"><br><img src="https://pic.imgdb.cn/item/64b122a21ddac507cc8e43c3.jpg" alt="观看中国禁毒史"><br>看看你吸毒后是怎样的，让同学们直观地感受到了吸毒的危害，十年亦可终结生命<br><img src="https://pic.imgdb.cn/item/64b122a21ddac507cc8e4421.jpg" alt="讲解员请同学体验AI“变脸”"><br><img src="https://pic.imgdb.cn/item/64b122a21ddac507cc8e44b4.jpg" alt="吸毒的影响"><br>观看短视频和纪录片，进一步让同学们体会吸毒危害之深<br>纪录片讲述缉毒英雄罗金勇的故事让同学们感慨万分，热泪盈眶<br><img src="https://pic.imgdb.cn/item/64b122a31ddac507cc8e4634.jpg" alt="观看短视频"><br>随后，范立洋老师给大家讲述国家地名管理条例，让同学们知道了大田是国家地名管理条例试点县之一<br>并且讲述了大田的文化历史，知道了白岩、赤岩的历史，各个街道名称是怎么来的<br>知道了各个乡镇地名的由来，比如屏山：山围着内洋村，像屏障一样，这个乡就叫做屏山乡</p>
+<h2 id="7月13日上午，我们来到了检察院"><a href="#7月13日上午，我们来到了检察院" class="headerlink" title="7月13日上午，我们来到了检察院"></a>7月13日上午，我们来到了检察院</h2><p><img src="https://pic.imgdb.cn/item/64b123831ddac507cc916912.jpg" alt="外景"><br><img src="https://pic.imgdb.cn/item/64b123841ddac507cc9169c8.jpg" alt="公诉公示屏"><br>开展了一场唇枪舌战——辩论赛，我们的辩题是良好的亲子关系关键在于父母/孩子<br><img src="https://pic.imgdb.cn/item/64b123841ddac507cc916ac7.jpg" alt="现场图片"><br><img src="https://pic.imgdb.cn/item/64b123841ddac507cc916b9b.jpg" alt="范立洋老师讲解"><br>最终我们喜获胜利，我们学校被评为优秀团队，我被评为优秀辩手</p>
+<h2 id="7月13日下午，我们来到大田法院"><a href="#7月13日下午，我们来到大田法院" class="headerlink" title="7月13日下午，我们来到大田法院"></a>7月13日下午，我们来到大田法院</h2><p><img src="https://pic.imgdb.cn/item/64b123e81ddac507cc92d69d.jpg" alt="外景"><br>旁听一起电信诈骗案的审理，嫌疑人的后悔自责让同学们对电信诈骗罪后果有了深刻了解<br><img src="https://pic.imgdb.cn/item/64b123e91ddac507cc92d7ce.jpg" alt="开庭前"><br><a href="https://mp.weixin.qq.com/s/aCdwuTJZ6nNqD0o6By1iLA"><br>  <img src="https://pic.imgdb.cn/item/64b136f71ddac507cce293c1.jpg" alt="查看文章"><br></a><br><em>由于法庭禁止录音录像，所以在开庭前拍了一小张</em></p>
+<h2 id="7月14日上午，我们来到了大田县公安局办案中心"><a href="#7月14日上午，我们来到了大田县公安局办案中心" class="headerlink" title="7月14日上午，我们来到了大田县公安局办案中心"></a>7月14日上午，我们来到了大田县公安局办案中心</h2><p>大田县公安局办案中心是全省7家5星级办案中心之一<br>民警热心地为同学们讲解<br><img src="https://pic.imgdb.cn/item/64b123e91ddac507cc92daa1.jpg" alt="进入中心"><br><img src="https://pic.imgdb.cn/item/64b123e91ddac507cc92db5d.jpg" alt="集合"><br>参观了各区域<br><img src="https://pic.imgdb.cn/item/64b124451ddac507cc946e65.jpg" alt="数据可视化中心"><br><img src="https://pic.imgdb.cn/item/64b12c4f1ddac507ccb34c2f.jpg" alt="未成年人审理区"><br><img src="https://pic.imgdb.cn/item/64b12c4f1ddac507ccb34ca7.jpg" alt="带班民警为我们讲解速裁法庭"><br><img src="https://pic.imgdb.cn/item/64b12c4e1ddac507ccb34bb6.jpg" alt="有序参观"><br><em>由于一些照片涉及敏感信息，不予公示</em><br>参加县妇联、团县委、关工委联合组织的谈心会<br>会上，范立洋老师讲了好多故事<br>一个男生和一个女生同学了小学初中高中，男生请女生去吃饭，去还是不去呢？<br>针对这个问题，范老师为大家做了详细的分析<br>还讲了一群村民抓到小偷，在一位村民提议下打死小偷，最后被公安局惩处<br>以此告诉同学们要有法律意识<br>厦门航空因为空姐撒了热咖啡，导致乘客受伤，空姐被免职，乘务长被降职，年终奖全没，还要赔偿<br>县妇联副主席讲了如果有心理上的问题还可以打12338找他们<br>团县委给同学们讲了入团条件<br><img src="https://pic.imgdb.cn/item/64b13d961ddac507ccfca054.jpg" alt="范立洋老师讲故事，与同学们谈心"><br>此图来自段长<a href="https://www.jianpian.cn/mpage?author_id=6486056">@Marvin</a>，我没拍，因为听的太认真了</p>
+<h2 id="7月14日下午，我们来到了城二小观看同学们的法治故事演讲比赛"><a href="#7月14日下午，我们来到了城二小观看同学们的法治故事演讲比赛" class="headerlink" title="7月14日下午，我们来到了城二小观看同学们的法治故事演讲比赛"></a>7月14日下午，我们来到了城二小观看同学们的法治故事演讲比赛</h2><p><img src="https://pic.imgdb.cn/item/64b124451ddac507cc946f0c.jpg" alt="现场"><br><img src="https://pic.imgdb.cn/item/64b124451ddac507cc947068.jpg" alt="一中同学讲自己的普法故事"><br>并前往第二集美学村参观，了解了大田的抗战历史<br><img src="https://pic.imgdb.cn/item/64b124461ddac507cc9472e9.jpg" alt="集美祠"><br><img src="https://pic.imgdb.cn/item/64b124691ddac507cc94ee59.jpg" alt="嘉庚像"><br><img src="https://pic.imgdb.cn/item/64b1246a1ddac507cc94f19d.jpg" alt="陈嘉庚旧时居住地"><br>三天下来同学们收获满满，受到了法治教育，成为知法守法懂法的好公民<br>全程提供饮水，除户外基本都有空调吹😊<br><img src="https://pic.imgdb.cn/item/64b1353a1ddac507ccdc5c57.jpg" alt="林子婧同学的感受送给大家"></p>
 ]]></content>
       <tags>
-        <tag>技术</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Youreln工具箱二创开发必知</title>
-    <url>/2023/08/07/Youreln%E5%B7%A5%E5%85%B7%E7%AE%B1%E4%BA%8C%E5%88%9B%E5%BC%80%E5%8F%91%E5%BF%85%E7%9F%A5/</url>
-    <content><![CDATA[<p>Youreln工具箱自上线以来就受到了开发者的欢迎（而不是用户😅）<br>如果你是用户，请不要看了，去看<a href="/2023/06/26/%E7%94%A8%E6%88%B7%E6%8C%87%E5%8D%97/">用户手册</a></p>
-<span id="more"></span>
-<p>开源仓库地址（你必须知道，这是拉取代码的地方，包括主页、工具等）<br><a href="https://gitee.com/Youreln/youreln-toolbox">https://gitee.com/Youreln/youreln-toolbox</a><br>要明确的是，开发语言是HTML，里面使用的都是使用一些开放的api和开源库<br>新版工具箱大部分工具应该没什么bug，但是仓库里的旧版有些许bug，修复完可以提交lssues。<br>点击建议提交<br><a href="https://gitee.com/Youreln/youreln-toolbox/issues">https://gitee.com/Youreln/youreln-toolbox/issues</a><br>开发完新版工具箱最好可以注明仓库地址方便后来的开发者！</p>
-<h2 id="敲重点！"><a href="#敲重点！" class="headerlink" title="敲重点！"></a>敲重点！</h2><p>必须遵守开源协议，二创后最好也开源<br>本项目使用GNU General Public License v2.0开源协议<br><a href="https://gitee.com/Youreln/youreln-toolbox/fosseye_scans">https://gitee.com/Youreln/youreln-toolbox/fosseye_scans</a><br>禁止开发后进行商业行为！<br>图标开源库网址：<a href="https://fontawesome.com/">https://fontawesome.com</a><br>国内站：<a href="https://fontawesome.com.cn/v4">https://fontawesome.com.cn/v4</a><br>因为我用的是Font Awesome的5版本的图标，所以图标会少些，可以去fontawesome.com.cn/v4找，有些前缀要改成fas<br>其他没什么，开发完可以在本仓库留下足迹，或者跟我说一声</p>
-]]></content>
-      <tags>
-        <tag>技术</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>xiaopf教育app2.0版本来袭！</title>
-    <url>/2023/06/11/xiaopf%E6%95%99%E8%82%B2app2.0%E7%89%88%E6%9C%AC%E4%B8%8A%E7%BA%BF%E4%BA%86/</url>
-    <content><![CDATA[<p>经过了一个月的公测，xiaopf教育（原中梧教育）app2.0版本正式上线！！！<br><a href="https://baby2020.lanzoub.com/b01kwtptc" title="下载点此">https://baby2020.lanzoub.com/b01kwtptc</a>密码:xiaopf<br><img src="https://img1.imgtp.com/2023/06/11/mVOukomd.png"><br>看看有什么新功能吧<br>1、新增了常见问题</p>
-<span id="more"></span>
-<p><img src="https://pic.imgdb.cn/item/6485230f1ddac507ccf3de7e.jpg"><br>2、增加了团队博客<br><img src="https://pic.imgdb.cn/item/648523151ddac507ccf3e666.jpg"><br>中梧后续还会更新<br><strong>3、支持app端登录了！！！</strong><br><img src="https://pic.imgdb.cn/item/6485231b1ddac507ccf3eda3.jpg"></p>
-]]></content>
-      <tags>
-        <tag>技术</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>xiaopf教育app停服公告</title>
-    <url>/2023/05/05/xiaopf%E6%95%99%E8%82%B2app%E5%81%9C%E6%9C%8D%E5%85%AC%E5%91%8A/</url>
-    <content><![CDATA[<p>由于老总林中梧与开发部门决裂<br>所以从现在起开始停服<br>若中梧使用管理权限开服将清空全部数据<br>开服时间待定<br>具体参见➡<a href="https://support.qq.com/products/502768/post/168329177515739724/">公告📄</a></p>
-]]></content>
-      <tags>
-        <tag>其他</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>xiaopf教育app正式上线！</title>
-    <url>/2023/05/01/xiaopf%E6%95%99%E8%82%B2app%E6%AD%A3%E5%BC%8F%E4%B8%8A%E7%BA%BF%EF%BC%81/</url>
-    <content><![CDATA[<p>经过我的不懈努力，中梧教育app正式上线！！！<br>要下载的话可以点这儿哦➡<a href="https://baby2020.lanzoub.com/iJoRU0ugepmd">下载</a><br>或者识别下方二维码下载<br><img src="https://img1.imgtp.com/2023/05/02/iedeEmpE.png"><br>密码：xiaopf<br>现在开放公测！！！<br>感谢<a href="https://space.bilibili.com/1372117931">@xiaopf</a></p>
-]]></content>
-      <tags>
-        <tag>技术</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>xiaopf教育网页版</title>
-    <url>/2023/05/13/xiaopf%E6%95%99%E8%82%B2%E7%BD%91%E9%A1%B5%E7%89%88%E5%8F%91%E5%B8%83%EF%BC%81%EF%BC%81%EF%BC%81/</url>
-    <content><![CDATA[<p>原中梧教育<br>网页版的好处：可登录，数据永不丢失<br>坏处：不够稳定<br>app版的好处：好处：十分稳定<br>坏处：只能游客发帖，重装还会分配新游客账号导致之前游客数据丢失<br>但是要保证数据请用微信打开此网页<br>要前往请参见以下内容<br><a href="https://support.qq.com/product/1221">点击跳转到xiaopf教育页面</a><br>APP下载：<!DOCTYPE html>  </p>
-<html>  
-<head>  
-    <title>跳转到微信</title>  
-</head>  
-<body>  
-    <button onclick="jumpToWeixin()">点此下载app</button>  
-    <script>  
-        function jumpToWeixin() {  
-            var productUrl = 'https://youreln.gitee.io/2023/05/01/xiaopf%E6%95%99%E8%82%B2app%E6%AD%A3%E5%BC%8F%E4%B8%8A%E7%BA%BF%EF%BC%81/';  
-            window.location.href = productUrl;  
-        }  
-    </script>  
-</body>  
-</html>
-如需到微信打开请点击
-<a href="weixin://open?url=https%3A%2F%2Fsupport.qq.com%2Fproduct% gender">跳转到微信</a>
-推荐网页版[https://support.qq.com/product/502768](https://support.qq.com/product/502768)]]></content>
-      <tags>
-        <tag>技术</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Youreln工具箱上线</title>
-    <url>/2023/06/11/youreln%E5%B7%A5%E5%85%B7%E7%AE%B1/</url>
-    <content><![CDATA[<p>经过了好久的开发，终于搞了一个看起来还行的工具箱<br><img src="https://pic.imgdb.cn/item/64856ae71ddac507cc6a9e12.jpg"></p>
-<span id="more"></span>
-<p>1、二维码生成解码美化器<br><img src="https://pic.imgdb.cn/item/64856b171ddac507cc6aef33.jpg"><br>2、摩斯电码生成和解码工具<br><img src="https://pic.imgdb.cn/item/64856b4a1ddac507cc6b5b37.jpg"><br>3、倒计时工具<br><img src="https://pic.imgdb.cn/item/64856b801ddac507cc6bb69f.jpg"><br>4、番茄时钟<br><img src="https://pic.imgdb.cn/item/64856ba41ddac507cc6bf8cf.jpg"><br>。。。。。<br>还在开发，还没写完自己看累死了<a href="http://youreln.rth1.one/">http://youreln.rth1.one</a></p>
-<iframe src="https://youreln.rth1.one/pc.html" width="100%" height="500px" frameborder="0"></iframe>
-2023/7/1 14:04:53 
-开发完毕自己看]]></content>
-      <tags>
-        <tag>技术</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>中梧教育页面重写！</title>
-    <url>/2023/11/25/%E4%B8%AD%E6%A2%A7%E6%95%99%E8%82%B2%E5%9B%9E%E5%BD%92/</url>
-    <content><![CDATA[<p>今天重写了中梧教育，<a href="http://lc-tsvfker3.cn-n1.lcfile.com/4Pn8to3mVOpTLngUrjaJq4bFYfhyqk3e/%E4%B8%AD%E6%A2%A7%E6%95%99%E8%82%B2_1.0.0_release.apk">点此下载</a><br>不忘初心，重新开始1.0.0版本，签名重制，请卸载原版本后重装<br><img src="https://pic.imgdb.cn/item/6561e743c458853aef30f896.jpg"></p>
-<span id="more"></span>
-<p><img src="https://pic.imgdb.cn/item/6561e75bc458853aef315662.jpg"><br><img src="https://pic.imgdb.cn/item/6561e758c458853aef314a20.jpg"><br><img src="https://pic.imgdb.cn/item/6561e755c458853aef313f11.jpg"><br><img src="https://pic.imgdb.cn/item/6561e751c458853aef313229.jpg"></p>
-]]></content>
-      <tags>
-        <tag>技术</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>京台 1990</title>
-    <url>/2023/11/26/%E4%BA%AC%E5%8F%B0%201990/</url>
-    <content><![CDATA[<p><strong>本文来自B站UP主：吴际崖</strong><br>有一天，我路过南五环，我看见京台高速的路牌。<br><img src="https://pic.imgdb.cn/item/6562f969c458853aef56578c.jpg"><br>我以为是到台州，实际是到台北。<br><img src="https://pic.imgdb.cn/item/6562f96cc458853aef5661dc.jpg"></p>
-<span id="more"></span>
-<p>台湾对于我来说是一个又近又远的地方。<br><img src="https://pic.imgdb.cn/item/6562f970c458853aef566fd7.jpg"><br>我想看看到底有多远。<br><img src="https://pic.imgdb.cn/item/6562f974c458853aef567cb1.jpg"><br>出发那天天气很好。<br><img src="https://pic.imgdb.cn/item/6562f977c458853aef568616.jpg"><br>第一次走这么远的路。<br><img src="https://pic.imgdb.cn/item/6562f97ac458853aef569266.jpg"><br>希望一切顺利。<br><img src="https://pic.imgdb.cn/item/6562f97ec458853aef569fd6.jpg"><br>沂蒙山，八百里<br><img src="https://pic.imgdb.cn/item/6562f981c458853aef56a9e4.jpg"><br>里里都是故事。<br><img src="https://pic.imgdb.cn/item/6562f984c458853aef56b4b4.jpg"><br><img src="https://pic.imgdb.cn/item/6562f98cc458853aef56cf7b.jpg"><br><img src="https://pic.imgdb.cn/item/6562f98ec458853aef56d875.jpg"><br><img src="https://pic.imgdb.cn/item/6562f991c458853aef56e2e9.jpg"><br>到山东<br><img src="https://pic.imgdb.cn/item/6562f994c458853aef56ee59.jpg"><br>不能错过的是煎饼。<br><img src="https://pic.imgdb.cn/item/6562f996c458853aef56f77c.jpg"><br>在临沂<br><img src="https://pic.imgdb.cn/item/6562f999c458853aef56ff4f.jpg"><br><img src="https://pic.imgdb.cn/item/6562f99cc458853aef570b18.jpg"><br>不能错过的是炒鸡。<br><img src="https://pic.imgdb.cn/item/6562f9a0c458853aef5718e7.jpg"><br><img src="https://pic.imgdb.cn/item/6562f9a2c458853aef571f37.jpg"><br>还有豆沫。<br><img src="https://pic.imgdb.cn/item/6562f9a4c458853aef572968.jpg"><br>也没有葱花姜，就是纯鲜肉。<br><img src="https://pic.imgdb.cn/item/6562f9a6c458853aef572f49.jpg"><br><img src="https://pic.imgdb.cn/item/6562f9a8c458853aef57364f.jpg"><br>那种调味品能把这个肉的味道盖住。<br><img src="https://pic.imgdb.cn/item/6562f9acc458853aef57433e.jpg"><br>“不忘初心，回归自然。”老爷子说，<br><img src="https://pic.imgdb.cn/item/6562f9aec458853aef574a75.jpg"><br>“只要用心去做，人人都可以。”<br><img src="https://pic.imgdb.cn/item/6562f9b0c458853aef57509d.jpg"><br><img src="https://pic.imgdb.cn/item/6562f9b3c458853aef575930.jpg"><br>于是这一炉火，就烧了40年。<br><img src="https://pic.imgdb.cn/item/6562f9b6c458853aef576319.jpg"><br>柴火。<br><img src="https://pic.imgdb.cn/item/6562f9b9c458853aef576f59.jpg"><br>骨汤。<br><img src="https://pic.imgdb.cn/item/6562f9bcc458853aef577830.jpg"><br>鲜肉。<br><img src="https://pic.imgdb.cn/item/6562f9bdc458853aef577d9b.jpg"><br>真香。<br><img src="https://pic.imgdb.cn/item/6562f9c0c458853aef5788fb.jpg"><br>头一次早上吃汤圆，汤汁很浓。<br><img src="https://pic.imgdb.cn/item/6562f9c3c458853aef579259.jpg"><br>咬一口。<br><img src="https://pic.imgdb.cn/item/6562f9c6c458853aef579aa9.jpg"><br>满是芝麻香。<br><img src="https://pic.imgdb.cn/item/6562f9c8c458853aef57a119.jpg"><br>去了最想去的梧桐大道，<br><img src="https://pic.imgdb.cn/item/6562f9cbc458853aef57aca0.jpg"><br>带上了一份念想。<br><img src="https://pic.imgdb.cn/item/6562f9ccc458853aef57b1f5.jpg"><br><img src="https://pic.imgdb.cn/item/6562f9d0c458853aef57bdd0.jpg"><br><img src="https://pic.imgdb.cn/item/6562f9d4c458853aef57cc5d.jpg"><br><img src="https://pic.imgdb.cn/item/6562f9d6c458853aef57d47d.jpg"><br><img src="https://pic.imgdb.cn/item/6562f9d8c458853aef57da4e.jpg"><br><img src="https://pic.imgdb.cn/item/6562f9dbc458853aef57e57b.jpg"><br>我是一个爱吃火锅的人，<br><img src="https://pic.imgdb.cn/item/6562f9ddc458853aef57eb6d.jpg"><br>黄山一品锅<br><img src="https://pic.imgdb.cn/item/6562f9e0c458853aef57f4b4.jpg"><br>层层叠叠。<br><img src="https://pic.imgdb.cn/item/6562f9e4c458853aef5803ed.jpg"><br>一层菜，一层楼。<br><img src="https://pic.imgdb.cn/item/6562f9e6c458853aef580b05.jpg"><br>让人念念不忘。<br><img src="https://pic.imgdb.cn/item/6562f9e9c458853aef58157b.jpg"><br>这条路的尽头。<br><img src="https://pic.imgdb.cn/item/6562f9ebc458853aef581f30.jpg"><br>平潭县，<br><img src="https://pic.imgdb.cn/item/6562f9edc458853aef58251f.jpg"><br>但还不是终点。<br><img src="https://pic.imgdb.cn/item/6562f9f0c458853aef582d9f.jpg"><br>天有多大，<br><img src="https://pic.imgdb.cn/item/6562f9f0c458853aef582d9f.jpg"><br>海有多阔。<br><img src="https://pic.imgdb.cn/item/6562f9f5c458853aef583f30.jpg"><br>讨海的人。<br><img src="https://pic.imgdb.cn/item/6562f9f7c458853aef584690.jpg"><br>赶潮落水。<br><img src="https://pic.imgdb.cn/item/6562f9f9c458853aef584f91.jpg"><br>一叶知秋。<br><img src="https://pic.imgdb.cn/item/6562fefdc458853aef68876e.jpg"><br>落叶，<br><img src="https://pic.imgdb.cn/item/6562ff01c458853aef689435.jpg"><br>终会归根。<br><img src="https://pic.imgdb.cn/item/6562ff57c458853aef69a3ba.jpg"><br>下一次，我想走完这条路。<br><img src="https://pic.imgdb.cn/item/6562ff71c458853aef69f15b.jpg"></p>
-]]></content>
-      <tags>
-        <tag>其他</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>征程新时代，争做好少年——大田县实验小学庆“六一”文艺汇演视频</title>
-    <url>/2023/06/01/%E5%85%AD%E4%B8%80/</url>
-    <content><![CDATA[<p>文章资讯</p>
-<iframe src="https://mp.weixin.qq.com/s/HWeMIOttUCCCUjvIPpmWUA" frameborder="0" scrolling="no"></iframe>
-现场视频
-<span id="more"></span>
-<iframe src="//player.bilibili.com/player.html?aid=486829516&bvid=BV13N411C7X8&cid=1150077706&page=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true" autoplay="0"> </iframe>]]></content>
-      <tags>
-        <tag>其他</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>关于我</title>
-    <url>/2023/04/22/%E5%85%B3%E4%BA%8E%E6%88%91/</url>
-    <content><![CDATA[<p>自从上初中以来，我已忙忙碌碌，从小学的一周一更，到现在一月都不一定更。<br>虽说学习累，但我们还要坚持<br>生活是丰富多彩的，要我们去发现<br>航拍 风光 延时<br>B站（大杂烩）：<a href="https://space.bilibili.com/593864864" title="Youreln">https://space.bilibili.com/593864864</a><br>微博（不常更）：<a href="https://weibo.com/7748480464" title="YRStudio-Youreln">https://weibo.com/7748480464</a><br>抖音（粉丝最多）：<a href="https://www.douyin.com/user/MS4wLjABAAAAdN1pfPgV-1UvUP3Ox0sq9wkRfSEDTanGLgVlnETLZ9fgV1jg6_5OTiCAdlbzinyE" title="Youreln">https://www.douyin.com/user/MS4wLjABAAAAdN1pfPgV-1UvUP3Ox0sq9wkRfSEDTanGLgVlnETLZ9fgV1jg6_5OTiCAdlbzinyE</a><br>微信视频号（熟人最多）：<a href="https://img1.imgtp.com/2023/04/22/7NVK95Kf.jpg" title="Youreln视频号二维码">https://img1.imgtp.com/2023/04/22/7NVK95Kf.jpg</a><br>快手（被恶心到了，他说我的年度总结是默片，不会更新了）：<a href="https://www.kuaishou.com/profile/3xr6iytpmj67ppm" title="Youreln看着玩">https://www.kuaishou.com/profile/3xr6iytpmj67ppm</a></p>
-]]></content>
-      <tags>
-        <tag>其他</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>大型纪录片《卡脚》</title>
-    <url>/2024/06/29/%E5%A4%A7%E5%9E%8B%E7%BA%AA%E5%BD%95%E7%89%87%E3%80%8A%E5%8D%A1%E8%84%9A%E3%80%8B%E8%84%9A%E6%9C%AC/</url>
-    <content><![CDATA[<p>不是剪刀买不起，而是洗洁精更有性价比。近日，在大田情人谷，一位同学太过调皮，下河抓鱼，脚卡拖鞋里，岸上人都在吃瓜，他的好兄弟在那拔，吃瓜群众下河救人，众人齐心协力，还是拔不出来，这位同学请求大家拿来剪刀，最后一位UP主拿来洗洁精，终于，艰难的把拖鞋拔了出来。五星上将麦克阿瑟这样评价：果然，高手在民间，失手在阴间。</p>
-]]></content>
-      <tags>
-        <tag>其他</tag>
+        <tag>摄影</tag>
       </tags>
   </entry>
   <entry>
@@ -278,143 +403,59 @@
       </tags>
   </entry>
   <entry>
-    <title>工具箱安卓端效果实现方法</title>
-    <url>/2024/08/26/%E5%B7%A5%E5%85%B7%E7%AE%B1%E5%AE%89%E5%8D%93APP%E6%95%88%E6%9E%9C%E5%AE%9E%E7%8E%B0%E6%96%B9%E6%B3%95/</url>
-    <content><![CDATA[<p>前端效果实现lua</p>
+    <title>辩论赛陈词</title>
+    <url>/2023/07/07/%E8%BE%A9%E8%AE%BA%E8%B5%9B%E9%99%88%E8%AF%8D/</url>
+    <content><![CDATA[<p><strong>辩题：《良好的亲子关系关键在于父母还是孩子》</strong><br /><strong>一辩陈词</strong><br /><strong>正方</strong><br />尊敬的评委好！主持人好！<br /></p>
 <span id="more"></span>
-<figure class="highlight lua"><table><tr><td class="code"><pre><span class="line"><span class="built_in">require</span> <span class="string">&quot;import&quot;</span></span><br><span class="line"></span><br><span class="line">import <span class="string">&quot;android.os.*&quot;</span></span><br><span class="line"></span><br><span class="line">import <span class="string">&quot;android.widget.*&quot;</span></span><br><span class="line"></span><br><span class="line">import <span class="string">&quot;android.view.*&quot;</span></span><br><span class="line"></span><br><span class="line">import <span class="string">&quot;android.content.*&quot;</span></span><br><span class="line"></span><br><span class="line">import <span class="string">&quot;android.net.*&quot;</span></span><br><span class="line"></span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">onDrawerListItemClick</span><span class="params">(data, recyclerView, listIndex, itemIndex)</span></span></span><br><span class="line"></span><br><span class="line">  <span class="keyword">local</span> listData = data.get(listIndex);</span><br><span class="line"></span><br><span class="line">  <span class="keyword">local</span> itemData = listData.get(itemIndex);</span><br><span class="line"></span><br><span class="line">  <span class="keyword">local</span> itemTitle = itemData.getTitle();</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"></span><br><span class="line">  <span class="built_in">print</span>(<span class="string">&quot;Click: &quot;</span> .. itemTitle)</span><br><span class="line"></span><br><span class="line"><span class="keyword">end</span></span><br><span class="line"></span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">onSearchEvent</span><span class="params">(keyword)</span></span></span><br><span class="line"></span><br><span class="line">  <span class="built_in">print</span>(<span class="string">&quot;Search keyword: &quot;</span> .. keyword)</span><br><span class="line"></span><br><span class="line"><span class="keyword">end</span></span><br><span class="line"></span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">onMenuItemClick</span><span class="params">(title)</span></span></span><br><span class="line"></span><br><span class="line">  switch(title) <span class="keyword">do</span></span><br><span class="line"></span><br><span class="line">    case <span class="string">&quot;清除缓存并重新进入&quot;</span></span><br><span class="line"></span><br><span class="line">    clearCache()</span><br><span class="line"></span><br><span class="line">    restartApplication()</span><br><span class="line"></span><br><span class="line">    case <span class="string">&quot;用户手册&quot;</span></span><br><span class="line"></span><br><span class="line">    openUserManual()</span><br><span class="line"></span><br><span class="line">    default</span><br><span class="line"></span><br><span class="line">    <span class="built_in">print</span>(<span class="string">&quot;Click: &quot;</span> .. title)</span><br><span class="line"></span><br><span class="line">  <span class="keyword">end</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">end</span></span><br><span class="line"></span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">clearCache</span><span class="params">()</span></span></span><br><span class="line"></span><br><span class="line">  <span class="comment">-- 执行清除缓存的逻辑</span></span><br><span class="line"></span><br><span class="line">  <span class="comment">-- 这里可以使用合适的方法或API来清除应用的缓存</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">end</span></span><br><span class="line"></span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">restartApplication</span><span class="params">()</span></span></span><br><span class="line"></span><br><span class="line">  <span class="keyword">local</span> intent = activity.getPackageManager().getLaunchIntentForPackage(activity.getPackageName())</span><br><span class="line"></span><br><span class="line">  intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP)</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"></span><br><span class="line">  activity.startActivity(intent)</span><br><span class="line"></span><br><span class="line">  activity.finish()</span><br><span class="line"></span><br><span class="line"><span class="keyword">end</span></span><br><span class="line"></span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">openUserManual</span><span class="params">()</span></span></span><br><span class="line"></span><br><span class="line">  <span class="keyword">local</span> url = <span class="string">&quot;https://youreln.gitee.io/2023/06/26/%E7%94%A8%E6%88%B7%E6%8C%87%E5%8D%97/&quot;</span></span><br><span class="line"></span><br><span class="line"></span><br><span class="line"></span><br><span class="line">  <span class="keyword">local</span> intent = Intent(Intent.ACTION_VIEW, Uri.parse(url))</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"></span><br><span class="line">  activity.startActivity(intent)</span><br><span class="line"></span><br><span class="line"><span class="keyword">end</span></span><br><span class="line"></span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">openOldVersion</span><span class="params">()</span></span></span><br><span class="line"></span><br><span class="line">  <span class="keyword">local</span> url = <span class="string">&quot;https://youreln.gitee.io/youreln-toolbox/app-h5.html&quot;</span></span><br><span class="line"></span><br><span class="line">  <span class="keyword">local</span> intent = Intent(activity, activity.getClass());</span><br><span class="line"></span><br><span class="line">  intent.setData(Uri.parse(url));</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"></span><br><span class="line">  activity.startActivity(intent)</span><br><span class="line"></span><br><span class="line"><span class="keyword">end</span></span><br><span class="line"></span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">onFloatingActionButtonClick</span><span class="params">(v)</span></span></span><br><span class="line"></span><br><span class="line">  <span class="keyword">local</span> url = <span class="string">&quot;https://youreln.gitee.io/youreln-toolbox/&quot;</span></span><br><span class="line"></span><br><span class="line"></span><br><span class="line"></span><br><span class="line">  <span class="keyword">local</span> intent = Intent(Intent.ACTION_VIEW, Uri.parse(url))</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"></span><br><span class="line">  activity.startActivity(intent)</span><br><span class="line"></span><br><span class="line"><span class="keyword">end</span></span><br><span class="line"></span><br><span class="line"></span><br></pre></td></tr></table></figure>
-<p>在Fusion app里写的具体见下<br /><img src="https://cdn.nlark.com/yuque/0/2024/jpeg/35935935/1724645793662-4c1d7af7-d1fd-4597-83c2-2e3fddb6c877.jpeg#averageHue=%23fcfcfc&from=url&id=gExTF&originHeight=2688&originWidth=1216&originalType=binary&ratio=1&rotation=0&showTitle=false&size=128357&status=done&style=none&title=" alt="1892724727.jpg"><br /><img src="https://cdn.nlark.com/yuque/0/2024/jpeg/35935935/1724645795234-16fe72c2-cafc-4ec1-adf9-510f147e8c49.jpeg#averageHue=%23fbfbfb&from=url&id=sWX8B&originHeight=4384&originWidth=1216&originalType=binary&ratio=1&rotation=0&showTitle=false&size=312697&status=done&style=none&title=" alt="1068237311.jpg"><br /><img src="https://cdn.nlark.com/yuque/0/2024/jpeg/35935935/1724645796553-e3d53385-f786-44f7-a6d8-2f07e2a38e6d.jpeg#averageHue=%23fafafa&from=url&id=s0Vme&originHeight=2688&originWidth=1216&originalType=binary&ratio=1&rotation=0&showTitle=false&size=236531&status=done&style=none&title=" alt="2096362136.jpg"><br /><img src="https://cdn.nlark.com/yuque/0/2024/jpeg/35935935/1724645798211-16a167bb-aaf2-46dd-8933-d5ca4565f440.jpeg#averageHue=%23f9f9f9&from=url&id=TVWol&originHeight=2688&originWidth=1216&originalType=binary&ratio=1&rotation=0&showTitle=false&size=248641&status=done&style=none&title=" alt="1911012831.jpg"><br />app-longterm是因为我不想写了，剩下都留给你们了，源码我网站和Gitee还有Github都有，自取。<br />须知在我网站有</p>
-]]></content>
-      <tags>
-        <tag>技术</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>换源公告</title>
-    <url>/2024/07/17/%E6%8D%A2%E6%BA%90%E5%85%AC%E5%91%8A/</url>
-    <content><![CDATA[<p>由于Gitee Pages停止服务，已全部转移到Github了，望周知</p>
+<p>首先，我们来探讨一下亲子关系的定义和重要性。亲子关系是指父母与孩子之间的亲密关系，这种关系在孩子的成长过程中起着至关重要的作用。良好的亲子关系在于父母。亲子关系的好坏，直接关系到孩子的成长和身心健康。良好的亲子关系能够为孩子提供安全稳定的环境，帮助他们在成长过程中建立自信心和自尊心。<br />我们先来看看父母的角色。父母不仅是孩子的抚养者，也是孩子的教育者。当一个孩子出生时，他是毫无任何知识和技能的。父母需要通过提供安全稳定的环境，同时也需要耐心地教导孩子如何思考、如何行为。这是一个责任重大的任务，它需要父母的引导和榜样力量。古语有云：“孝子不贵，贤父生知。”这句话道出了亲子关系中父母的重要性。父母不仅是孩子的抚养者，更是孩子的启蒙者和引路人。在孩子纯真无邪的内心世界里，父母无疑是他们的灯塔，为他们指引方向。若没有父母正确的引导，亲子关系从何而谈？<br />在这个问题上，我们必须承认父母对孩子们的影响是深远的。从孩子出生的那一刻起，父母的行为、言语和态度都会影响到孩子。父母的价值观和行为方式会直接影响到孩子，他们会以身作则，成为孩子模仿的榜样。如果父母的行为方式是积极的、有责任感的，那么孩子也会学习到这些品质，并成为积极、有责任感的人。如果父母的行为方式是消极的、没有责任感的那么孩子会向好的方向发展吗？答案是否认的，因为在孩子的成长过程中，父母的引导和榜样力量是非常重要的，是无法替代的。<br />然而，有人可能会说，孩子也是亲子关系的参与者，他们同样也有责任去维护这种关系。这是对的，但我们必须明白，孩子的责任主要体现在接受教育和主动学习上。正如《论语》所说：“学而不思则罔，思而不学则殆。”这句话强调了孩子在学习过程中主动性和思考的重要性。如果没有父母的引导和教育，孩子们将无法形成正确的价值观和行为方式，也无法顺利地融入社会。<br />总结起来，我方坚信良好的亲子关系的关键在于父母。父母是孩子的第一任老师，他们的行为方式、价值观念以及教育方式都会深深影响到孩子。孩子们的成长离不开父母的引导和榜样力量。<br /><strong>反方</strong><br />首先，让我们来看看孩子在亲子关系中的作用。尽管父母是孩子的第一任老师，但孩子并不是被动接受教育的容器，他们有自己的想法。相反，孩子在接受父母的教育和引导的同时，也会对父母产生积极的影响。孩子通过表达自己的想法、感受和需求，帮助父母了解他们的内心世界，从而更好地调整教育方式和方法。这种互动的方式有助于建立更紧密、更理解的亲子关系。<br />孩子的行为方式、价值观念以及教育方式对亲子关系有着深刻的影响。父母作为孩子的第一任老师，在孩子的成长过程中扮演着至关重要的角色。然而，孩子的行为方式、价值观念以及教育方式也会直接影响到父母的行为和决策。孩子的积极行为和良好的学习习惯可以激发父母的信心和鼓励，而孩子的消极行为和不良学习习惯则可能引发父母的担忧和困惑。从而影响亲子关系。<br />孩子的成长和进步也是建立良好亲子关系的关键因素之一。孩子的成长和进步不仅体现了他们自己的努力和坚持，也给父母带来了欣慰和骄傲。当孩子取得学业上的成就、养成好的行为习惯、展现出积极的人生态度时，父母会感到无比的欣慰和自豪，这进一步促进了良好亲子关系的建立。<br />综上所述，我方坚信良好的亲子关系的关键在于孩子。尽管孩子的行为方式、价值观念以及教育方式都会受到父母的影响，但孩子并不是被动接受一切的容器，他们在建立良好的亲子关系中也同样扮演着重要的角色。<br /><strong>二辩陈词</strong><br /><strong>正方</strong><br />对方辩友的陈词固然精彩。我想指出的是，在建立良好亲子关系的过程中，关键因素仍然是父母。请问对方辩友，你们说，孩子既然是一个容器，不去倒水，水从哪里来的呢？再者，孩子自己的容器中如果是不好的东西呢？请对方辩友思考清楚吧！<br />首先，我想强调的是，父母是孩子的第一任老师。在孩子的成长过程中，父母的教育和引导是不可或缺的。孩子的价值观、行为方式和教育方式都直接受到父母的影响。父母的责任不仅仅是提供安全稳定的环境，更重要的是，他们需要以身作则，展示正确的行为方式，传递积极的价值观。这是责任重大的任务，它需要父母的引导和榜样力量。<br />其次，我想指出的是，孩子的成长和进步离不开父母的引导和支持。尽管孩子是亲子关系中的积极参与者，但他们的成长过程需要父母的指导和鼓励。父母需要尊重孩子的想法和需求，但同时也要给予他们适当的支持和鼓励。这是父母的责任，也是建立良好亲子关系的关键因素之一。<br />然而，我想问对方辩友的是，如果一个孩子没有得到父母的引导和支持，那么他如何在成长过程中建立正确的价值观和行为方式？如果父母没有提供安全稳定的环境，那么孩子如何得以安心地成长和学习？<br />我们应该认识到，良好的亲子关系是建立在彼此的信任和支持上的。然而，如果在这个关系中缺乏了父母的角色或者父母的支持，那么这个关系还能称之为良好的亲子关系吗？<br />因此，我坚信良好的亲子关系的关键在于父母。<br />谢谢各位评委和观众！<br /><strong>反方</strong><br />你方提到了”良好的亲子关系是建立在彼此的信任和支持上的”，这不是一半论证了你方观点，一半论证了我方观点吗？对方辩友请别急，接下来我来一一回答。孩子从外界受到了各种好影响，自己会去慢慢积累，从而建立正确价值观。若是不好的东西，也会受到法律和道德的制约，进而纠正，是你们政治没学好吗？接着，孩子可以去图书馆等社会公共场所，让自己去体会比直接灌输来得有意义。<br />首先，孩子在亲子关系中扮演着积极的角色。他们不仅仅是接受父母的教育和引导，更是通过自己的思考、感受和需求，对父母产生影响。孩子的成长过程需要父母的引导和支持，但同时也要尊重孩子的想法和需求，给予他们适当的支持和鼓励。<br />其次，孩子的行为方式、价值观念以及教育方式对亲子关系有着深刻的影响。尽管父母在孩子的成长过程中扮演着至关重要的角色，但孩子的行为方式、价值观念以及教育方式也会直接影响到父母的行为和决策。一个积极乐观的孩子能够激发父母的信心和鼓励，而一个充满爱的家庭氛围对于孩子成长的过程有极其重要的影响。<br />因此我方坚信良好的亲子关系的关键在于孩子。<br />谢谢各位评委和观众！<br /><br><img src="https://pic.imgdb.cn/item/64a800c51ddac507ccb233b3.jpg" alt="辩论语言"><br><strong><em>写不下去了，大家可以评论补充。</em></strong></p>
 ]]></content>
       <tags>
         <tag>其他</tag>
       </tags>
   </entry>
   <entry>
-    <title>护青园法治夏令营活动记录</title>
-    <url>/2023/07/14/%E6%8A%A4%E9%9D%92%E5%9B%AD%E6%B3%95%E6%B2%BB%E5%A4%8F%E4%BB%A4%E8%90%A5/</url>
-    <content><![CDATA[<p>#本文由Youreln原创撰写#<br><a href="https://www.jianpian.cn/a/ozyyllp?sd=3&a_uid=6486056&s_uid=11537844&package_type=&sc=groupmessage"><br>  <img src="https://pic.imgdb.cn/item/64b139921ddac507cceba44f.jpg" alt="查看文章"><br></a><br>这是段长写的，不过我是第一人称式讲解哦</p>
-<h2 id="7月12日上午，我们来到了大田六中"><a href="#7月12日上午，我们来到了大田六中" class="headerlink" title="7月12日上午，我们来到了大田六中"></a>7月12日上午，我们来到了大田六中</h2><p><img src="https://pic.imgdb.cn/item/64b122471ddac507cc8cfa05.jpg" alt="前往大田六中会议室"></p>
+    <title>Youreln工具箱app正式上线！</title>
+    <url>/2023/07/01/Youreln%E5%B7%A5%E5%85%B7%E7%AE%B1%E6%AD%A3%E5%BC%8F%E5%8F%91%E5%B8%83/</url>
+    <content><![CDATA[<p>用户手册：<a href="https://youreln.gitee.io/2023/06/26/%E7%94%A8%E6%88%B7%E6%8C%87%E5%8D%97/">点此查看</a><br>在经过了一个多月的内测，修复了大量bug后，我的工具箱app正式上线！<br>开发代码就已经非常大量了<br><img src="https://pic.imgdb.cn/item/649fb3c31ddac507cc4afdc3.jpg"><br>目前已经完全开源使用，开源仓库：<a href="https://gitee.com/Youreln/youreln-toolbox">https://gitee.com/Youreln/youreln-toolbox</a></p>
+<h2 id="下载"><a href="#下载" class="headerlink" title="下载"></a>下载</h2><p>下载app请点击下方按钮<br>    <button onclick="window.location.href='https://gitee.com/Youreln/youreln-toolbox/releases/tag/v1.2'">点击下载</button><br>也提供网页版：<a href="https://youreln.rth1.one/">https://youreln.rth1.one/</a><br>但app提供不一样的界面哦</p>
 <span id="more"></span>
-<p><img src="https://pic.imgdb.cn/item/64b122471ddac507cc8cfbaf.jpg" alt="来到会议室听介绍"><br>聆听了一场铁路安全讲座，大田铁路派出所小郭警官风趣的讲座让同学们知道了翻越铁路要负法律责任，<br>同时了解了铁路安全的相关法规，比如不能在铁路500米范围内放风筝等轻飘物等<br><img src="https://pic.imgdb.cn/item/64b122481ddac507cc8cfce0.jpg" alt="铁路安全讲座现场"><br>一场道路安全讲座，张和栋警长现场即兴讲座，同学们热情洋溢，让大家在乐中学到了道路安全常识和相关法规，并通过案例了解了违反交规的惨重后果<br>用一件件鲜活的事例，让同学们意识到遵守交规很重要。<br>一名公务员即将退休，结果因醉驾被免了职，养老金也没了<br><img src="https://pic.imgdb.cn/item/64b122481ddac507cc8cfd65.jpg" alt="道路安全讲座现场"><br>聆听反诈知识宣传讲座，汤江健警官通过给同学们观看大田反诈视频以及各学校制作的微视频，让同学们从视频中了解电信诈骗及其危害<br><img src="https://pic.imgdb.cn/item/64b1226a1ddac507cc8d74ef.jpg" alt="观看微视频"></p>
-<h2 id="7月12日下午，我们来到了汽车站的禁毒馆"><a href="#7月12日下午，我们来到了汽车站的禁毒馆" class="headerlink" title="7月12日下午，我们来到了汽车站的禁毒馆"></a>7月12日下午，我们来到了汽车站的禁毒馆</h2><p><img src="https://pic.imgdb.cn/item/64b1226b1ddac507cc8d75d5.jpg" alt="汽车站下集合"><br><img src="https://pic.imgdb.cn/item/64b122a21ddac507cc8e43c3.jpg" alt="观看中国禁毒史"><br>看看你吸毒后是怎样的，让同学们直观地感受到了吸毒的危害，十年亦可终结生命<br><img src="https://pic.imgdb.cn/item/64b122a21ddac507cc8e4421.jpg" alt="讲解员请同学体验AI“变脸”"><br><img src="https://pic.imgdb.cn/item/64b122a21ddac507cc8e44b4.jpg" alt="吸毒的影响"><br>观看短视频和纪录片，进一步让同学们体会吸毒危害之深<br>纪录片讲述缉毒英雄罗金勇的故事让同学们感慨万分，热泪盈眶<br><img src="https://pic.imgdb.cn/item/64b122a31ddac507cc8e4634.jpg" alt="观看短视频"><br>随后，范立洋老师给大家讲述国家地名管理条例，让同学们知道了大田是国家地名管理条例试点县之一<br>并且讲述了大田的文化历史，知道了白岩、赤岩的历史，各个街道名称是怎么来的<br>知道了各个乡镇地名的由来，比如屏山：山围着内洋村，像屏障一样，这个乡就叫做屏山乡</p>
-<h2 id="7月13日上午，我们来到了检察院"><a href="#7月13日上午，我们来到了检察院" class="headerlink" title="7月13日上午，我们来到了检察院"></a>7月13日上午，我们来到了检察院</h2><p><img src="https://pic.imgdb.cn/item/64b123831ddac507cc916912.jpg" alt="外景"><br><img src="https://pic.imgdb.cn/item/64b123841ddac507cc9169c8.jpg" alt="公诉公示屏"><br>开展了一场唇枪舌战——辩论赛，我们的辩题是良好的亲子关系关键在于父母/孩子<br><img src="https://pic.imgdb.cn/item/64b123841ddac507cc916ac7.jpg" alt="现场图片"><br><img src="https://pic.imgdb.cn/item/64b123841ddac507cc916b9b.jpg" alt="范立洋老师讲解"><br>最终我们喜获胜利，我们学校被评为优秀团队，我被评为优秀辩手</p>
-<h2 id="7月13日下午，我们来到大田法院"><a href="#7月13日下午，我们来到大田法院" class="headerlink" title="7月13日下午，我们来到大田法院"></a>7月13日下午，我们来到大田法院</h2><p><img src="https://pic.imgdb.cn/item/64b123e81ddac507cc92d69d.jpg" alt="外景"><br>旁听一起电信诈骗案的审理，嫌疑人的后悔自责让同学们对电信诈骗罪后果有了深刻了解<br><img src="https://pic.imgdb.cn/item/64b123e91ddac507cc92d7ce.jpg" alt="开庭前"><br><a href="https://mp.weixin.qq.com/s/aCdwuTJZ6nNqD0o6By1iLA"><br>  <img src="https://pic.imgdb.cn/item/64b136f71ddac507cce293c1.jpg" alt="查看文章"><br></a><br><em>由于法庭禁止录音录像，所以在开庭前拍了一小张</em></p>
-<h2 id="7月14日上午，我们来到了大田县公安局办案中心"><a href="#7月14日上午，我们来到了大田县公安局办案中心" class="headerlink" title="7月14日上午，我们来到了大田县公安局办案中心"></a>7月14日上午，我们来到了大田县公安局办案中心</h2><p>大田县公安局办案中心是全省7家5星级办案中心之一<br>民警热心地为同学们讲解<br><img src="https://pic.imgdb.cn/item/64b123e91ddac507cc92daa1.jpg" alt="进入中心"><br><img src="https://pic.imgdb.cn/item/64b123e91ddac507cc92db5d.jpg" alt="集合"><br>参观了各区域<br><img src="https://pic.imgdb.cn/item/64b124451ddac507cc946e65.jpg" alt="数据可视化中心"><br><img src="https://pic.imgdb.cn/item/64b12c4f1ddac507ccb34c2f.jpg" alt="未成年人审理区"><br><img src="https://pic.imgdb.cn/item/64b12c4f1ddac507ccb34ca7.jpg" alt="带班民警为我们讲解速裁法庭"><br><img src="https://pic.imgdb.cn/item/64b12c4e1ddac507ccb34bb6.jpg" alt="有序参观"><br><em>由于一些照片涉及敏感信息，不予公示</em><br>参加县妇联、团县委、关工委联合组织的谈心会<br>会上，范立洋老师讲了好多故事<br>一个男生和一个女生同学了小学初中高中，男生请女生去吃饭，去还是不去呢？<br>针对这个问题，范老师为大家做了详细的分析<br>还讲了一群村民抓到小偷，在一位村民提议下打死小偷，最后被公安局惩处<br>以此告诉同学们要有法律意识<br>厦门航空因为空姐撒了热咖啡，导致乘客受伤，空姐被免职，乘务长被降职，年终奖全没，还要赔偿<br>县妇联副主席讲了如果有心理上的问题还可以打12338找他们<br>团县委给同学们讲了入团条件<br><img src="https://pic.imgdb.cn/item/64b13d961ddac507ccfca054.jpg" alt="范立洋老师讲故事，与同学们谈心"><br>此图来自段长<a href="https://www.jianpian.cn/mpage?author_id=6486056">@Marvin</a>，我没拍，因为听的太认真了</p>
-<h2 id="7月14日下午，我们来到了城二小观看同学们的法治故事演讲比赛"><a href="#7月14日下午，我们来到了城二小观看同学们的法治故事演讲比赛" class="headerlink" title="7月14日下午，我们来到了城二小观看同学们的法治故事演讲比赛"></a>7月14日下午，我们来到了城二小观看同学们的法治故事演讲比赛</h2><p><img src="https://pic.imgdb.cn/item/64b124451ddac507cc946f0c.jpg" alt="现场"><br><img src="https://pic.imgdb.cn/item/64b124451ddac507cc947068.jpg" alt="一中同学讲自己的普法故事"><br>并前往第二集美学村参观，了解了大田的抗战历史<br><img src="https://pic.imgdb.cn/item/64b124461ddac507cc9472e9.jpg" alt="集美祠"><br><img src="https://pic.imgdb.cn/item/64b124691ddac507cc94ee59.jpg" alt="嘉庚像"><br><img src="https://pic.imgdb.cn/item/64b1246a1ddac507cc94f19d.jpg" alt="陈嘉庚旧时居住地"><br>三天下来同学们收获满满，受到了法治教育，成为知法守法懂法的好公民<br>全程提供饮水，除户外基本都有空调吹😊<br><img src="https://pic.imgdb.cn/item/64b1353a1ddac507ccdc5c57.jpg" alt="林子婧同学的感受送给大家"></p>
-]]></content>
-      <tags>
-        <tag>摄影</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>新年快乐</title>
-    <url>/2024/01/01/%E6%96%B0%E5%B9%B4%E5%BF%AB%E4%B9%90/</url>
-    <content><![CDATA[<p><img src="https://cdn.nlark.com/yuque/0/2024/png/35935935/1704069524334-5316745c-ac2d-422a-b40b-ebff2ac6c92a.png?x-oss-process=image/resize,w_750,limit_0" alt="海报"></p>
-<span id="more"></span>
-<!DOCTYPE html>
-<html lang="zh-CN">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>新年快乐</title>
-    <style>
-        .button {
-            display: inline-block;
-            padding: 10px 20px;
-            background-color: #4CAF50;
-            color: white;
-            text-align: center;
-            text-decoration: none;
-            font-size: 16px;
-            margin: 4px 2px;
-            cursor: pointer;
-            border-radius: 4px;
-        }
-    </style>
-</head>
-<body>
-    <a href="https://www.yuque.com/yuqueyonghucnfmve/youreln/yub25x0s8abokazs?singleDoc#%20%E3%80%8A%E6%96%B0%E5%B9%B4%E5%BF%AB%E4%B9%90%E3%80%8B" class="button">新年快乐</a>
-</body>
-</html>
-]]></content>
-      <tags>
-        <tag>其它</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>搞个项目迭了8代</title>
-    <url>/2023/05/05/%E6%90%9E%E4%B8%AA%E9%A1%B9%E7%9B%AE%E8%BF%AD%E4%BA%868%E4%BB%A3/</url>
-    <content><![CDATA[<p><a href="https://www.kdocs.cn/l/crnKsa9jGwuK">文档</a><br>累死了累死了！<br><img src="https://pic2.imgdb.cn/item/6454c8dd0d2dde577736747f.png"><br>昨天录了一下午<br>今天剪了一天！！！！<br>成片即将登场<br>关注我！！！！！！</p>
-]]></content>
-  </entry>
-  <entry>
-    <title>《昆虫记》中考必刷题</title>
-    <url>/2023/06/25/%E6%98%86%E8%99%AB%E8%AE%B0%E5%B0%8F%E5%86%8C%E5%AD%90/</url>
-    <content><![CDATA[<p>制作不易，红星照耀中国的请回<a href="https://youreln.gitee.io/">主页</a>寻找<br><img src="https://pic.imgdb.cn/item/649818cc1ddac507cc643547.jpg" alt="第一张图片"></p>
-<span id="more"></span>
-<p><img src="https://pic.imgdb.cn/item/649818cc1ddac507cc643585.jpg" alt="第二张图片"><br><img src="https://pic.imgdb.cn/item/649818cc1ddac507cc6435d3.jpg" alt="第三张图片"><br><img src="https://pic.imgdb.cn/item/649818cc1ddac507cc643628.jpg" alt="第四张图片"><br><img src="https://pic.imgdb.cn/item/649818cd1ddac507cc64366f.jpg" alt="第五张图片"><br><img src="https://pic.imgdb.cn/item/649818d51ddac507cc6440c6.jpg" alt="第六张图片"><br><img src="https://pic.imgdb.cn/item/649818d51ddac507cc64410a.jpg" alt="第七张图片"><br><img src="https://pic.imgdb.cn/item/649818d51ddac507cc644183.jpg" alt="第八张图片"><br><img src="https://pic.imgdb.cn/item/649818d61ddac507cc6441d0.jpg" alt="第九张图片"><br><img src="https://pic.imgdb.cn/item/649818d61ddac507cc644225.jpg" alt="第十张图片"><br><img src="https://pic.imgdb.cn/item/649818db1ddac507cc6449ba.jpg" alt="第十一张图片"><br><img src="https://pic.imgdb.cn/item/649818db1ddac507cc6449f0.jpg" alt="第十二张图片"><br><img src="https://pic.imgdb.cn/item/649818dc1ddac507cc644a65.jpg" alt="第十三张图片"><br><img src="https://pic.imgdb.cn/item/649818dc1ddac507cc644ad1.jpg" alt="第十四张图片"><br><img src="https://pic.imgdb.cn/item/649818dc1ddac507cc644b37.jpg" alt="第十五张图片"><br><img src="https://pic.imgdb.cn/item/649818e31ddac507cc6454bc.jpg" alt="第十六张图片"><br><img src="https://pic.imgdb.cn/item/649818e31ddac507cc6454fb.jpg" alt="第十七张图片"><br><img src="https://pic.imgdb.cn/item/649818e41ddac507cc64557a.jpg" alt="第十八张图片"><br><img src="https://pic.imgdb.cn/item/649818e41ddac507cc64562a.jpg" alt="第十九张图片"><br><img src="https://pic.imgdb.cn/item/649818e41ddac507cc6456b3.jpg" alt="第二十张图片"><br><img src="https://pic.imgdb.cn/item/649818ed1ddac507cc64614f.jpg" alt="第二十一张图片"><br><img src="https://pic.imgdb.cn/item/649818ed1ddac507cc64618e.jpg" alt="第二十二张图片"><br><img src="https://pic.imgdb.cn/item/649818ed1ddac507cc6461fc.jpg" alt="第二十三张图片"><br><img src="https://pic.imgdb.cn/item/649818ed1ddac507cc646245.jpg" alt="第二十四张图片"><br><img src="https://pic.imgdb.cn/item/649818ee1ddac507cc6462ce.jpg" alt="第二十五张图片"><br><img src="https://pic.imgdb.cn/item/649818ee1ddac507cc64637b.jpg" alt="第二十六张图片"><br><img src="https://pic.imgdb.cn/item/649818ee1ddac507cc646412.jpg" alt="第二十七张图片"><br>友情链接：<a href="https://support.qq.com/product/502768">中梧教育</a></p>
-]]></content>
-      <tags>
-        <tag>其他</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>查询困扰福建中小学生福建尚行知“拨雪寻春书香满园”寒假云诗词大会</title>
-    <url>/2023/01/21/%E6%9F%A5%E8%AF%A2%E5%9B%B0%E6%89%B0%E7%A6%8F%E5%BB%BA%E4%B8%AD%E5%B0%8F%E5%AD%A6%E7%94%9F%E7%A6%8F%E5%BB%BA%E5%B0%9A%E8%A1%8C%E7%9F%A5%E2%80%9C%E6%8B%A8%E9%9B%AA%E5%AF%BB%E6%98%A5%E4%B9%A6%E9%A6%99%E6%BB%A1%E5%9B%AD%E2%80%9D%E5%AF%92%E5%81%87%E4%BA%91%E8%AF%97%E8%AF%8D%E5%A4%A7%E4%BC%9A/</url>
-    <content><![CDATA[<p><a href="https://weibo.com/ttarticle/p/show?id=2309404862880158974335">微博原文章</a><br>​​工具附文末，各位观众作不作弊靠诚信，我工具仅是为了让大家复习巩固。注意：仅适用于全省1-2年级、5-6年级、7-9年级，其他不支持</p>
-<p>最近不是正式考评了吗，大家都很头疼</p>
-<span id="more"></span>
-<p>PS：使用造成的后果与我无关<br><img src="https://wx1.sinaimg.cn/large/008snPJmly4hajb0kn48oj30q60de75k.jpg"><br>为了造福大家，我爆肝做了一个题库<br><img src="https://wx1.sinaimg.cn/large/008snPJmly4hajb17hambj30q60e30wk.jpg"><br>既然都有题库了，不如搞个查询系统？</p>
-<p>这次使用易查分 ​ ，咱们学校也在用这个来给学生查成绩</p>
-<p>然后<br><img src="https://wx1.sinaimg.cn/large/008snPJmly4hajb2yay2zj30q60daglv.jpg"><br><img src="https://wx1.sinaimg.cn/large/008snPJmly4hajb3cuikij30q60dcdgg.jpg"><br><img src="https://wx1.sinaimg.cn/large/008snPJmly4hajb3nd4zfj30q60dfjs2.jpg"><br>然后就好了，虽然标题是大田，但是适用于全省啊</p>
-<p>使用方法：输入前四个字符  字符就是包括汉字和符号</p>
-<p>如：查询【对《使至塞上》这首诗的分析,不恰当的一项是?】，就只需输入【对《使至】</p>
-<p>查询系统网址：<a href="https://727952.yichafen.com/">https://727952.yichafen.com/</a></p>
-<p>题库只包含我做到过的且我认为较易错的且大部分是比较长的，如赏析理解等，也有易错的判断题。会不断更新的哦。</p>
-<p>有些题去百度搜也是搜不到或搜到的是错的<br>目前也已支持三四五六年级的，快去试试吧！<br>完全免费哦！​​​​</p>
+<p>下载方式如图<br><img src="https://pic.imgdb.cn/item/649fb4801ddac507cc4c4612.jpg"></p>
+<h2 id="工具列表"><a href="#工具列表" class="headerlink" title="工具列表"></a>工具列表</h2><p>-亲戚关系计算器</p>
+<ul>
+<li>体重BMI计算器</li>
+<li>倒计时</li>
+<li>单位转换</li>
+<li>密码生成器</li>
+<li>摩斯电码</li>
+<li>文字转语音</li>
+<li>番茄时钟</li>
+<li>网络测速</li>
+<li>计算器</li>
+<li>银行卡类型查询</li>
+<li>函数绘制</li>
+<li>成绩分析</li>
+<li>HTML转PDF</li>
+<li>灵魂涂鸦</li>
+<li>小记</li>
+<li>冷静草稿框</li>
+<li>二维码生成</li>
+<li>屏幕测试</li>
+<li>查快递</li>
+</ul>
+<p><strong>游戏</strong></p>
+<ul>
+<li>扫雷</li>
+<li>猜拳游戏</li>
+<li>数字华容道</li>
+<li>点击方块</li>
+<li>山鸡跳跳乐</li>
+<li>打砖块</li>
+<li>文字游戏</li>
+</ul>
 ]]></content>
       <tags>
         <tag>技术</tag>
       </tags>
-  </entry>
-  <entry>
-    <title>山影映湖中，碧波荡漾，人间仙境</title>
-    <url>/2023/05/06/%E6%B9%96%E7%BE%8E%E4%B8%83%E6%98%9F%E6%B9%96/</url>
-    <content><![CDATA[<p>拍摄地点：湖美七星湖<br>BGM：起风了钢琴版<br>视频</p>
-<span id="more"></span>
-<iframe src="//player.bilibili.com/player.html?aid=740703473&bvid=BV1sk4y1E7Vs&cid=1115721816&page=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true" autoplay="0"></iframe>]]></content>
-      <tags>
-        <tag>摄影</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>爬楼看云</title>
-    <url>/2024/04/04/%E7%88%AC%E6%A5%BC%E7%9C%8B%E4%BA%91/</url>
-    <content><![CDATA[<p>今天爬到楼顶，看了一些云，没想到楼顶这么好看，先把视频奉上</p>
-<span id="more"></span>
-<pre><code>&lt;iframe src=&quot;//player.bilibili.com/player.html?aid=1752535966&amp;bvid=BV1Lx421D75B&amp;cid=1493205755&amp;p=1&quot; scrolling=&quot;no&quot; border=&quot;0&quot; frameborder=&quot;no&quot; framespacing=&quot;0&quot; allowfullscreen=&quot;true&quot;&gt; &lt;/iframe&gt;
-</code></pre>
-<hr>
-<p>再来一些大图，微信有点菜，自建服务器OSS来存<br>（请横屏观看👇）<br><img src="https://www.freeimg.cn/i/2024/04/04/660e45b84a314.jpg"></p>
-]]></content>
-      <tags>
-        <tag>摄影</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>班级同学外号查询</title>
-    <url>/2023/05/05/%E7%8F%AD%E7%BA%A7%E5%90%8C%E5%AD%A6%E5%A4%96%E5%8F%B7%E6%9F%A5%E8%AF%A2/</url>
-    <content><![CDATA[<p>为了防止外人，特此利用查询，点击边栏<a href="https://727952.yichafen.com/">“查询系统”</a>即可进入查询<br>爱看点此进入➡<a href="https://727952.yichafen.com/">查询</a><br>对应班级：大田县第五中学七年六班</p>
-<iframe src="https://727952.yichafen.com/public/queryscore/sqcode/Mszckn0mMzA0MXxjODczZTIwYmIzNTc5M2VkNjM0NjQwZTIyYmUwODZjMXw3Mjc5NTIO0O0O.html" width="100%" height="800" frameborder="0" scrolling="no"></iframe>]]></content>
   </entry>
   <entry>
     <title>Youreln工具箱正式开源以及用户手册</title>
@@ -503,6 +544,17 @@
       </tags>
   </entry>
   <entry>
+    <title>《昆虫记》中考必刷题</title>
+    <url>/2023/06/25/%E6%98%86%E8%99%AB%E8%AE%B0%E5%B0%8F%E5%86%8C%E5%AD%90/</url>
+    <content><![CDATA[<p>制作不易，红星照耀中国的请回<a href="https://youreln.gitee.io/">主页</a>寻找<br><img src="https://pic.imgdb.cn/item/649818cc1ddac507cc643547.jpg" alt="第一张图片"></p>
+<span id="more"></span>
+<p><img src="https://pic.imgdb.cn/item/649818cc1ddac507cc643585.jpg" alt="第二张图片"><br><img src="https://pic.imgdb.cn/item/649818cc1ddac507cc6435d3.jpg" alt="第三张图片"><br><img src="https://pic.imgdb.cn/item/649818cc1ddac507cc643628.jpg" alt="第四张图片"><br><img src="https://pic.imgdb.cn/item/649818cd1ddac507cc64366f.jpg" alt="第五张图片"><br><img src="https://pic.imgdb.cn/item/649818d51ddac507cc6440c6.jpg" alt="第六张图片"><br><img src="https://pic.imgdb.cn/item/649818d51ddac507cc64410a.jpg" alt="第七张图片"><br><img src="https://pic.imgdb.cn/item/649818d51ddac507cc644183.jpg" alt="第八张图片"><br><img src="https://pic.imgdb.cn/item/649818d61ddac507cc6441d0.jpg" alt="第九张图片"><br><img src="https://pic.imgdb.cn/item/649818d61ddac507cc644225.jpg" alt="第十张图片"><br><img src="https://pic.imgdb.cn/item/649818db1ddac507cc6449ba.jpg" alt="第十一张图片"><br><img src="https://pic.imgdb.cn/item/649818db1ddac507cc6449f0.jpg" alt="第十二张图片"><br><img src="https://pic.imgdb.cn/item/649818dc1ddac507cc644a65.jpg" alt="第十三张图片"><br><img src="https://pic.imgdb.cn/item/649818dc1ddac507cc644ad1.jpg" alt="第十四张图片"><br><img src="https://pic.imgdb.cn/item/649818dc1ddac507cc644b37.jpg" alt="第十五张图片"><br><img src="https://pic.imgdb.cn/item/649818e31ddac507cc6454bc.jpg" alt="第十六张图片"><br><img src="https://pic.imgdb.cn/item/649818e31ddac507cc6454fb.jpg" alt="第十七张图片"><br><img src="https://pic.imgdb.cn/item/649818e41ddac507cc64557a.jpg" alt="第十八张图片"><br><img src="https://pic.imgdb.cn/item/649818e41ddac507cc64562a.jpg" alt="第十九张图片"><br><img src="https://pic.imgdb.cn/item/649818e41ddac507cc6456b3.jpg" alt="第二十张图片"><br><img src="https://pic.imgdb.cn/item/649818ed1ddac507cc64614f.jpg" alt="第二十一张图片"><br><img src="https://pic.imgdb.cn/item/649818ed1ddac507cc64618e.jpg" alt="第二十二张图片"><br><img src="https://pic.imgdb.cn/item/649818ed1ddac507cc6461fc.jpg" alt="第二十三张图片"><br><img src="https://pic.imgdb.cn/item/649818ed1ddac507cc646245.jpg" alt="第二十四张图片"><br><img src="https://pic.imgdb.cn/item/649818ee1ddac507cc6462ce.jpg" alt="第二十五张图片"><br><img src="https://pic.imgdb.cn/item/649818ee1ddac507cc64637b.jpg" alt="第二十六张图片"><br><img src="https://pic.imgdb.cn/item/649818ee1ddac507cc646412.jpg" alt="第二十七张图片"><br>友情链接：<a href="https://support.qq.com/product/502768">中梧教育</a></p>
+]]></content>
+      <tags>
+        <tag>其他</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>红星照耀中国小册子电子档</title>
     <url>/2023/06/22/%E7%BA%A2%E6%98%9F%E7%85%A7%E8%80%80%E4%B8%AD%E5%9B%BD%E5%B0%8F%E5%86%8C%E5%AD%90/</url>
     <content><![CDATA[<p>制作不易，可以来我工具箱支持一下我：<a href="https://youreln.rth1.one/">工具箱</a><br><img src="https://pic.imgdb.cn/item/649411e81ddac507ccce005f.jpg"></p>
@@ -514,181 +566,141 @@
       </tags>
   </entry>
   <entry>
-    <title>辩论赛陈词</title>
-    <url>/2023/07/07/%E8%BE%A9%E8%AE%BA%E8%B5%9B%E9%99%88%E8%AF%8D/</url>
-    <content><![CDATA[<p><strong>辩题：《良好的亲子关系关键在于父母还是孩子》</strong><br /><strong>一辩陈词</strong><br /><strong>正方</strong><br />尊敬的评委好！主持人好！<br /></p>
+    <title>Youreln工具箱上线</title>
+    <url>/2023/06/11/youreln%E5%B7%A5%E5%85%B7%E7%AE%B1/</url>
+    <content><![CDATA[<p>经过了好久的开发，终于搞了一个看起来还行的工具箱<br><img src="https://pic.imgdb.cn/item/64856ae71ddac507cc6a9e12.jpg"></p>
 <span id="more"></span>
-<p>首先，我们来探讨一下亲子关系的定义和重要性。亲子关系是指父母与孩子之间的亲密关系，这种关系在孩子的成长过程中起着至关重要的作用。良好的亲子关系在于父母。亲子关系的好坏，直接关系到孩子的成长和身心健康。良好的亲子关系能够为孩子提供安全稳定的环境，帮助他们在成长过程中建立自信心和自尊心。<br />我们先来看看父母的角色。父母不仅是孩子的抚养者，也是孩子的教育者。当一个孩子出生时，他是毫无任何知识和技能的。父母需要通过提供安全稳定的环境，同时也需要耐心地教导孩子如何思考、如何行为。这是一个责任重大的任务，它需要父母的引导和榜样力量。古语有云：“孝子不贵，贤父生知。”这句话道出了亲子关系中父母的重要性。父母不仅是孩子的抚养者，更是孩子的启蒙者和引路人。在孩子纯真无邪的内心世界里，父母无疑是他们的灯塔，为他们指引方向。若没有父母正确的引导，亲子关系从何而谈？<br />在这个问题上，我们必须承认父母对孩子们的影响是深远的。从孩子出生的那一刻起，父母的行为、言语和态度都会影响到孩子。父母的价值观和行为方式会直接影响到孩子，他们会以身作则，成为孩子模仿的榜样。如果父母的行为方式是积极的、有责任感的，那么孩子也会学习到这些品质，并成为积极、有责任感的人。如果父母的行为方式是消极的、没有责任感的那么孩子会向好的方向发展吗？答案是否认的，因为在孩子的成长过程中，父母的引导和榜样力量是非常重要的，是无法替代的。<br />然而，有人可能会说，孩子也是亲子关系的参与者，他们同样也有责任去维护这种关系。这是对的，但我们必须明白，孩子的责任主要体现在接受教育和主动学习上。正如《论语》所说：“学而不思则罔，思而不学则殆。”这句话强调了孩子在学习过程中主动性和思考的重要性。如果没有父母的引导和教育，孩子们将无法形成正确的价值观和行为方式，也无法顺利地融入社会。<br />总结起来，我方坚信良好的亲子关系的关键在于父母。父母是孩子的第一任老师，他们的行为方式、价值观念以及教育方式都会深深影响到孩子。孩子们的成长离不开父母的引导和榜样力量。<br /><strong>反方</strong><br />首先，让我们来看看孩子在亲子关系中的作用。尽管父母是孩子的第一任老师，但孩子并不是被动接受教育的容器，他们有自己的想法。相反，孩子在接受父母的教育和引导的同时，也会对父母产生积极的影响。孩子通过表达自己的想法、感受和需求，帮助父母了解他们的内心世界，从而更好地调整教育方式和方法。这种互动的方式有助于建立更紧密、更理解的亲子关系。<br />孩子的行为方式、价值观念以及教育方式对亲子关系有着深刻的影响。父母作为孩子的第一任老师，在孩子的成长过程中扮演着至关重要的角色。然而，孩子的行为方式、价值观念以及教育方式也会直接影响到父母的行为和决策。孩子的积极行为和良好的学习习惯可以激发父母的信心和鼓励，而孩子的消极行为和不良学习习惯则可能引发父母的担忧和困惑。从而影响亲子关系。<br />孩子的成长和进步也是建立良好亲子关系的关键因素之一。孩子的成长和进步不仅体现了他们自己的努力和坚持，也给父母带来了欣慰和骄傲。当孩子取得学业上的成就、养成好的行为习惯、展现出积极的人生态度时，父母会感到无比的欣慰和自豪，这进一步促进了良好亲子关系的建立。<br />综上所述，我方坚信良好的亲子关系的关键在于孩子。尽管孩子的行为方式、价值观念以及教育方式都会受到父母的影响，但孩子并不是被动接受一切的容器，他们在建立良好的亲子关系中也同样扮演着重要的角色。<br /><strong>二辩陈词</strong><br /><strong>正方</strong><br />对方辩友的陈词固然精彩。我想指出的是，在建立良好亲子关系的过程中，关键因素仍然是父母。请问对方辩友，你们说，孩子既然是一个容器，不去倒水，水从哪里来的呢？再者，孩子自己的容器中如果是不好的东西呢？请对方辩友思考清楚吧！<br />首先，我想强调的是，父母是孩子的第一任老师。在孩子的成长过程中，父母的教育和引导是不可或缺的。孩子的价值观、行为方式和教育方式都直接受到父母的影响。父母的责任不仅仅是提供安全稳定的环境，更重要的是，他们需要以身作则，展示正确的行为方式，传递积极的价值观。这是责任重大的任务，它需要父母的引导和榜样力量。<br />其次，我想指出的是，孩子的成长和进步离不开父母的引导和支持。尽管孩子是亲子关系中的积极参与者，但他们的成长过程需要父母的指导和鼓励。父母需要尊重孩子的想法和需求，但同时也要给予他们适当的支持和鼓励。这是父母的责任，也是建立良好亲子关系的关键因素之一。<br />然而，我想问对方辩友的是，如果一个孩子没有得到父母的引导和支持，那么他如何在成长过程中建立正确的价值观和行为方式？如果父母没有提供安全稳定的环境，那么孩子如何得以安心地成长和学习？<br />我们应该认识到，良好的亲子关系是建立在彼此的信任和支持上的。然而，如果在这个关系中缺乏了父母的角色或者父母的支持，那么这个关系还能称之为良好的亲子关系吗？<br />因此，我坚信良好的亲子关系的关键在于父母。<br />谢谢各位评委和观众！<br /><strong>反方</strong><br />你方提到了”良好的亲子关系是建立在彼此的信任和支持上的”，这不是一半论证了你方观点，一半论证了我方观点吗？对方辩友请别急，接下来我来一一回答。孩子从外界受到了各种好影响，自己会去慢慢积累，从而建立正确价值观。若是不好的东西，也会受到法律和道德的制约，进而纠正，是你们政治没学好吗？接着，孩子可以去图书馆等社会公共场所，让自己去体会比直接灌输来得有意义。<br />首先，孩子在亲子关系中扮演着积极的角色。他们不仅仅是接受父母的教育和引导，更是通过自己的思考、感受和需求，对父母产生影响。孩子的成长过程需要父母的引导和支持，但同时也要尊重孩子的想法和需求，给予他们适当的支持和鼓励。<br />其次，孩子的行为方式、价值观念以及教育方式对亲子关系有着深刻的影响。尽管父母在孩子的成长过程中扮演着至关重要的角色，但孩子的行为方式、价值观念以及教育方式也会直接影响到父母的行为和决策。一个积极乐观的孩子能够激发父母的信心和鼓励，而一个充满爱的家庭氛围对于孩子成长的过程有极其重要的影响。<br />因此我方坚信良好的亲子关系的关键在于孩子。<br />谢谢各位评委和观众！<br /><br><img src="https://pic.imgdb.cn/item/64a800c51ddac507ccb233b3.jpg" alt="辩论语言"><br><strong><em>写不下去了，大家可以评论补充。</em></strong></p>
+<p>1、二维码生成解码美化器<br><img src="https://pic.imgdb.cn/item/64856b171ddac507cc6aef33.jpg"><br>2、摩斯电码生成和解码工具<br><img src="https://pic.imgdb.cn/item/64856b4a1ddac507cc6b5b37.jpg"><br>3、倒计时工具<br><img src="https://pic.imgdb.cn/item/64856b801ddac507cc6bb69f.jpg"><br>4、番茄时钟<br><img src="https://pic.imgdb.cn/item/64856ba41ddac507cc6bf8cf.jpg"><br>。。。。。<br>还在开发，还没写完自己看累死了<a href="http://youreln.rth1.one/">http://youreln.rth1.one</a></p>
+<iframe src="https://youreln.rth1.one/pc.html" width="100%" height="500px" frameborder="0"></iframe>
+2023/7/1 14:04:53 
+开发完毕自己看]]></content>
+      <tags>
+        <tag>技术</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>xiaopf教育app2.0版本来袭！</title>
+    <url>/2023/06/11/xiaopf%E6%95%99%E8%82%B2app2.0%E7%89%88%E6%9C%AC%E4%B8%8A%E7%BA%BF%E4%BA%86/</url>
+    <content><![CDATA[<p>经过了一个月的公测，xiaopf教育（原中梧教育）app2.0版本正式上线！！！<br><a href="https://baby2020.lanzoub.com/b01kwtptc" title="下载点此">https://baby2020.lanzoub.com/b01kwtptc</a>密码:xiaopf<br><img src="https://img1.imgtp.com/2023/06/11/mVOukomd.png"><br>看看有什么新功能吧<br>1、新增了常见问题</p>
+<span id="more"></span>
+<p><img src="https://pic.imgdb.cn/item/6485230f1ddac507ccf3de7e.jpg"><br>2、增加了团队博客<br><img src="https://pic.imgdb.cn/item/648523151ddac507ccf3e666.jpg"><br>中梧后续还会更新<br><strong>3、支持app端登录了！！！</strong><br><img src="https://pic.imgdb.cn/item/6485231b1ddac507ccf3eda3.jpg"></p>
 ]]></content>
+      <tags>
+        <tag>技术</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>征程新时代，争做好少年——大田县实验小学庆“六一”文艺汇演视频</title>
+    <url>/2023/06/01/%E5%85%AD%E4%B8%80/</url>
+    <content><![CDATA[<p>文章资讯</p>
+<iframe src="https://mp.weixin.qq.com/s/HWeMIOttUCCCUjvIPpmWUA" frameborder="0" scrolling="no"></iframe>
+现场视频
+<span id="more"></span>
+<iframe src="//player.bilibili.com/player.html?aid=486829516&bvid=BV13N411C7X8&cid=1150077706&page=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true" autoplay="0"> </iframe>]]></content>
       <tags>
         <tag>其他</tag>
       </tags>
   </entry>
   <entry>
-    <title>红包封面</title>
-    <url>/2024/01/24/%E7%BA%A2%E5%8C%85%E5%B0%81%E9%9D%A2/</url>
-    <content><![CDATA[<p>新年快乐<br><a href="https://cover.weixin.qq.com/preview?key=AwAAAOeFS4zLnHbvgxGrOw">点击预览</a></p>
-<style>
-   .beautiful-button {
-   background-color: #4CAF50;
-   border: none;
-   color: white;
-   padding: 15px 32px;
-   text-align: center;
-   text-decoration: none;
-   display: inline-block;
-   font-size: 16px;
-   margin: 4px 2px;
-   cursor: pointer;
-   transition-duration: 0.4s;
-   }
-
-   .beautiful-button:hover {
-   background-color: #45a049;
-   }
-</style>
-</head>
-<body>
-   <h1>期末考考完了，为了感谢大家，特此制作红包封面送给大家</h1>
-   <p>试用封面看下方↓</p>
-   <a href="https://cover.weixin.qq.com/preview?key=AwAAAOeFS4zLnHbvgxGrOw" class="beautiful-button">点击预览</a>
-   <iframe src="https://www.yuque.com/yuqueyonghucnfmve/youreln/qg8zk2smmawy3pkv?singleDoc#" width="100%" height="600" frameborder="0" scrolling="yes"></iframe>
-</body>]]></content>
+    <title>xiaopf教育网页版</title>
+    <url>/2023/05/13/xiaopf%E6%95%99%E8%82%B2%E7%BD%91%E9%A1%B5%E7%89%88%E5%8F%91%E5%B8%83%EF%BC%81%EF%BC%81%EF%BC%81/</url>
+    <content><![CDATA[<p>原中梧教育<br>网页版的好处：可登录，数据永不丢失<br>坏处：不够稳定<br>app版的好处：好处：十分稳定<br>坏处：只能游客发帖，重装还会分配新游客账号导致之前游客数据丢失<br>但是要保证数据请用微信打开此网页<br>要前往请参见以下内容<br><a href="https://support.qq.com/product/1221">点击跳转到xiaopf教育页面</a><br>APP下载：<!DOCTYPE html>  </p>
+<html>  
+<head>  
+    <title>跳转到微信</title>  
+</head>  
+<body>  
+    <button onclick="jumpToWeixin()">点此下载app</button>  
+    <script>  
+        function jumpToWeixin() {  
+            var productUrl = 'https://youreln.gitee.io/2023/05/01/xiaopf%E6%95%99%E8%82%B2app%E6%AD%A3%E5%BC%8F%E4%B8%8A%E7%BA%BF%EF%BC%81/';  
+            window.location.href = productUrl;  
+        }  
+    </script>  
+</body>  
+</html>
+如需到微信打开请点击
+<a href="weixin://open?url=https%3A%2F%2Fsupport.qq.com%2Fproduct% gender">跳转到微信</a>
+推荐网页版[https://support.qq.com/product/502768](https://support.qq.com/product/502768)]]></content>
       <tags>
-        <tag>其它</tag>
+        <tag>技术</tag>
       </tags>
   </entry>
   <entry>
-    <title>妙趣横生，温暖关怀：记采访政教处主任陈开榄</title>
-    <url>/2023/10/07/%E9%87%87%E8%AE%BF%E6%A6%84%E5%93%A5/</url>
-    <content><![CDATA[<p>陈开榄老师，想必大家已经不陌生了，他是我们的政教处主任，他总是能够准确地把握学生的需求，为他们提供最合适的帮助和指导。无论是在课堂上还是在课外活动中，他总是能够与学生们建立起良好的关系，成为他们信任的朋友和导师，同学们亲切地称他为榄哥。<br>10月5日下午，我们一行同学来到了政教处，对其进行了1个小时的采访，让我们了解了榄哥的工作经历以及他对各种事情的观点。</p>
+    <title>山影映湖中，碧波荡漾，人间仙境</title>
+    <url>/2023/05/06/%E6%B9%96%E7%BE%8E%E4%B8%83%E6%98%9F%E6%B9%96/</url>
+    <content><![CDATA[<p>拍摄地点：湖美七星湖<br>BGM：起风了钢琴版<br>视频</p>
 <span id="more"></span>
-<p>刚来到政教处，同学们都感到有些紧张，但是榄哥对我们亲切的问候让同学们感到宾至如归。他面带微笑，请同学们坐下，一些同学紧张得不敢坐下，榄哥则在一旁静静地泡茶。泡完以后，他微笑地请紧张的同学们坐下，主动起身移开椅子让他们经过坐下，大家都没有了那一份紧张。他给同学们倒了茶，便说：“你们的按你们的问题来问哈。”于是，我们便开始了采访。<br>榄哥是政教处主任，于是我们从大家最关心的话题开始切入。我向他提出了第一个问题：“您是如何进入政教处的呢？然后您在政教处呢工作多少年？在工作中遇到最大困难和收获是什么呢？”他啜了口茶，开始娓娓道来。“到政教处是怎么来的呢？其实主要是根据学校的工作需要和我自己本身的一个工作的积累。因为长期以来的话我都是一直在从事着这一个学生的德育教育、德育管理的这块。学校的德育工作只有两大部分在负责，一个是政教一个就是团委。”同学们听得入了神，他就开始讲起了他的故事。“那进入学校的团委工作的时间我就长了。2009年的时候你们都还没出生。2009年的时候，我就到学校的团委工作了，那时候我主要是负责少先队，当学校团委副书记。一直到后来，也就因为工作的需要在岗位调整到政教处。那政教处里呢，工作的性质其实是一样的啊，主要就是负责学校的德育建设、学生的德育管理。因为原来的这个政教处主任做岗位的调整，然后我就从团委呢就到了政教处。”<br>同学们做好了笔记。我想在当政教处主任途中，一定会遇到困难，也会有收获，于是我们向他提出了第二个问题：“您在工作途中遇到了哪些困难的还有哪些收获呢？”叶涵没笔在一旁很紧张，在我提完问题以后，榄哥就递给他一支笔，继续慢慢地讲起了他的故事。“那不管是政教还是在团委，其实学校德育工作也是一种发展，每一个阶段，每一个时间学校管理的这个侧重点不一。所以不管是在政教还是团委来讲，我觉得面临的最大的困难就是在于不同的这个时间，学生的思想品德变化不太一样，特点不一样。所以呢在工作中呢也必须得叫与时俱进，不能够总是用经验主义来解决来解决一些新的问题。”为了让我们更加容易理解接下来对我们说的内容，他对我们说：“可能比如说不太了解政教处是干什么？简单来讲，绝大部分的人觉得政教处是干嘛的？收拾坏人！”幽默易懂的语言让同学们轻松明白了政教处的职责。“那倒是比如讲的话我们好多孩子不同年龄段的孩子都有它不同的特征。比如说在十年之前学生管理很大的一个问题在哪里啊？政教处的最大的压力是在哪里呢？学生的沉迷网络，这个沉迷网络是干嘛的？好多的孩子会半夜常常跑到网吧去上网。当时智能手机没有像现在这么普及和发展，那好多孩子呢为了这个玩网络游戏。那时候十点多老师查房的时候回去睡觉，等到十一点多，他就翻墙跑出去上网了。然后通宵第二天才回来，上课那肯定就无精打采的了。可以这么说，原来在网吧就好比现在的奶茶店，原来的网吧的话那就是一个乌烟瘴气的一个地方，我看现在奶茶店也是个乌烟瘴气的地方。”这使同学们简明地了解了奶茶店的人员混杂。“很多的奶茶店都是一些不良的社会青年聚集的，包括现在派出所反馈过来的，好多的奶茶店就融入了一些不良的社会青年。然后在里面呢，就计划一些如何实施诈骗、如何实施欺凌等等的这些东西。”接着，他进行了总结“所以每一个时代每一个时间段，因为社会的发展和变化，孩子的特点也不一样。所以说呢我们政教处所要面临的就是不确定性的东西很多。比如现在你看一下我们现在做的最大的一个现在我们政教处比如说做的很多的一个精力方面放在哪里？反诈骗、防欺凌、反性侵啊。”<br>讲到这里，他就顺着这条脉络，回答了我们对严抓交通安全的看法的问题。“比如说未满16周岁不能够骑电动车，就是电动自行车、助力车也不行。非机动车不能驶入机动车道、必须佩戴头盔这些都是我们国家的的《中华人民共和国道路交通安全法》所明确规定的。那为什么要定在16周岁才可以骑电动车？为什么要佩戴头盔？这一部法律的实施不是说交警部门为了罚款来制定这部法律。这部法律的实施那是什么书写出来的啊？那是伤者的痛、死者的命、亲人的泪水、事故发生后的后悔，书写了这一步法律！”同学们大受了震撼，他就讲起了自己的事情。“我孩子今年上高一，未满十六周岁。他也想找我要电动自行车。我首先我就跟他说，‘你未年满十六周岁，爸爸是不会给你买的。’这本身是法律所规定的，那你都不具备法律所允许的条件，做人做事要合法合规是一个底线。”，“所以说抓这个安全规范的骑停车，政教处这几年来的话是花了很大的精力，但是我们也可以看到，随着这个经济发展生活水平的提高，骑电动车的现象越来越多。那对于高中生的话，年满十六周的，我们不反对你骑电动车，但是必须要做到什么？通常的头盔要戴是不是？停车要规范要有序嘛，也不能因为自己要停车，然后把居民出入的路口，以及我们公共的道路给占用，是不是？我们这样子就很自私了，不能为了自己的方便而影响了别人。我历来我都很反感这样的行为。我们如果不能够为别人，不能够为我们这个社会起到一些帮助，没有力量去帮助别人，起码我觉得那我们可以做好自己，不要去影响、干扰别人，包括对班级。我觉得做这个如果做人的境界应该做的好的境界，高的境界。那就让自己能够成为一个什么呢——让别人觉得我们的存在他而感到幸福。”<br>叶涵就向他提出了下一个问题：“您认为政教处在学校工作中的角色是什么？您是如何理解的？这个角色在学校工作的重要性呢？”他先问了我们一句：“你们怎么看待学校的政教工作？”我便回答：“就是管理学校的纪律问题、德育工作的一个处室。”他又给我们做了一个比喻：“表面上来看政教处的工作呢，政教处像消防员。学校嘞，哪里有危机，哪里有突发事件，那都是政教处的工作的这个范围。目前，其实政教处的中心的工作是哪里呢？那其实就是等于安全。”他就让我们看了看政教处墙上的标语：“育人为本 德育为先”。“育人对于我们国家来讲，这是涉及到什么呢？百年根基。那德育为什么要德育？有一些德育简单理解，其实也就是思想品德的事情，是不是？德育啊，其实就是品德教育嘛，就是一个思想品德 。那为什么想要德育为先？可以想象一下，一个三观不正、品德不端的人，他的学习能力越强，今后他对我们这个社会，对我们这个国家的破坏也就越强。所以对于我们这个青少年来说，，三观要正。那其实大家也可以看到，不仅仅是说我们是管理一些坏的学生。你们班主任每一次开展的这个主题班会也是政教处布置下去的。那我们开主题班会，这是一个班主任对你们的一种思想品德的教育其实就是在帮助你们树立正确的三观，是不是？养成良好的习惯，培养文明素养。那这些工作的话其实也是这个政教工作的内容之一。所以除了这个建立，第二个的话其实就是一个维护。那你们所看到的比较多的，就是我们在维护校园的安全稳定。班主任实施了一些这个学生思想品德教育的这些工作。”<br>他不想拘泥于这些问题，他说：“比如，利用今天这个我来陪你一个小时的时间你们有没有什么想知道一些你们很想知道的？不要局限于这边的这些问题，你突然你自己现在有突发奇想，你也可以问。”我们就问：“您是如何处理学生问题，怎么能够让他们深刻认识错误呢？”他就回答：“这个问这个问题有点大，并不是每个学生犯了错以后，他就一定会认识到自己的错误，也并不是说政教处进行了一番的教育他就一定能够转变啊。如果一经教育能够转变，那政教处的事情就不会这么忙，就不会这么累了，班主任的工作就不会那么辛苦，是不是啊？”我们不是很理解，他就说：“你们就想想看，当班级出现违纪的事情的时候，班主任进行了批评教育，很多的同学能够马上就改过来了吗”这句话真的很形象，同学们都感受到了政教工作的不易。为了让我们进一步理解，他就进一步来解释：“这世界上有两件最难的事情，一个是把你口袋的钱拿到我的口袋。第二件事情就是把我的想法，把我脑袋中的想法钻到你的脑袋去。所以政教处对于违纪处理确实很难，那我们根据学校的违纪处理办法进行处理。”为了让我们知道不能做违纪的事，他开始讲起了后果。“到了政教处，有一些事情，如果弄到政教处上来的话，那说明的话事情的性质已经比较严重了。正常的情况的话，同学们的违纪呢都是由班级年段处理。班级年段如果处理不下，那就政教处来处理。到政教处来处理，这说明已经性质比较严重了。然后到这边来处理的话，那基本上就要处分了啊。那一处分的话呢，档案就会跟着你们一辈子了。所以说我都一直告诫你们啊，因为我们现在是没有把这些处分材料给上网上去呢。那如果哪一天的话，把这些处分的决定如果统一的跟派出所联动起来。那你日后应聘上网调，你说对一些违禁的违法的他怎么认定，然后看到打人啊偷盗啊，你干的都是乱七八糟的事情，那就可以走人了。”他那里还有一个鲜活的案例“你说我们有一回叶文彬叶树建还有跟那个应该是跟鸿图的叶舟。有天大中午的喝酒醉，好像喝了一斤的白酒，在教堂附近把我们一个退休老师的孙子，才几岁呢，五岁。经过的时候就看人家不爽，一个大巴掌就把小朋友给摔过去啊，摔完自己也醉掉，就躺在路上。”说到这里，他又想到了：“好多好多孩子啊，就脱离学校，又脱离管教。偷，盗，抢啊，什么拉车门、当手机是不是？然后没钱花了，就肯定就要想办法了啊。去偷盗又涉嫌电信诈骗。”他发出了感叹：“其实大家要想一想，我们的爸爸妈妈已经把大家照顾的很好了。不要去搞七搞八。当然那几个孩子会变成那个样子，跟他的家庭有很大的关系。爸爸妈妈没管，好像都是抱养的，所以打小的话就缺少缺少家庭的关爱。”我们也认识到了我们是多幸福。“但不管怎么样，起码做人不能违纪违法，不能给别人带来伤害，是不是？我一直很反感的，就是要去影响破坏社会。那以前讲的学生半夜翻墙出去上网吧，那现在呢？现在就是怕你们沉迷于手机啊。所以对手机的管控啊真的是得靠自律啊！这个上半年几起跟永安约架要怎么约都是上手机。他们现在都快手约，南抖音北快手的。”他还说出了他的“卧底”身份。“我也在快手啊，我就是隐姓埋名，那我肯定能我在快手上我是不发任何东西的，然后我也不用我自己的手机注册。我几乎三天两天我都会在同城快手上去走一走逛一逛看一看。”让同学们知道网络不是法外之地，也不能做违法违纪的事。<br>访谈已接近尾声，我们想让他对学校德育工作做一下评价，“我看了也少了很多牵手照、宾馆照、纹身照、亲嘴照。”他结合我们班级的现状，提出了建议：“那现在学校这些学校得育的管理需要得到每一位同学的配合支持，不仅管好自己，还要尽量的把好的去影响别人。我赞成一个班级正气要竖起来。你看，一个班级没有凝聚力，松松垮垮的一盘散沙，这不是叫谁的责任？是每个人的责任！还有班级的同学，应该要拧成一股绳。对班级的一些不良的行为我们要去抵制，能够向着班级的集体的利益努力这个班级的战斗力才会强！”我们经过了一下午的访谈，获益良多。</p>
-]]></content>
-      <tags>
-        <tag>其他</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>大田五中×集美大学“音乐之翼”活动</title>
-    <url>/2024/07/14/%E9%9F%B3%E4%B9%90%E4%B9%8B%E7%BF%BC/</url>
-    <content><![CDATA[<h1 id="汇演视频"><a href="#汇演视频" class="headerlink" title="汇演视频"></a>汇演视频</h1><span id="more"></span>
-   <iframe src="//player.bilibili.com/player.html?isOutside=true&aid=1456137013&bvid=BV1bi421Y75w&cid=1611738384&p=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"></iframe>
-
-<hr>
-<h1 id="海量照片、资料"><a href="#海量照片、资料" class="headerlink" title="海量照片、资料"></a>海量照片、资料</h1><pre><code>链接： https://caiyun.139.com/m/i?075CgOLV778bd 提取码：hyZ1 复制内容打开中国移动云盘手机APP，操作更方便哦
-</code></pre>
-<p><strong>服务器运营不下去了，只能用移动云盘，敬请谅解！所有原片都在这里</strong><br><img src="https://pic.imgdb.cn/item/66977504d9c307b7e90ce21e.jpg" alt="二维码已包含提取码！"></p>
-<h1 id="报道"><a href="#报道" class="headerlink" title="报道"></a>报道</h1><div style="display: flex; justify-content: center; align-items: center; height: 100vh; background-color: #f0f0f0;">
-    <div class="card" style="width: 300px; height: 400px; background-image: linear-gradient(to bottom right, #ff9966, #ff5e62); border-radius: 10px; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); position: relative; overflow: hidden; transition: all 0.3s ease;">
-        <a href="https://mp.weixin.qq.com/mp/appmsgalbum?action=getalbum&__biz=MzkwNjcxMjY5OA==&scene=1&album_id=3544527381736456193&count=3#wechat_redirect" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; z-index: 2;"></a>
-        <img src="https://pic.imgdb.cn/item/6697761fd9c307b7e90f3422.jpg" alt="点击跳转">
-        <img alt="点击跳转" style="width: 100%; height: 100%; object-fit: cover;">
-    </div>
-</div>
-
-<hr>
-<div style="display: flex; flex-wrap: wrap; justify-content: center;">
-    <div class="card" style="border: 1px solid #ccc; border-radius: 5px; padding: 10px; margin: 10px; width: 300px; text-align: center; background-color: #f9f9f9; box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);">
-        <a href="https://www.xwkx.net/e/wap/show.php?id=186955">报道1</a>
-    </div>
-    <div class="card" style="border: 1px solid #ccc; border-radius: 5px; padding: 10px; margin: 10px; width: 300px; text-align: center; background-color: #f9f9f9; box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);">
-        <a href="http://m.taihainet.com/lifeid/cssh/2024-07-14/2784794.html">报道2</a>
-    </div>
-    <div class="card" style="border: 1px solid #ccc; border-radius: 5px; padding: 10px; margin: 10px; width: 300px; text-align: center; background-color: #f9f9f9; box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);">
-        <a href="http://life.china.com.cn/gonggao/zixun/detail2_2024_07/14/4436733.html">报道3</a>
-    </div>
-    <div class="card" style="border: 1px solid #ccc; border-radius: 5px; padding: 10px; margin: 10px; width: 300px; text-align: center; background-color: #f9f9f9; box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);">
-        <a href="https://cj.sina.com.cn/articles/view/5764894621/1579d4f9d001016gx2">报道4</a>
-    </div>
-    <div class="card" style="border: 1px solid #ccc; border-radius: 5px; padding: 10px; margin: 10px; width: 300px; text-align: center; background-color: #f9f9f9; box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);">
-        <a href="https://life.china.com/2024-07/14/content_336121.html">报道5</a>
-    </div>
-</div>
-]]></content>
+<iframe src="//player.bilibili.com/player.html?aid=740703473&bvid=BV1sk4y1E7Vs&cid=1115721816&page=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true" autoplay="0"></iframe>]]></content>
       <tags>
         <tag>摄影</tag>
       </tags>
   </entry>
   <entry>
-    <title>音乐剧设计</title>
-    <url>/2024/07/05/%E9%9F%B3%E4%B9%90%E5%89%A7%E8%AE%BE%E8%AE%A1%E5%AE%89%E6%8E%92/</url>
-    <content><![CDATA[<p>故事背景:<br />在大田五中，有一群充满着青春活力的少年们。新的学期到来，他们对未来充满着疑惑，他们都来自不同的家庭、有着不同的梦想、但是却有着同一个目的——找到自己的梦想是什么，并付之努力实现梦想。在一次体育课上，为筹备运动会，体育老师与班主任一起陪同学生们练习，大课间休息时，同学们围坐在一起，他们谈起了自己的困扰，聊起了自己的梦想，他们互相鼓励。在班主任老师和体育老师的帮助下，他们在家长会上说服了自己的家长，让父母真正的认识到了他们的决心与天赋。学生们从此正式走向了圆梦的道路上。</p>
-<span id="more"></span>
-<p>故事主角:<br />（尤韧）1.张扬（热爱体育的少年，是体育生，但由于父母想要让他学习文化课，不支持他想要走体育道路的想法，在新的学期里，他闷闷不乐，他不知道自己以后要去做什么，又该为了什么而努力，在一次体育课上，季萧萧和同学们谈起了热爱与梦想一词，发现原来不只他没有得到家庭的理解，他们决定寻求老师的帮助，希望老师能够召开一次家长会，让孩子们站在讲台上，大声的告诉父母他们的梦想，他们想要努力的决心）</p>
-<p>（林子婧）2.温暖（班级的班长，学习成绩优异，但时常处在焦虑当中，害怕自己的成绩下降。新的学期，她看到热爱音乐并坚持音乐的季萧萧，觉得季萧萧很幸福快乐，因为他不知道自己有什么梦想，她只知道不能让成绩下降，却不知道自己到底热爱着什么）</p>
-<p>（黄依）3.季萧萧（艺术特长生，性格乐观活泼，有点话痨，爱表现自己，乐于助人。新的学期里，她也遇到了一点问题，她的文化课成绩并不理想，因此妈妈提出成绩如果再不理想，要停掉她的艺术课程，于是她找到了班长温暖，想要补习文化课知识，从而了解到了温暖的困境，并和同学们一起帮助她）<br />4.体育老师（李尚坤）<br />5.班主任（李佳慧）<br />6.林雨缘（季萧萧母亲）<br />7.郭书畅（张扬母亲）<br />8.张陆垚（温暖父亲）<br />具体情节:<br />《第一幕:青春活力的少年们》<br />（游宇宸）旁白：在大田五中，有一群充满着青春活力的少年们。新学期到来，高二的他们对未来充满着疑惑，他们都来自不同的家庭、有着不同的梦想、但是却有着同一个目的——找到自己的梦想是什么，并付之努力实现梦想。<br />开场舞——《我的未来式》【3分11秒】<br />第一场:多人合唱《少年》<br />角色——全体学生<br />（舞台设计）同学们有不同的站位、一组为开学在校门口打招呼、说话；一组为开学拉着行李箱；<br />（大屏幕）：校门口图片<br /><img src="https://cdn.nlark.com/yuque/0/2024/jpeg/35935935/1724644763988-ebbf38cb-ae01-48cc-9fb6-1ddb500e70c0.jpeg#averageHue=%23505f3d&id=x4JWp&originHeight=778&originWidth=1552&originalType=binary&ratio=1&rotation=0&showTitle=false&status=done&style=none&title="><br />（背景音频）：“好久不见”“假期作业写完了吗”“我假期出去旅游了”“我一个假期都在上兴趣班”…<br />第二场:《你们好，我的名字是张扬》（介绍故事背景主角人物）<br />角色:张扬、季萧萧、温暖、张扬母亲<br />①张扬——（场景）：校门口；（背景音乐：This summer）<br />张扬母亲：新的学期你就进入高二下学期了，很快你就要高考了，不要再跟无线电训练队一起训练了，文化课才是你最重要的事情。<br />张扬：我不要！我们才刚拿了全国一等奖！<br />张扬母亲：一等奖有什么用，能让你上大学吗？你现在那点儿分数能上个什么好大学？<br />张扬：我可以走体育考试，通过体育上大学啊。妈妈，我喜欢体育，这也是我擅长、热爱的东西，我…(被打断)<br />张扬母亲：热爱有什么用，我还不了解你，连文化课都还没学好，你能坚持得下来体育吗。<br />张扬：我可以的。<br />张扬母亲：好了，去上学吧，希望能看到你成绩进步，我会和你们班主任联系不许你再去训练队训练了。<br />【张扬进入校园遇到温暖和季萧萧】<br />———-黑幕————–转场—————<br />②温暖、季萧萧、张扬——（场景：教室内）（背景音乐：月光皎洁）<br />季萧萧：哎，明明是新学期，却一点动力都没有啊。<br />温暖：怎么啦，你可是小开心果啊，今天怎么这么丧。而且奇怪的是，张扬今天也是一副沉闷样子。<br />季萧萧：我妈妈说，新学期考试，如果我的文化课成绩没有达到500分，就要停掉我的声乐课了，我上哪里学够500分啊！<br />张扬（张扬此时听到，转过头）：那你可还比好多了，还有余地，达到500分还允许你学，我一点儿条件都讲不了啊）<br />温暖：我只知道萧萧是要学习艺术，准备走艺考的，你？要学什么？<br />张扬：体育啊，这是我的擅长项。<br />季萧萧：听完你的话我心里好受多了，但是不多。<br />张扬、季萧萧：哎….<br />温暖:好啦！马上就要上课了，大家快准备一下。<br />———-黑幕————–转场—————</p>
-<p>③开始重唱《你们好，我们的名字是》<br />———-黑幕————–转场—————</p>
-<p>第三场:女生二重唱《同学，可以帮我个忙吗》<br />角色:季萧萧、温暖<br />（场景：教室）<br />（背景音乐：下课铃声（老师再见！）；《10°C》）<br />①情景剧<br />季萧萧：温暖！我有个忙想你帮我！<br />温暖：你说吧，只要我能做到的我都会无条件帮助你！<br />季萧萧：上天有好生之德！让我拥有你这么一个好同桌！好班长！<br />温暖：好啦，说吧，什么忙需要我？<br />季萧萧：我想你帮我补习补习，我一定要努力考到500分！<br />温暖：可以啊！小音乐家！<br />季萧萧：温暖啊，你以后想做什么呢？<br />温暖：读大学，找工作。<br />季萧萧：读什么专业呢？做什么工作呢？<br />温暖：不知道，要先看我考的分数。<br />季萧萧：你有什么梦想吗？<br />温暖：emmm，考上好大学算不算？<br />季萧萧：梦想啊，是你喜欢什么，喜欢到你愿意为它付出巨大的努力。就像我，我喜欢音乐，我愿意为她努力考到500分！<br />温暖：emmmm，我也不知道我喜欢什么，我还是想考好大学。<br />季萧萧：嗯？不可能！每个人都有自己的梦想的！<br />温暖：可是我…..嗯，至少现在不知道是什么，我会努力想想的，我先给你补习吧！<br />季萧萧：我也会帮助你的！我们一定要一起找到你的梦想！<br />温暖：好的，小音乐家萧萧！<br />———-黑幕————–转场—————<br />②开始演唱女生二重唱《同学，可以帮我个忙吗？》<br />第四场:男女三重唱《我们的困扰》<br />角色:张扬、季萧萧、温暖<br />旁白：在一次体育课，他们又谈起了新阶段的困扰<br />①场景：操场体育课上<br />背景音乐：<br />体育老师（李尚坤）：同学们，接下来的课程还剩下30分钟，大家原地休息一下吧！<br />背景音：喧嚷声<br />张扬：温暖，<br />温暖：怎么了<br />张扬：我听说你最近在帮萧萧补课，你（停顿）可不可以也帮帮我，我想试试，用分数证明我自己，如果分数达到了，我想我也许能劝动我妈妈。<br />温暖：可以啊！萧萧最近也有了些进步！我们可以一起学习！<br />季萧萧：温暖，我的神！我现在距离500分还有！额，50分…….<br />张扬：看来我比你有希望，我上次月考考了480 分.<br />季萧萧：我会努力的！<br />温暖：看到你们干劲十足，我也好有动力哈哈。<br />季萧萧：萧萧，你喜欢小朋友吗？<br />温暖：喜欢啊，小朋友多可爱。<br />季萧萧：其实我觉得你，很适合当老师，你乐于助人，责任心强，学习又好，是我心中的完美小老师。<br />张扬:对啊，温暖，你以后想干什么呢？<br />温暖：其实，我也不知道我想干什么，不过，这确实提供了一个思路，说实话，我还挺喜欢讲课的，讲课的我最自信！<br />季萧萧：前路征途漫漫啊！<br />张扬：加油，50分！<br />季萧萧：张扬！<br />———-黑幕————–转场—————</p>
-<p>②开始演唱男女三重唱《我们的困扰》<br />《第二幕:我喜欢的都是什么》<br />第一场:多人重唱《来谈谈我们的梦想与热爱吧!》<br />角色——张扬、季萧萧、温暖、同班同学沈森、<br />①（场景：教室）<br />班主任：新的学期，想必同学们都已经对未来的学习生活做好了充分准备，新学期新气象，我们决定召开一次家长会，大家有需要在家长会上传达的内容，同意汇报到班长那里，我会帮大家传递心声的。<br />学生：谢谢李老师！<br />班主任：好，下课<br />————————————————老师离场———————————————————<br />张扬：温暖！请帮我记录“张扬正在努力学习！他真的很喜欢体育，他想继续和无线电运动训练队一起训练！他想未来也一直学习体育！<br />季萧萧：张扬，你跟温暖在聊什么呢？聊的这么开心。<br />张扬：我在叫温暖记录我的心声呢！<br />季萧萧：温暖！请帮我记录“萧萧距离500分还差20分！一定会考到500分的，请不要在停止她的声乐课了”<br />沈森：班长，请帮我记录<br />XX：班长，也请帮我记录一下………<br />—————————————————黑幕————————————————————<br />②开始多人重唱《来谈谈我们的梦想吧》<br />第二场:教师独唱《我喜欢》<br />角色——班主任<br />班主任：这帮孩子啊，青春、有活力，每个人有都有自己的梦想，存在即合理，就让我来帮助他们吧！<br />教师独唱《我喜欢》<br />———-黑幕————–转场—————<br />第三场:多人合唱《我喜欢》<br />角色——全体学生<br />—————————————————黑幕————————————————————</p>
-<p>《第三幕:你的梦想实现了吗》——多人重唱<br />第一场:多人重唱《我理解并选择支持你》<br />角色——季萧萧母亲，张扬母亲，温暖父亲<br />①（场景：家长会）（背景音乐：）<br />班主任：最后，在这次家长会的结尾，我想和各位家长谈一谈孩子们的梦想。<br />张扬妈妈和季萧萧的妈妈在哪里？<br />张扬母亲：老师，您好，我是张扬的妈妈！<br />班主任：在这次的“传递学生心声”中，有两位同学的心声，我想和两位妈妈说一下，同时，其他家长也可以认真听一下。<br />张扬同学在这次的期中考试中，考了550分，他在之前可是从来没有超越过500分，他在定向运动比赛“无线电运动”全国比赛中获得了一等奖，他的努力我们都看在眼里，他适合体育、热爱体育，他是很适合选择体育道路的。<br />另外，萧萧妈妈，萧萧说她还差20分就达到500分了，最近希望可以提前恢复她的声乐课，她想去参加一个声乐比赛。<br />或许家长们都认为，梦想这个词，过于虚无缥缈了。但是我想和各位家长说的是，如果没有梦想作为信仰支撑，哪怕进入了大学，他们依然会陷入迷茫，没有方向的前行，注定会迷路。<br />—————————————————家长会后——————————————————<br />②张扬母亲和萧萧母亲分作两场唱《我理解并选择支持你》</p>
-<p>第二场:多人重唱《与光同行》<br />朗诵稿《我们都是追梦人》<br />角色——张扬、季萧萧、温暖<br />诗朗诵稿</p>
-<p>第三场:多人合唱《圆梦》<br />角色——全体学生教师<br />旁白：高三一班毕业了，张扬考上了理想的北京体育大学，季萧萧考上了自己喜欢的上海音乐学院，温暖考上了北京师范大学，她选择了未来从事教师事业。至此，圆梦。<br />演唱：《圆梦》</p>
+    <title>xiaopf教育app停服公告</title>
+    <url>/2023/05/05/xiaopf%E6%95%99%E8%82%B2app%E5%81%9C%E6%9C%8D%E5%85%AC%E5%91%8A/</url>
+    <content><![CDATA[<p>由于老总林中梧与开发部门决裂<br>所以从现在起开始停服<br>若中梧使用管理权限开服将清空全部数据<br>开服时间待定<br>具体参见➡<a href="https://support.qq.com/products/502768/post/168329177515739724/">公告📄</a></p>
 ]]></content>
       <tags>
         <tag>其他</tag>
       </tags>
   </entry>
   <entry>
-    <title>黄山旅游攻略</title>
-    <url>/2024/07/12/%E9%BB%84%E5%B1%B1%E6%97%85%E6%B8%B8%E6%94%BB%E7%95%A5/</url>
-    <content><![CDATA[<p><a href="https://www.yuque.com/yuqueyonghucnfmve/youreln/bvu3wn21kxaexaf0?singleDoc">语雀的完整攻略</a></p>
-<span id="more"></span>
-<p><a name="wZsD7"></a></p>
-<h2 id="简介"><a href="#简介" class="headerlink" title="简介"></a>简介</h2><blockquote>
-<p>本攻略综合自百度地图、携程、大众点评<br><img src="https://cdn.nlark.com/yuque/0/2024/jpeg/35935935/1720273749142-d4838be5-626d-4bac-96e3-151b2b233375.jpeg#averageHue=%23616363&from=url&id=CYGYn&originHeight=1161&originWidth=1080&originalType=binary&ratio=1&rotation=0&showTitle=false&size=505867&status=done&style=none&title=" alt="-305088705.jpg"></p>
-</blockquote>
-<p><a name="DD6Nr"></a></p>
-<h2 id="注意事项"><a href="#注意事项" class="headerlink" title="注意事项"></a>注意事项<img src="https://cdn.nlark.com/yuque/0/2024/png/35935935/1720187351694-0d5fe98d-b606-435d-b1d7-96f1cd3e8e2e.png#averageHue=%23327fe5&clientId=udec829b6-7f3f-4&from=paste&height=25&id=ubd9ced92&originHeight=32&originWidth=32&originalType=url&ratio=1&rotation=0&showTitle=false&status=done&style=none&taskId=u9f199e4f-d5e8-42f3-8bd3-398eae339a2&title=&width=25"></h2><ol>
-<li>交通：出门在外，安全第一。打车要选正规出租车或平台网约车，避免上黑车的当。别忘了，出发地和目的地一定要确认清楚哦！</li>
-<li>鞋子：好的鞋子能带你走更远的路。爬山记得穿运动鞋或平底鞋，保证舒适度，让你行走如飞！</li>
-<li>景点：别错过黄山的美丽山景，也别忘了去周边的古村落感受一下古朴与宁静。西溪南、宏村、西递，都是不错的选择。</li>
-<li>购物：买特产别在景区，去大型超市看看，明码标价更放心。</li>
-<li>日出日落：想要欣赏美丽的日出日落，最好自己爬山上去。虽然累一点，但绝对值得！</li>
-<li>导游：街边的野导和一日游导游不靠谱，出租车司机推荐的餐厅也要三思。相信自己的判断，别被忽悠了。</li>
-<li>索道时间：下山索道 17:00 就停了，不想山上过夜的话，记得早点去排队。</li>
-<li>山顶酒店：一定要提前预订，至少提前 5 天，不然可能会没房哦。</li>
-<li>学生证：别忘了带上学生证，很多景点都能打折呢。</li>
-<li>徒步路线：如果你喜欢徒步，可以选择云谷寺到白鹅岭这条路线，相对轻松一些。</li>
-<li>假扮卡通人物：遇到假扮的卡通人物要合照，赶紧拒绝，他们可是要收费的。</li>
-<li>翡翠谷：路面较滑，游玩时要小心，注意安全。</li>
-<li>住宿：时间充裕的话，在宏村住一晚是个不错的选择，能让你更深入地感受当地风土人情。</li>
-<li>热情搭讪：保持警惕，很多热情搭讪的人可能是为了推销。</li>
-<li>气温：即使是夏天，黄山上的气温也可能较低，带上薄外套，以防着凉。</li>
-<li>晕车药：景点之间距离较远，晕车的朋友记得带上晕车药。</li>
-<li>落地站：选择黄山北站，高铁经停，还有去景区的线路车，方便又快捷。</li>
-<li>安全意识：在旅途中，时刻保持安全意识，保护好自己和财物。<br><a name="a4ap6"></a><h2 id="山顶天气（点击下方）"><a href="#山顶天气（点击下方）" class="headerlink" title="山顶天气（点击下方）"></a>山顶天气（点击下方）</h2><a href="https://you.ctrip.com/weather/huangshan19.html"><img src="https://cdn.nlark.com/yuque/0/2024/png/35935935/1720188337642-4a8e88b3-a7ff-4573-8a3d-704ea82f3423.png#averageHue=%23dedbd4&clientId=udec829b6-7f3f-4&from=paste&height=83&id=uf1622c24&originHeight=83&originWidth=586&originalType=binary&ratio=1&rotation=0&showTitle=false&size=29947&status=done&style=none&taskId=u8b667d8f-3c6e-4e31-88ae-97274792f9e&title=&width=586" alt="image.png"></a><br><a name="WidpW"></a><h2 id="交通方式"><a href="#交通方式" class="headerlink" title="交通方式"></a>交通方式</h2></li>
-</ol>
-<p><strong>出发：</strong><br /><strong>三明北站</strong><br /><a href="https://ditu.amap.com/dir?from%5Badcode%5D=350425&from%5Bname%5D=%E7%A6%8F%E5%BB%BA%E7%9C%81%E4%B8%89%E6%98%8E%E5%B8%82%E5%A4%A7%E7%94%B0%E5%8E%BF&from%5Bid%5D=3504251719299059334&from%5Bpoitype%5D=&from%5Blnglat%5D=117.84682800000002,25.692535&from%5Bmodxy%5D=&to%5Bname%5D=%E4%B8%89%E6%98%8E%E5%8C%97%E7%AB%99&to%5Blnglat%5D=117.806783,26.375556&to%5Bid%5D=B02560QA7R-to&to%5Bpoitype%5D=&to%5Badcode%5D=350400&to%5Bmodxy%5D=117.806783,26.375556&type=car&policy=1">点击查看【amap】</a><br>:::warning<br>G1510      **14:05  **2时14分    <strong>16:19</strong><br />G304    **12:10   **2时21分      <strong>14:47</strong><br>:::<br><a name="gGhZl"></a></p>
-<h2 id="行程安排"><a href="#行程安排" class="headerlink" title="行程安排"></a>行程安排</h2><p><a name="zWkI6"></a></p>
-<h3 id="Day-1-·-屯溪老街"><a href="#Day-1-·-屯溪老街" class="headerlink" title="Day 1 · 屯溪老街"></a>Day 1 · 屯溪老街</h3><p><a name="FJKJ1"></a></p>
-<h4 id="酒店"><a href="#酒店" class="headerlink" title="酒店"></a>酒店</h4><p>16:30 前往酒店<br /><img src="https://cdn.nlark.com/yuque/0/2023/png/35935935/1699165004267-029de869-6bc7-4b1a-8e29-135141632470.png#averageHue=%23eb997b&clientId=ue7b0bf01-6f44-4&from=paste&height=284&id=ud99744a9&originHeight=284&originWidth=340&originalType=binary&ratio=1&rotation=0&showTitle=false&size=22646&status=done&style=none&taskId=u70e5e251-2ea0-4860-a633-24d4bd55147&title=&width=340" alt="image.png"><br />18:00 入住酒店<br><a name="PYAKZ"></a></p>
-<h5 id="备选酒店"><a href="#备选酒店" class="headerlink" title="备选酒店"></a>备选酒店</h5><p><a name="fmU9u"></a></p>
-<h4 id="屯溪老街"><a href="#屯溪老街" class="headerlink" title="屯溪老街"></a>屯溪老街</h4><p><img src="https://cdn.nlark.com/yuque/0/2024/png/35935935/1719223598578-79c98c34-9148-41ed-a60b-0dab8a6e2bdf.png#averageHue=%2368705f&clientId=ue69e772d-0dc0-4&from=paste&id=u92811ec6&originHeight=452&originWidth=678&originalType=url&ratio=1&rotation=0&showTitle=false&size=649055&status=done&style=none&taskId=u6b05017d-60d9-4942-90df-c6d04e7fbf2&title=" alt="image.png"><br />屯溪老街的主街东西走向，全长八百余米，东端有一块牌坊和写有《屯溪老街记》的照壁，西至横江、率水、新安江汇流处的老大桥（镇海桥）。这里古时因三江汇流处的码头发展起来，繁荣于明清，现在街上依然有着过去的繁华。<br />白天来屯溪老街，能清晰地看到徽派建筑上精美的砖雕、木雕、石雕，并参观一些景点，有屯溪博物馆、万粹楼等。晚上的这里要比白天更热闹些，店铺开了灯，一串串红灯笼与白墙黑瓦相映，带个三脚架，吃饭、逛街之余可以拍拍夜景。<br />若要吃美食，新苏老徽馆（老街151号）挺有名气，你可以尝尝电视节目《舌尖上的中国》里介绍过的徽州特色菜毛豆腐、臭鳜鱼。此外，沿街有许多卖小吃的，有臭豆腐、烧饼、徽墨酥等，边吃边逛也是不错的选择，像徽墨酥买回家还能赠送亲朋好友。<br />从主街两旁叉出去的道路，也属于屯溪老街街区。如果你不喜欢购物，从岔路往南走，就能到达新安江畔，可以看江景；也可以步行至德阳楼，一边喝茶，一边看黄梅戏。<br><a name="Qd22v"></a></p>
-<h4 id="晚餐"><a href="#晚餐" class="headerlink" title="晚餐"></a>晚餐</h4><p><a href="https://m.ctrip.com/webapp/you/foods/120061/454891.html?seo=0&isHideNavBar=YES&ishideheader=true&source=share&openapp=5&s_guid=51b846bd-4ceb-4968-bec0-6fdbfab4a202"><img src="https://cdn.nlark.com/yuque/0/2024/jpeg/35935935/1719628222825-99d093d5-ca3e-4d71-bf4d-799d30493f59.jpeg#averageHue=%23ceb89f&clientId=u66698cfd-b688-4&from=drop&height=650&id=u4b134362&originHeight=2340&originWidth=1080&originalType=binary&ratio=1&rotation=0&showTitle=false&size=1014336&status=done&style=none&taskId=u13483434-e198-4288-a05a-160b0ad058e&title=&width=300" alt="566e9be817ec3783ddc3da71ee834d4.jpg"></a><a href="https://m.ctrip.com/webapp/you/foods/120061/58094.html?seo=0&isHideNavBar=YES&ishideheader=true&source=share&openapp=5&s_guid=6513b3f0-5572-4ae4-9848-7c98de9bc0f4"><img src="https://cdn.nlark.com/yuque/0/2024/jpeg/35935935/1719628268457-d2a53a8b-9139-441e-ae40-b7b8522e24e8.jpeg#averageHue=%23d5bfa7&clientId=u66698cfd-b688-4&from=paste&height=609&id=ub1cd515e&originHeight=2340&originWidth=1080&originalType=binary&ratio=1&rotation=0&showTitle=false&size=1057708&status=done&style=none&taskId=ue6482bde-12da-48dd-ad6b-02814dafd0b&title=&width=281" alt="a3dc797c9acb61ea7847cf20c3de68c.jpg"></a><br /><a href="https://m.ctrip.com/webapp/you/foods/120061/5574717.html?seo=0&isHideNavBar=YES&ishideheader=true&source=share&openapp=5&s_guid=46e1586c-1dd2-4082-aede-5f804ef9a378"><img src="https://cdn.nlark.com/yuque/0/2024/jpeg/35935935/1719628274928-370a4b95-21d0-43d4-b958-f064af92b177.jpeg#averageHue=%23dbcab7&clientId=u66698cfd-b688-4&from=paste&height=622&id=ud95418fb&originHeight=2340&originWidth=1080&originalType=binary&ratio=1&rotation=0&showTitle=false&size=1021160&status=done&style=none&taskId=ufda5a224-8152-42a3-9bb5-e8388b126be&title=&width=287" alt="b18657fe8708809cf6f441a8bbaf0a5.jpg"></a><a href="https://m.ctrip.com/webapp/you/foods/120061/11115508.html?seo=0&isHideNavBar=YES&ishideheader=true&source=share&openapp=5&s_guid=aa3390d9-8e4d-4c2b-9802-29af672da6c1"><img src="https://cdn.nlark.com/yuque/0/2024/jpeg/35935935/1719628281591-fc79f2a1-dd90-4624-943d-d430b1a2158c.jpeg#averageHue=%23a48c75&clientId=u66698cfd-b688-4&from=paste&height=633&id=uc75e2989&originHeight=2340&originWidth=1080&originalType=binary&ratio=1&rotation=0&showTitle=false&size=964951&status=done&style=none&taskId=uc9ef095b-15c6-4caa-82b8-ec745b4fb3e&title=&width=292" alt="a445c2019eea2055e4988464f088eb1.jpg"></a><br><a name="ukHNg"></a></p>
-<h4 id="新安江-夜游景点"><a href="#新安江-夜游景点" class="headerlink" title="新安江-夜游景点"></a>新安江-夜游景点</h4><p><a href="https://j.map.baidu.com/89/t9mJ"><img src="https://cdn.nlark.com/yuque/0/2024/jpeg/35935935/1719628819234-4e8e0d10-b56c-4de6-a38b-fbd92a9577f1.jpeg#averageHue=%2381866d&clientId=u66698cfd-b688-4&from=paste&height=756&id=ub7e22fb8&originHeight=2340&originWidth=1080&originalType=binary&ratio=1&rotation=0&showTitle=false&size=937318&status=done&style=none&taskId=uc739dac0-b7f7-46bb-8289-1379b920e86&title=&width=349" alt="ec95af5c1e428394fbb60c797448598.jpg"></a><br /><a href="https://ditu.amap.com/dir?from%5Badcode%5D=341002&from%5Bname%5D=%E8%8A%B1%E7%AD%91%C2%B7%E9%BB%84%E5%B1%B1%E8%A1%97%E5%A4%B4%E5%B7%B7%E5%B0%BE%E8%80%81%E8%A1%97%E8%87%BB%E5%93%81%E6%B0%91%E5%AE%BF(%E9%BB%8E%E9%98%B3%E8%80%81%E8%A1%97%C2%B7%E5%B1%AF%E6%BA%AA%E8%80%81%E8%A1%97%E8%A1%97%E5%8F%A3%E5%BA%97)&from%5Bid%5D=B0JAL7BEFU&from%5Bpoitype%5D=100000&from%5Blnglat%5D=118.31071099999997,29.707339&from%5Bmodxy%5D=118.31056,29.706837&to%5Badcode%5D=341002&to%5Bname%5D=%E6%B1%9F%E5%BF%83%E6%B4%B2%E5%B9%BF%E5%9C%BA&to%5Bid%5D=B022F0021V&to%5Bpoitype%5D=110105&to%5Blnglat%5D=118.31440399999997,29.70503&to%5Bmodxy%5D=118.312582,29.704813&type=walk&policy=0&dateTime=now">点击查看【amap】</a><br /><a href="https://j.map.baidu.com/d8/ey8J"><img src="https://cdn.nlark.com/yuque/0/2024/jpeg/35935935/1719628952455-160d21dd-fca3-46c4-80fc-1f2e585712d1.jpeg#averageHue=%23a29f96&clientId=u66698cfd-b688-4&from=paste&height=852&id=udbb80d81&originHeight=2340&originWidth=1080&originalType=binary&ratio=1&rotation=0&showTitle=false&size=815509&status=done&style=none&taskId=u68830f4f-4a67-482a-9c57-249f875413f&title=&width=393" alt="87624d7f71ddb792dc8be23a3e13c54.jpg"></a><br /><a href="https://ditu.amap.com/dir?from%5Badcode%5D=341002&from%5Bname%5D=%E8%8A%B1%E7%AD%91%C2%B7%E9%BB%84%E5%B1%B1%E8%A1%97%E5%A4%B4%E5%B7%B7%E5%B0%BE%E8%80%81%E8%A1%97%E8%87%BB%E5%93%81%E6%B0%91%E5%AE%BF(%E9%BB%8E%E9%98%B3%E8%80%81%E8%A1%97%C2%B7%E5%B1%AF%E6%BA%AA%E8%80%81%E8%A1%97%E8%A1%97%E5%8F%A3%E5%BA%97)&from%5Bid%5D=B0JAL7BEFU-from&from%5Bpoitype%5D=100000&from%5Blnglat%5D=118.31071099999997,29.707339&from%5Bmodxy%5D=118.31056,29.706837&to%5Badcode%5D=341002&to%5Bname%5D=%E5%B1%AF%E6%BA%AA%E5%8D%9A%E7%89%A9%E9%A6%86(%E6%9A%82%E5%81%9C%E5%BC%80%E6%94%BE)&to%5Bid%5D=B022F004PX&to%5Bpoitype%5D=140100&to%5Blnglat%5D=118.30687599999999,29.707987&to%5Bmodxy%5D=&type=walk&policy=0&dateTime=now">点击查看【amap】</a><br><a name="qzh66"></a></p>
-<h3 id="Day-2-·-黄山"><a href="#Day-2-·-黄山" class="headerlink" title="Day 2 · 黄山"></a>Day 2 · 黄山</h3><p><a name="lM58O"></a></p>
-<h3 id="交通方式-1"><a href="#交通方式-1" class="headerlink" title="交通方式"></a>交通方式</h3><p><a name="oCfKv"></a></p>
-<h4 id="高铁"><a href="#高铁" class="headerlink" title="高铁"></a>高铁</h4><p><img src="https://cdn.nlark.com/yuque/0/2024/jpeg/35935935/1719629445565-7893f211-2324-4635-b08e-af7550c066b2.jpeg#averageHue=%23f2ebdd&clientId=u66698cfd-b688-4&from=paste&height=572&id=u12337cba&originHeight=1920&originWidth=1080&originalType=binary&ratio=1&rotation=0&showTitle=false&size=139576&status=done&style=none&taskId=ub9e14dcc-8ae9-4c86-9813-8dd41f07f18&title=&width=322" alt="459f0be9b080763bfc02bc58066862c.jpg"><img src="https://cdn.nlark.com/yuque/0/2024/jpeg/35935935/1719629165915-6f386e50-7f59-4546-a3ea-afc620b8ba6f.jpeg#averageHue=%23f4f4f4&clientId=u66698cfd-b688-4&from=paste&height=845&id=h5Ibz&originHeight=2340&originWidth=1080&originalType=binary&ratio=1&rotation=0&showTitle=false&size=587950&status=done&style=none&taskId=ubcaaab57-a5dd-4f21-bed4-370eff2857c&title=&width=390" alt="ff3715bad2a24086fa90168cf720362.jpg"></p>
-<p><img src="https://cdn.nlark.com/yuque/0/2024/jpeg/35935935/1719629475350-9e071ec8-3b11-47c3-8fad-1ab49b1b5130.jpeg#averageHue=%23daf7d3&clientId=u66698cfd-b688-4&from=paste&height=1172&id=u47d7c6f0&originHeight=3606&originWidth=1080&originalType=binary&ratio=1&rotation=0&showTitle=false&size=604646&status=done&style=none&taskId=u624f506f-3e27-4076-abb4-60a311e7ccc&title=&width=351" alt="f4ea42d1bd992749f14a37c2e38e684.jpg"><img src="https://cdn.nlark.com/yuque/0/2024/jpeg/35935935/1719629636187-78333f2a-c0c3-409b-b0af-c13e4773a18c.jpeg#averageHue=%23eaf4f7&clientId=u66698cfd-b688-4&from=paste&height=709&id=u9373b4e9&originHeight=2340&originWidth=1080&originalType=binary&ratio=1&rotation=0&showTitle=false&size=427434&status=done&style=none&taskId=ubd27299f-f0de-4b3e-a329-a9b9c570c3c&title=&width=327" alt="9a0108401af7f38eb651e75de2808c9.jpg"><br><a name="BARBU"></a></p>
-<h4 id="路线"><a href="#路线" class="headerlink" title="路线"></a>路线</h4><p><img src="https://cdn.nlark.com/yuque/0/2024/jpeg/35935935/1719632410461-98533a46-a8eb-409f-89cb-e5957ad54111.jpeg#averageHue=%23cbb376&from=url&id=gTvTX&originHeight=2214&originWidth=3000&originalType=binary&ratio=1&rotation=0&showTitle=false&size=1721312&status=done&style=none&title=" alt="1684664499.jpg"></p>
-<p><strong>西海大峡谷二日游路线</strong><br />如果您住在后山的酒店(狮林，排云型旅或西海饭店)<br /><strong>第一天</strong> 可选择乘坐云谷索道或太平索道上山，入住后山酒店。<br /><img src="https://cdn.nlark.com/yuque/0/2024/jpeg/35935935/1719630480446-a7146d8c-6967-49cc-b0ee-7d4368e11bd0.jpeg#averageHue=%2387e7af&clientId=u66698cfd-b688-4&from=paste&height=631&id=u9149daac&originHeight=2340&originWidth=1080&originalType=binary&ratio=1&rotation=0&showTitle=false&size=602074&status=done&style=none&taskId=u29756dc1-bb46-4073-8e71-0d7183869a3&title=&width=291" alt="7f4b0e841ebb1b4806b54f6992b4cf2.jpg"><br /><strong>第二天</strong> 早起，选择丹霞峰或清凉台看日出，后由排云亭→西海大峡谷北入口(途中可远观光明顶，飞来石等景点)→一环→二环→谷底→乘坐西海观光缆车→天海→经海心亭→鳌鱼峰→玉屏景区，游览迎客松后乘坐玉屏索道下山。<br /><img src="https://cdn.nlark.com/yuque/0/2024/jpeg/35935935/1719630787856-cfeed5f3-8c99-48c4-b447-3c48099abc51.jpeg#averageHue=%2360dd94&clientId=u66698cfd-b688-4&from=paste&height=639&id=u501307ed&originHeight=2340&originWidth=1080&originalType=binary&ratio=1&rotation=0&showTitle=false&size=334210&status=done&style=none&taskId=u8a56798b-936e-4ac5-9d80-a2f241cf828&title=&width=295" alt="631b7c6ccce5b8221c16cf4e109abb0.jpg"><img src="https://cdn.nlark.com/yuque/0/2024/jpeg/35935935/1719631221940-7f23f3c5-830f-42a4-8bf3-9f1bc0ee8084.jpeg#averageHue=%2374e2a2&clientId=u66698cfd-b688-4&from=paste&height=431&id=u98013800&originHeight=904&originWidth=855&originalType=binary&ratio=1&rotation=0&showTitle=false&size=151488&status=done&style=none&taskId=ucee72416-3b07-4c8b-a906-71cc429f508&title=&width=408" alt="db12739f4550b74dce211f0e701f1d0.jpg"><br />如果您住在天海(白云宾馆)<br /><strong>第一天</strong> 可选择乘坐云谷索道或太平索道上山，再由排云亭→西海大峡谷北入口(途中可远观光明顶，飞来石等景点)→一环→二环→谷底→乘坐西海观光缆车→天海，入住白云宾馆。<br /><strong>第二天</strong> 可以选择在光明顶或猴子观海观看日出，从猴子观海至云谷寺景区，乘坐云谷索道下山。<br /><img src="https://cdn.nlark.com/yuque/0/2024/jpeg/35935935/1719631501012-e713c14e-b7f3-4c83-ae02-2e1c52c2d596.jpeg#averageHue=%2371e1a0&clientId=u28904010-f1f6-4&from=paste&height=907&id=ua2d2e285&originHeight=907&originWidth=864&originalType=binary&ratio=1&rotation=0&showTitle=false&size=150337&status=done&style=none&taskId=u24018a9e-5788-4bf6-9860-7389e6115a3&title=&width=864" alt="0bab25f9736fad6f96b40d3424c6ad3.jpg"><br><a name="y3LyR"></a></p>
-<h3 id="吃饭"><a href="#吃饭" class="headerlink" title="吃饭"></a>吃饭</h3><p><img src="https://cdn.nlark.com/yuque/0/2024/jpeg/35935935/1719633072352-54224d87-0b48-408d-a225-85b3a58631d9.jpeg#averageHue=%23ede7e3&from=url&id=wpxeH&originHeight=7597&originWidth=1080&originalType=binary&ratio=1&rotation=0&showTitle=false&size=2355408&status=done&style=none&title=" alt="974072789.jpg"><br><a name="TbpI2"></a></p>
-<h3 id="景区简介"><a href="#景区简介" class="headerlink" title="景区简介"></a>景区简介</h3><p><a href="https://player.bilibili.com/player.html?bvid=BV1F14y1d77o&autoplay=0">点击查看【bilibili】</a><br /><img src="https://cdn.nlark.com/yuque/0/2023/png/35935935/1699166314274-8fd9e9be-7249-41ca-81a5-6318eaf04ec9.png#averageHue=%23416786&clientId=u355cf227-f536-4&from=paste&id=u9516ef33&originHeight=1162&originWidth=2500&originalType=url&ratio=1&rotation=0&showTitle=false&size=3606938&status=done&style=none&taskId=uded2f7cc-d0e1-4c6a-901d-a273d1c7577&title=" alt="image.png"><br />黄山风景区坐落于黄山市黄山区汤口镇境内。黄山自古以来就是中国数一数二的名山，奇松、怪石、云海、温泉被称为黄山的“四绝”。除此之外，雾凇、雪景、日出也是游人不会错过的景观，古人有“五岳归来不看山，黄山归来不看岳”的说法。<br />景区内分为南门、西门和北门，绝大多数游客都会从南门出入，南门又有前山后山两个出入口，都靠近山脚下的汤口镇。镇上也成了游玩黄山的中转站，很多游客都会提前赶到这里住宿一晚。汤口镇上到景区门口需乘黄山新国线班车，在前山山门（慈光阁）、后山山门（云谷寺）、黄山温泉都会停靠。<br />景区游览主要分为前山、后山两条上山路线，都通向主峰之一光明顶，在光明顶的另一侧，还有一条环线-西海大峡谷。<br><a name="UliLN"></a></p>
-<h4 id="前山"><a href="#前山" class="headerlink" title="前山"></a><strong>前山</strong></h4><p><img src="https://cdn.nlark.com/yuque/0/2024/png/35935935/1720157571999-757a26f8-8d21-4e35-bdac-e683842af663.png#averageHue=%234a5543&clientId=u41b9c3e6-3dfe-4&from=paste&id=u9dd44e78&originHeight=853&originWidth=1280&originalType=url&ratio=1&rotation=0&showTitle=false&size=1545282&status=done&style=none&taskId=uef51d559-903e-4a85-b900-b7f871dee88&title=" alt="image.png"><br />前山指慈光阁开始到山顶玉屏楼的登山路线（可乘玉屏索道直达），还有山顶的莲花峰、天都峰区域。前山风景大气，很适合乘索道俯瞰。高峰莲花峰和另一主峰天都峰都在这里（两峰交替开放），还迎客松、鲫鱼背、百步云梯、一线天、天海等经典景点。<br><a name="q48HP"></a></p>
-<h4 id="后山"><a href="#后山" class="headerlink" title="后山"></a><strong>后山</strong></h4><p><img src="https://cdn.nlark.com/yuque/0/2024/png/35935935/1720157608535-5317f83e-a0ee-4c45-9fb4-25d5dcb87734.png#averageHue=%23877448&clientId=u41b9c3e6-3dfe-4&from=paste&id=ua1ed0579&originHeight=640&originWidth=360&originalType=url&ratio=1&rotation=0&showTitle=false&size=427741&status=done&style=none&taskId=udd3c8851-7618-4819-8975-e2f19fa3ec6&title=" alt="image.png"><br />后山是指云谷寺到白鹅岭的登山路线（可乘云谷索道直达），以及白鹅岭后面的始信峰、狮子峰、排云亭等山顶区域，后山风景多是精巧的山景，适合步行一路观赏。飞来石、猴子观海都在这里。<br><a name="k8GlK"></a></p>
-<h4 id="西海大峡谷"><a href="#西海大峡谷" class="headerlink" title="西海大峡谷"></a><strong>西海大峡谷</strong></h4><p><img src="https://cdn.nlark.com/yuque/0/2024/jpeg/35935935/1720157137682-12361b57-b86f-43c2-a2b9-82dd64317a81.jpeg#averageHue=%23818c8c&clientId=u41b9c3e6-3dfe-4&from=paste&height=1620&id=uca6a7765&originHeight=1620&originWidth=1080&originalType=binary&ratio=1&rotation=0&showTitle=false&size=276494&status=done&style=none&taskId=u43d47c87-e616-4dcb-87e5-8e04ccebefb&title=&width=1080" alt="98ee1338edc660ef64964f09fa3dba7.jpg"><br />西海大峡谷是近些年新开放的景区，谷内幽深，风景非常壮丽，被称为黄山真正的精华风光集合地。西海大峡谷可以从后山山顶区域的排云亭进入，谷内环绕一圈后回到主峰天海处。从排云亭步行下到谷底大约2小时左右，然后可乘坐缆车到天海。<br><a name="TrXb2"></a></p>
-<h4 id="酒店（山上）"><a href="#酒店（山上）" class="headerlink" title="酒店（山上）"></a>酒店（山上）</h4><p><a name="cEsy3"></a></p>
-<h4 id="酒店（山下）"><a href="#酒店（山下）" class="headerlink" title="酒店（山下）"></a>酒店（山下）</h4><p><img src="https://cdn.nlark.com/yuque/0/2024/jpeg/35935935/1719631849277-22cd9254-762d-4b2a-ad73-787dfff656ea.jpeg#averageHue=%23e1edd4&clientId=u28904010-f1f6-4&from=paste&height=3214&id=u3836e43d&originHeight=3214&originWidth=1080&originalType=binary&ratio=1&rotation=0&showTitle=false&size=1028187&status=done&style=none&taskId=u1fc79eb4-bc39-4717-ba3e-583fe9c8698&title=&width=1080" alt="ac7cd395cbf50483bdb88138d7c97c0.jpg"><br><a name="N3obQ"></a></p>
-<h3 id="Day-3-·-宏村"><a href="#Day-3-·-宏村" class="headerlink" title="Day 3 ·  宏村"></a>Day 3 ·  宏村</h3><p><a name="alfwE"></a></p>
-<h3 id="交通方式-2"><a href="#交通方式-2" class="headerlink" title="交通方式"></a>交通方式</h3><p><img src="https://cdn.nlark.com/yuque/0/2024/jpeg/35935935/1719630996028-f0427393-3f5e-4de5-96e8-f31f66e456b6.jpeg#averageHue=%23e5ede6&clientId=u66698cfd-b688-4&from=paste&height=520&id=u91201078&originHeight=1010&originWidth=1080&originalType=binary&ratio=1&rotation=0&showTitle=false&size=272267&status=done&style=none&taskId=uba6593d9-cf19-4168-915a-de703d0e5bc&title=&width=556" alt="d696d98e263f8f536f1250448505b80.jpg"><br /><img src="https://cdn.nlark.com/yuque/0/2024/jpeg/35935935/1719631283183-a5622efe-9437-4962-bad1-dd3e1254c1ef.jpeg#averageHue=%23f2f2f0&clientId=u66698cfd-b688-4&from=paste&height=2340&id=u6ae4a394&originHeight=2340&originWidth=1080&originalType=binary&ratio=1&rotation=0&showTitle=false&size=577931&status=done&style=none&taskId=ub29808bf-b23b-4047-bf7a-026d0e8b0bc&title=&width=1080" alt="cd3f37937dc1248fdc44cc433418bfc.jpg"><br /><img src="https://cdn.nlark.com/yuque/0/2024/jpeg/35935935/1719631270862-391b66d3-ad8b-415e-86ff-476063a61f4e.jpeg#averageHue=%23b0cea6&clientId=u66698cfd-b688-4&from=paste&height=4337&id=u3e611109&originHeight=4337&originWidth=7285&originalType=binary&ratio=1&rotation=0&showTitle=false&size=5556484&status=done&style=none&taskId=u8e4d7a4a-dd16-4509-b6c7-82c314e8b66&title=&width=7285" alt="e60b27bc3475dd0b191770cb25a0ecb.jpg"><br><a name="noAnK"></a></p>
-<h3 id="景区简介-1"><a href="#景区简介-1" class="headerlink" title="景区简介"></a>景区简介</h3><p><img src="https://cdn.nlark.com/yuque/0/2024/png/35935935/1719225103691-ebb740d7-10f4-42eb-ba48-833b71786dfe.png#averageHue=%23416a49&clientId=u82eecd7b-55ef-4&from=paste&id=uff09e98b&originHeight=462&originWidth=1180&originalType=url&ratio=1&rotation=0&showTitle=false&size=1375297&status=done&style=none&taskId=u6114d87b-5be8-4601-8082-023b8d03e96&title=" alt="image.png"><br />宏村景区是徽派古村中的代表，有“中国画里乡村”的美誉。来宏村一是看水利系统带来的水景，南湖、月沼是精华所在；二是看建筑上的徽派三雕，砖雕、石雕、木雕，像剪纸一样精细，人文景观与自然景观很好地融为一体。<br />宏村位于黟县东北11公里，黄山市西北68公里处，始建于南宋绍兴年间（公元1131年-1162年），从明永乐年间（公元1403年-1424年）开始，逐步发展成了神奇的“牛形村”的样子。村口的古树是“牛角”，村中房屋鳞次栉比的明清徽派建筑是“牛身”，村西溪水上四座桥是“牛腿”，月沼是“牛胃”，南湖是“牛肚”，流经家家户户的水圳（导引清泉的水沟）则是“牛肠”。<br />村中道路四通八达，入口有多个，主要的有三个，一个是村西当地人口中的“村口”，栽有红杨和银杏两颗古树；一个是南湖西边际泗桥通向的入口；还有一个是南湖东边，有停车场的入口，这是宏村较大的入口，也是正门所在，一般游客从此门进入，由南到北游览古村。<br />先欣赏位于宏村南端的精华景点之一南湖，是开凿于明万历丁未年（公元1607年）的弓形人工湖，水面开阔，穿湖而过的画桥为电影《卧虎藏龙》里李慕白牵马走过的地方。湖北岸有南湖书院，清朝时把原来湖边的六所私塾合并为一个书院，所以书院显得非常宽敞。看完南湖向北走，可顺道游览敬德堂、汪大燮故居（振绮堂）。<br />接着来到宏村中心位置的精华景点——开凿于明永乐年间的月沼，周围的徽派建筑倒映其中，是很好的拍照地。遗憾的是，月沼边往往聚满游客，想要拍张没人的照片比较困难。月沼北岸正中有祠堂乐叙堂，宏村的居民多姓汪，所以又叫汪氏宗祠。村中其他的屋子都是清代的，只有乐叙堂是明代的，比起清代建筑的繁复，明代建筑显得简约。月沼北侧西首还有建于清代的敬修堂。<br />继续向北走，参观宏村曾经的富豪建筑，清末大盐商汪定贵的住宅承志堂。承志堂里书房、厨房、马厩、保镖房、男女佣人房俱全，甚至还有搓麻将牌的“排山阁”。屋内自带池塘、水井，用水不出屋。而很值得一看的是精美的徽派三雕，有些木雕上还涂着金粉，可谓富丽堂皇。其他你还可以看下村中的德义堂、树人堂、桃源居等古建筑。<br><a name="BtrEd"></a></p>
-<h4 id="吃饭-1"><a href="#吃饭-1" class="headerlink" title="吃饭"></a>吃饭</h4><p><img src="https://cdn.nlark.com/yuque/0/2024/jpeg/35935935/1719633297263-1ef27576-a4b6-4a52-b393-0153660cacec.jpeg#averageHue=%23c39072&from=url&id=BY3Ev&originHeight=8982&originWidth=1080&originalType=binary&ratio=1&rotation=0&showTitle=false&size=3364418&status=done&style=none&title=" alt="-1420543280.jpg"></p>
-<p><a name="OhGDi"></a></p>
-<h4 id="酒店-1"><a href="#酒店-1" class="headerlink" title="酒店"></a>酒店</h4><p><img src="https://cdn.nlark.com/yuque/0/2024/jpeg/35935935/1719631354931-2397726f-884d-46d4-ba89-06c9681c9dfd.jpeg#averageHue=%23f5f4f4&clientId=u66698cfd-b688-4&from=paste&height=391&id=ltuZ6&originHeight=391&originWidth=1080&originalType=binary&ratio=1&rotation=0&showTitle=false&size=109259&status=done&style=none&taskId=u2604421d-19a3-44a9-94b7-d35f0d569a5&title=&width=1080" alt="0811ee45e99935bd8c606b3beaa7967.jpg"></p>
+    <title>班级同学外号查询</title>
+    <url>/2023/05/05/%E7%8F%AD%E7%BA%A7%E5%90%8C%E5%AD%A6%E5%A4%96%E5%8F%B7%E6%9F%A5%E8%AF%A2/</url>
+    <content><![CDATA[<p>为了防止外人，特此利用查询，点击边栏<a href="https://727952.yichafen.com/">“查询系统”</a>即可进入查询<br>爱看点此进入➡<a href="https://727952.yichafen.com/">查询</a><br>对应班级：大田县第五中学七年六班</p>
+<iframe src="https://727952.yichafen.com/public/queryscore/sqcode/Mszckn0mMzA0MXxjODczZTIwYmIzNTc5M2VkNjM0NjQwZTIyYmUwODZjMXw3Mjc5NTIO0O0O.html" width="100%" height="800" frameborder="0" scrolling="no"></iframe>]]></content>
+  </entry>
+  <entry>
+    <title>搞个项目迭了8代</title>
+    <url>/2023/05/05/%E6%90%9E%E4%B8%AA%E9%A1%B9%E7%9B%AE%E8%BF%AD%E4%BA%868%E4%BB%A3/</url>
+    <content><![CDATA[<p><a href="https://www.kdocs.cn/l/crnKsa9jGwuK">文档</a><br>累死了累死了！<br><img src="https://pic2.imgdb.cn/item/6454c8dd0d2dde577736747f.png"><br>昨天录了一下午<br>今天剪了一天！！！！<br>成片即将登场<br>关注我！！！！！！</p>
+]]></content>
+  </entry>
+  <entry>
+    <title>xiaopf教育app正式上线！</title>
+    <url>/2023/05/01/xiaopf%E6%95%99%E8%82%B2app%E6%AD%A3%E5%BC%8F%E4%B8%8A%E7%BA%BF%EF%BC%81/</url>
+    <content><![CDATA[<p>经过我的不懈努力，中梧教育app正式上线！！！<br>要下载的话可以点这儿哦➡<a href="https://baby2020.lanzoub.com/iJoRU0ugepmd">下载</a><br>或者识别下方二维码下载<br><img src="https://img1.imgtp.com/2023/05/02/iedeEmpE.png"><br>密码：xiaopf<br>现在开放公测！！！<br>感谢<a href="https://space.bilibili.com/1372117931">@xiaopf</a></p>
+]]></content>
+      <tags>
+        <tag>技术</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>关于我</title>
+    <url>/2023/04/22/%E5%85%B3%E4%BA%8E%E6%88%91/</url>
+    <content><![CDATA[<p>自从上初中以来，我已忙忙碌碌，从小学的一周一更，到现在一月都不一定更。<br>虽说学习累，但我们还要坚持<br>生活是丰富多彩的，要我们去发现<br>航拍 风光 延时<br>B站（大杂烩）：<a href="https://space.bilibili.com/593864864" title="Youreln">https://space.bilibili.com/593864864</a><br>微博（不常更）：<a href="https://weibo.com/7748480464" title="YRStudio-Youreln">https://weibo.com/7748480464</a><br>抖音（粉丝最多）：<a href="https://www.douyin.com/user/MS4wLjABAAAAdN1pfPgV-1UvUP3Ox0sq9wkRfSEDTanGLgVlnETLZ9fgV1jg6_5OTiCAdlbzinyE" title="Youreln">https://www.douyin.com/user/MS4wLjABAAAAdN1pfPgV-1UvUP3Ox0sq9wkRfSEDTanGLgVlnETLZ9fgV1jg6_5OTiCAdlbzinyE</a><br>微信视频号（熟人最多）：<a href="https://img1.imgtp.com/2023/04/22/7NVK95Kf.jpg" title="Youreln视频号二维码">https://img1.imgtp.com/2023/04/22/7NVK95Kf.jpg</a><br>快手（被恶心到了，他说我的年度总结是默片，不会更新了）：<a href="https://www.kuaishou.com/profile/3xr6iytpmj67ppm" title="Youreln看着玩">https://www.kuaishou.com/profile/3xr6iytpmj67ppm</a></p>
 ]]></content>
       <tags>
         <tag>其他</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Youreln</title>
+    <url>/2023/04/05/Youreln/</url>
+    <content><![CDATA[<p>新网站重建了！！！<br>但是，旧网站[youreln.top]也没了，域名已经释放了<br>都怪我手残<br>把数据库不小心毁了<br>算了，继续加油吧！！！<br>另外，中梧教育app也要上线了<br>设计稿给大家，点<a href="https://js.design/f/psph1t?p=GHPXNMnltV">这边</a><br>2023/5/2 10:11:02<br>已上线，看置顶文章</p>
+]]></content>
+      <tags>
+        <tag>其他</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>查询困扰福建中小学生福建尚行知“拨雪寻春书香满园”寒假云诗词大会</title>
+    <url>/2023/01/21/%E6%9F%A5%E8%AF%A2%E5%9B%B0%E6%89%B0%E7%A6%8F%E5%BB%BA%E4%B8%AD%E5%B0%8F%E5%AD%A6%E7%94%9F%E7%A6%8F%E5%BB%BA%E5%B0%9A%E8%A1%8C%E7%9F%A5%E2%80%9C%E6%8B%A8%E9%9B%AA%E5%AF%BB%E6%98%A5%E4%B9%A6%E9%A6%99%E6%BB%A1%E5%9B%AD%E2%80%9D%E5%AF%92%E5%81%87%E4%BA%91%E8%AF%97%E8%AF%8D%E5%A4%A7%E4%BC%9A/</url>
+    <content><![CDATA[<p><a href="https://weibo.com/ttarticle/p/show?id=2309404862880158974335">微博原文章</a><br>​​工具附文末，各位观众作不作弊靠诚信，我工具仅是为了让大家复习巩固。注意：仅适用于全省1-2年级、5-6年级、7-9年级，其他不支持</p>
+<p>最近不是正式考评了吗，大家都很头疼</p>
+<span id="more"></span>
+<p>PS：使用造成的后果与我无关<br><img src="https://wx1.sinaimg.cn/large/008snPJmly4hajb0kn48oj30q60de75k.jpg"><br>为了造福大家，我爆肝做了一个题库<br><img src="https://wx1.sinaimg.cn/large/008snPJmly4hajb17hambj30q60e30wk.jpg"><br>既然都有题库了，不如搞个查询系统？</p>
+<p>这次使用易查分 ​ ，咱们学校也在用这个来给学生查成绩</p>
+<p>然后<br><img src="https://wx1.sinaimg.cn/large/008snPJmly4hajb2yay2zj30q60daglv.jpg"><br><img src="https://wx1.sinaimg.cn/large/008snPJmly4hajb3cuikij30q60dcdgg.jpg"><br><img src="https://wx1.sinaimg.cn/large/008snPJmly4hajb3nd4zfj30q60dfjs2.jpg"><br>然后就好了，虽然标题是大田，但是适用于全省啊</p>
+<p>使用方法：输入前四个字符  字符就是包括汉字和符号</p>
+<p>如：查询【对《使至塞上》这首诗的分析,不恰当的一项是?】，就只需输入【对《使至】</p>
+<p>查询系统网址：<a href="https://727952.yichafen.com/">https://727952.yichafen.com/</a></p>
+<p>题库只包含我做到过的且我认为较易错的且大部分是比较长的，如赏析理解等，也有易错的判断题。会不断更新的哦。</p>
+<p>有些题去百度搜也是搜不到或搜到的是错的<br>目前也已支持三四五六年级的，快去试试吧！<br>完全免费哦！​​​​</p>
+]]></content>
+      <tags>
+        <tag>技术</tag>
       </tags>
   </entry>
 </search>
